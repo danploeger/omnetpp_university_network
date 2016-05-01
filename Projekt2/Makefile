@@ -1,12 +1,12 @@
 #
-# OMNeT++/OMNEST Makefile for Projekt2
+# OMNeT++/OMNEST Makefile for Exercise_2
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -O out
 #
 
 # Name of target to be created (-o option)
-TARGET = Projekt2$(EXE_SUFFIX)
+TARGET = Exercise_2$(EXE_SUFFIX)
 
 # User interface (uncomment one) (-u option)
 USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(CMDENV_LIBS)
@@ -28,7 +28,7 @@ PROJECTRELATIVE_PATH =
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
-OBJS = $O/Sender.o $O/Receiver.o
+OBJS = $O/Receiver.o $O/Sender.o
 
 # Message files
 MSGFILES =
@@ -103,7 +103,7 @@ msgheaders: $(MSGFILES:.msg=_m.h)
 clean:
 	$(qecho) Cleaning...
 	$(Q)-rm -rf $O
-	$(Q)-rm -f Projekt2 Projekt2.exe libProjekt2.so libProjekt2.a libProjekt2.dll libProjekt2.dylib
+	$(Q)-rm -f Exercise_2 Exercise_2.exe libExercise_2.so libExercise_2.a libExercise_2.dll libExercise_2.dylib
 	$(Q)-rm -f ./*_m.cc ./*_m.h
 	$(Q)-rm -f results/*_m.cc results/*_m.h
 

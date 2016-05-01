@@ -1,1 +1,1 @@
--g -Wall -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT  -DHAVE_PCAP -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I. -Iresults -I/home/lillyx/omnetpp-4.6/include
+-g -Wall   -I/usr/include -fno-stack-protector -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I. -Iresults -IC:/apps/omnetpp-4.6/include

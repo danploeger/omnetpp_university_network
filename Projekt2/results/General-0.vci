@@ -1,15 +1,15 @@
-file 39316 1461667561                                           
+file 40332 1462112878                                           
 version 2
-run General-0-20160426-12:45:54-8775
+run General-0-20160501-16:26:07-676
 attr configname General
-attr datetime 20160426-12:45:54
+attr datetime 20160501-16:26:07
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network Projekt2
-attr processid 8775
+attr processid 676
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -17,4 +17,4 @@ attr runnumber 0
 attr seedset 0
 
 vector 0  Projekt2.R  ""  ETV
-0	394 38922 2 2000 2.487623513697 3030.001197996422 1000 0.000166055685 20.296171559811 3030.0011979964 18018.985999634
+0	410 39922 2 2000 2.487623513697 3030.001197996422 1000 0.000166055685 20.296171559811 3030.0011979964 18018.985999634
