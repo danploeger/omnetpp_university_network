@@ -13,9 +13,6 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package Exercise_2;
-
-
 simple sender {
   parameters:
       volatile double delayTime @unit(s); 

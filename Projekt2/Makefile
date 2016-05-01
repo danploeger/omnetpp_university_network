@@ -1,12 +1,12 @@
 #
-# OMNeT++/OMNEST Makefile for Exercise_2
+# OMNeT++/OMNEST Makefile for Exercises
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -O out
 #
 
 # Name of target to be created (-o option)
-TARGET = Exercise_2$(EXE_SUFFIX)
+TARGET = Exercises$(EXE_SUFFIX)
 
 # User interface (uncomment one) (-u option)
 USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(CMDENV_LIBS)
@@ -103,7 +103,7 @@ msgheaders: $(MSGFILES:.msg=_m.h)
 clean:
 	$(qecho) Cleaning...
 	$(Q)-rm -rf $O
-	$(Q)-rm -f Exercise_2 Exercise_2.exe libExercise_2.so libExercise_2.a libExercise_2.dll libExercise_2.dylib
+	$(Q)-rm -f Exercises Exercises.exe libExercises.so libExercises.a libExercises.dll libExercises.dylib
 	$(Q)-rm -f ./*_m.cc ./*_m.h
 	$(Q)-rm -f results/*_m.cc results/*_m.h
 
