@@ -1,20 +1,27 @@
-%Todo
-%conf interval for each vector of samples.
-%funktionsaufruf ->sammeln der daten. Plot in matlab.
+%Calculate and plot Confidence Interval (CI) 
+%Note: First load .csv files into workspace.They will appear as vector.
 
-
-%calculate CI for each scenario (10,100,1000)
-for i=1:3
-[upperi,loweri]=confint(m,sample_vector_scenario_i);
-end
-
-
-
-
-%noch nicht angepasster plot
-colordef black;
-%semilogy(1:10,upper1,'r-',...
- %        1:step_JAC,resvec_JAC,'m-.',...
-  %       1:step_GSV,resvec_GSV,'c-',...
-   %      1:step_GSR,resvec_GSR,'b-.',...
-   %      1:m,cond(full(A))*eps*ones(m,1),'w')
+%Calculate CI for each scenario (Population) ${10,100,1000}s
+%with 10 samples (Sampleset)
+[upper1,lower1]=confint(X10_10s);
+[upper2,lower2]=confint(X10_100s);
+[upper3,lower3]=confint(X10_1000s);
+%with 30 samples
+[upper301,lower301]=confint(X30_10s);
+[upper302,lower302]=confint(X30_100s);
+[upper303,lower303]=confint(X30_1000s);
+%Plot all CI's in one plot.
+semilogx(    [1 1], [lower1 upper1], 'r', ...
+         [2 2], [lower2 upper2], 'r',...
+         [3 3],[lower3 upper3],'r',...
+         [1 1], [lower301 upper301], 'b+', ...
+         [2 2], [lower302 upper302], 'b+', ...
+         [3 3], [lower303 upper303], 'b+')
+legend('10x10s',...
+       '10x100s',...
+       '10x1000s',...
+       '30x10s',...
+       '30x100s',...
+       '30x1000s')
+title('Confidence Intervals for different Scenarios (s. legend)')
+ylabel('Lower/Upper Bound')

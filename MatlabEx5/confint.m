@@ -1,6 +1,8 @@
-function [s_2,zValue,ci_lower,ci_higher,y_m] = confint(m,samplevec)
+function [ci_lower,ci_higher] = confint(samplevec)
 %Function to calculate the Confidence Interval for Avg. Throughput
 
+%Get samplesize
+m=columns(samplevec);
 %Calculate the sample mean estimate y_m
 y_m=0;
 for i=1:m
