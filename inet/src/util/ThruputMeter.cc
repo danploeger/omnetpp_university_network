@@ -82,7 +82,10 @@ void ThruputMeter::beginNewInterval(simtime_t now)
 
 void ThruputMeter::finish()
 {
-    simtime_t duration = simTime() - startTime;
+    // Original value
+//    simtime_t duration = simTime() - startTime;
+    // New value
+    simtime_t duration = maxInterval;
 
     recordScalar("duration", duration);
     recordScalar("total packets", numPackets);
