@@ -27,6 +27,7 @@ expected_packets = n* pdf(pd, bins);
 %   distribution. This value adjusts the degrees of freedom of the test 
 %   based on the number of estimated parameters used to compute the cdf 
 %   or expected counts. Default is 0 (if 'Expected' is specified).
+%   For the Poisson we expect 1 parameter.
 % Alpha — significance level.
 
 [h,p,st] = chi2gof(bins, 'Ctrs', bins, ...
@@ -57,13 +58,19 @@ expected_packets = n* pdf(pd, bins);
 
 % Plot
 figure
-smpl_plot = subplot(2,1,1); % top subplot: sample data plot
-fttd_plot = subplot(2,1,2); % bottom subplot: fitted distribution
-smpl_plot_range = linspace (0, nbins, nbins);
-fttd_plot_range = linspace (0, 17, 17);
+smpl_plot = subplot(3,1,1); % top subplot: sample data plot
+hist_plot = subplot(3,1,2); % middle subplot: histogram plot
+fttd_plot = subplot(3,1,3); % bottom subplot: fitted distribution
+smpl_plot_range = linspace (50, 150, 100);
+hist_plot_range = linspace (0, nbins, nbins);
+fttd_plot_range = linspace (0, length(expected_packets), length(expected_packets));
 
-plot(smpl_plot, smpl_plot_range, packet_intervals')
+hst = hist(packetsec, smpl_plot_range);
+plot(smpl_plot, smpl_plot_range, hst')
 title(smpl_plot, 'sample data')
 
-plot(fttd_plot, fttd_plot_range, st.E')
+plot(hist_plot, hist_plot_range, packet_intervals')
+title(hist_plot, 'histogram plot')
+
+plot(fttd_plot, fttd_plot_range, expected_packets')
 title(fttd_plot, 'fitted distribution (expected counts)')
