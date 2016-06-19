@@ -14,39 +14,45 @@
 //
 
 import ned.DatarateChannel;
+import ned.IdealChannel;
 import inet.nodes.inet.StandardHost;
 import inet.networklayer.autorouting.ipv4.FlatNetworkConfigurator;
+//From Hints: Import the package of the UDPBasic App to derive own subclass and model VoIP client
+import inet.applications.udpapp.UDPBasicApp;
 
 network Exercise7Current
 {
     parameters:
-        double ber = default(0);
-        int nInternetCloud = default(1);
+        double ber = default(0); //Bit Error Rate
+        int nInternetCloud = default(1); //Server
         int nGateway = default(1);
         int nBackbone = default(5);
         int nAccess = default(5);
         int nEndUser = default(25);
         @display("bgb=300,550");
     types:
-        channel gateway2internetCloud extends DatarateChannel
+        //TODO: Do we need this? Its Ideal connection,so its sufficient to define a connection with 
+        // -->channelspec--> without delay or ber so omnet will automatically choose ned.IdealChannel
+        //read :omnetppmanual 3.9.1 .
+        channel gateway2internetCloud extends DatarateChannel //Ideal Connection, no delay.
         {
-            datarate = 1Mbps; 	//TODO
-            delay = 200ms;		//TODO
+            datarate = 1Mbps; 	//TODO: Ideal Connection
+            delay = 10ms;		//TODO: Ideal connection via Ideal channel, gives error during simulation.
         }
         channel backbone2gateway extends DatarateChannel
         {
-            datarate = 1Mbps; 	//TODO
-            delay = 200ms;		//TODO
+            datarate = 10Mbps; 	
+            delay = 10ms;		
         }
         channel access2backbone extends DatarateChannel
         {
-            datarate = 1Mbps; 	//TODO
-            delay = 200ms;		//TODO
+            datarate = 2Mbps; 	
+            delay = 15ms;		
         }
         channel endUser2access extends DatarateChannel
         {
-            datarate = 1Mbps; 	//TODO
-            delay = 200ms;		//TODO
+            datarate = 64kbps; 	
+            delay = 40ms;		
         }
     submodules:
         internetCloud[nInternetCloud]: StandardHost {	//TODO StandardHost?
