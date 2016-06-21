@@ -12,9 +12,12 @@
 
 class VoIPApp : public UDPBasicApp
 {
+<<<<<<< HEAD
 protected:
     virtual void sendPacket();
     virtual void processPacket(cPacket *msg);
+=======
+>>>>>>> branch 'master' of C:/Users/Daniel/Dropbox/OMNeT_Git
 public:
     VoIPApp();
     ~VoIPApp();

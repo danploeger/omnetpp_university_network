@@ -28,7 +28,11 @@ void VoIPApp::sendPacket()
 
 void VoIPApp::processPacket(cPacket *pk)
 {
+<<<<<<< HEAD
     UDPBasicApp::processPacket(pk);
+=======
+    UDPBasicApp::processPacket(cPacket *pk);
+>>>>>>> branch 'master' of C:/Users/Daniel/Dropbox/OMNeT_Git
     recordScalar("packet-arrival-time", simTime());
     recordScalar("arriving-packet-number", UDPBasicApp::numReceived);
 }
