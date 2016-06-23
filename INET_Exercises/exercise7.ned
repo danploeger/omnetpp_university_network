@@ -13,6 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 //
 
+
 import ned.DatarateChannel;
 import ned.IdealChannel;
 import inet.nodes.inet.StandardHost;
@@ -26,18 +27,12 @@ import inet.applications.udpapp.UDPBasicApp;
 //Network describing the Current Network as given in the task Description
 //The below code defines a network type named Exercise7Current
 
-//Define own channel types for the different connections
-  //dialup via ISDN ,40ms propagation delay,64kbps
-channel cable extends DatarateChannel
-{
-    datarate = 64kbps;
-    delay = 40ms;
-}
+
 
 channel gateway2server extends DatarateChannel //Ideal Connection, no delay.
 {
-    datarate = 1Mbps; 	//TODO: Ideal Connection
-    delay = 10ms;		//TODO: Ideal connection via Ideal channel, gives error during simulation.
+    //datarate = 1Mbps; 	//TODO: Ideal Connection
+    //delay = 10ms;		//TODO: Ideal connection via Ideal channel, gives error during simulation.
 }
 //Router Module:By default full-duplex connection when using ethernet interface to connect to other nodes
 channel backbone2gateway extends DatarateChannel
@@ -66,11 +61,20 @@ module accessNetwork
 {
     //A modul type subnet has parameters for its submodules.
     parameters:
-        int nEndUser = default(2);//number of end users connected to the AccessRouter
-
+        int nEndUser = default(25);//number of end users connected to the AccessRouter
+        
     gates:
-        //Gate to connect module to outside    
+        //Gate to connect module to other routers.Therefore ppp    
         inout pppg;
+    types:
+        //Define own channel types for the different connections
+  //dialup via ISDN ,40ms propagation delay,64kbps
+      channel dialup extends DatarateChannel
+       {
+          
+          delay = 40ms;
+       }    
+        
     submodules:
         accessRouter: Router {
             @display("i=abstract/router");
@@ -81,11 +85,11 @@ module accessNetwork
 
     //There are connections between the nodes
     connections:
-        //Router is connected to each host 
+        //Router is connected to each host via ethernet
         for i=0..nEndUser-1 {
-            accessRouter.pppg++ <--> cable <--> client[i].pppg++;
+            accessRouter.pppg++ <--> dialup <--> client[i].pppg++;
         }
-        //Router to router connection is ppp because its a protocol that is used for connecting routers (wiki);)
+      
 
         accessRouter.pppg++ <--> pppg;//Access Router has a port(ppp) to outside world / its the gate which connects the module to other modules
 }
@@ -116,7 +120,7 @@ module accessNetwork
 module backboneNetwork
 {
     parameters:
-        int nAccessNet = default(3);//Number of Access Networks connected to the BackboneRouter
+        int nAccessNet = default(5);//Number of Access Networks connected to the BackboneRouter
     gates:
         //Gate to connect    
         inout pppg;
@@ -128,7 +132,8 @@ module backboneNetwork
             @display("p=70,75");
         }
     connections:
-        //Backbone Router is connected to a number of AccessrouterNetworks
+        //Backbone Router is connected to a number of AccessrouterNetworks via their respective routers.
+        //Therefore ppp
         for i=0..nAccessNet-1 {
             backboneRouter.pppg++ <--> access2backbone <--> accessNet[i].pppg;
         }
@@ -154,7 +159,7 @@ network Exercise7Current
     parameters:
 
         //int nAccessNets = default(2);//Number of Acces Nets
-        int nBackboneNet = default(2); //Number of Backbone networks connected to gateway
+        int nBackboneNet = default(5); //Number of Backbone networks connected to gateway
         int nGateway = default(1);
 
     submodules:
@@ -167,18 +172,18 @@ network Exercise7Current
         gateway: Router {
             @display("i=abstract/router;p=188,154");
         }
-        client: StandardHost {
-            @display("is=s;p=482,135");
-        }
+//        client: StandardHost {
+//            @display("is=s;p=482,135");
+//        }
         server: StandardHost {
 
             @display("p=576,220;i=device/server_l");
         }
-
-        backboneRouter: Router {
-            @display("i=abstract/router;p=96,73");
-        }
-        configurator: FlatNetworkConfigurator {
+//
+//        backboneRouter: Router {
+//            @display("i=abstract/router;p=96,73");
+//        }
+        configurator: FlatNetworkConfigurator{
             parameters:
                 @display("p=53,134");
         }
@@ -188,7 +193,7 @@ network Exercise7Current
         for i=0..nBackboneNet-1 {
             gateway.pppg++ <--> backbone2gateway <--> backboneNet[i].pppg;
         }
-        gateway.pppg++ <--> gateway2server <--> server.pppg++;
+             gateway.pppg++ <--> gateway2server <--> server.pppg++;
 
 
 
