@@ -23,10 +23,11 @@ network Exercise4
     parameters:
         double ber = default(0);
         @display("bgb=232,193");
+        double datarateParam @unit(bps) = default(0bps); // bits per second; 0=infinite
     types:
         channel C extends DatarateChannel
         {
-            datarate = 1Mbps;
+            datarate = datarateParam;
             delay = 200ms;
             ber = pow(10, -7);
         }

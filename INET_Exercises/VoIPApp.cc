@@ -17,9 +17,6 @@ VoIPApp::~VoIPApp() {
 
 Define_Module(VoIPApp);
 
-//simsignal_t VoIPApp::sentPkSignal = registerSignal("sentPk");
-//simsignal_t VoIPApp::rcvdPkSignal = registerSignal("rcvdPk");
-
 void VoIPApp::sendPacket()
 {
     UDPBasicApp::sendPacket();
@@ -33,3 +30,19 @@ void VoIPApp::processPacket(cPacket *pk)
     recordScalar("arriving-packet-number", UDPBasicApp::numReceived);
 }
 
+//void VoIPApp::handleMessageWhenUp(cMessage *msg)
+//{
+//    UDPBasicApp::handleMessageWhenUp(msg);
+//    if (msg->isSelfMessage())
+//    {
+//        recordScalar("packet-selfmessage-time", simTime());
+//    } else {
+//        char message[80];
+//
+//        sprintf(message, "packet-%d-time", (int)selfMsg->getKind());
+////        strcpy(message, "packet-");
+////        strcat(message, "%d", (int)selfMsg->getKind());
+////        strcat(message, "-time");
+//        recordScalar(message, simTime());
+//    }
+//}
