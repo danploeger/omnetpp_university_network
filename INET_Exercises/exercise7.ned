@@ -77,10 +77,10 @@ module accessNetwork
 
     submodules:
         accessRouter: Router {
-            @display("i=abstract/router");
+            @display("i=abstract/router;p=189,140");
         }
         client[nEndUser]: StandardHost {
-            @display("is=s;p=100,36");
+            @display("is=s;p=191,30");
         }
 
     //There are connections between the nodes
@@ -105,10 +105,10 @@ module backboneNetwork
         inout pppg;
     submodules:
         backboneRouter: Router {
-            @display("i=abstract/router;p=207,75");
+            @display("i=abstract/router;p=188,144");
         }
         accessNet[nAccessNet]: accessNetwork {
-            @display("p=70,75");
+            @display("p=189,38");
             isDSL = !isISDN;
         }
     connections:
@@ -129,9 +129,10 @@ network Exercise7
         int nGateway = default(1);
         bool isDSL = default(false);
 
+        @display("bgl=2");
     submodules:
         backboneNet[nBackboneNet]: backboneNetwork {
-            @display("p=261,73");
+            @display("p=188,54");
             isISDN = !isDSL;
         }
         gateway: Router {
@@ -139,11 +140,11 @@ network Exercise7
         }
         server: StandardHost {
 
-            @display("p=561,166;i=device/server_l");
+            @display("p=555,154;i=device/server_l");
         }
         configurator: FlatNetworkConfigurator {
             parameters:
-                @display("p=53,134");
+                @display("p=444,46");
         }
     connections:
         //Connect BackboneNetworks to Gatewayrouter
