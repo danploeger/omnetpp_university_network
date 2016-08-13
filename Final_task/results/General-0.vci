@@ -1,0 +1,150 @@
+file 5908 1471078814                                            
+version 2
+run General-0-20160813-10:59:30-3364
+attr configname General
+attr datetime 20160813-10:59:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network University
+attr processid 3364
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 16  University.wirelessNet.whttpStudents.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 42  University.wirelessNet.whostVideoConf.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 68  University.wirelessNet.whostFTP.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 78  University.wirelessNet.accessPoint.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 117  University.remoteR.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 118  University.remoteR.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 157  University.mainR.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 158  University.mainR.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 168  University.mainR.ppp[1].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 169  University.mainR.ppp[1].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 217  University.profLaptop.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 218  University.profLaptop.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 251  University.wirelessNet.whttpStudents.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 250  University.wirelessNet.whttpStudents.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 257  University.wirelessNet.whostVideoConf.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 256  University.wirelessNet.whostVideoConf.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 263  University.wirelessNet.whostFTP.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 262  University.wirelessNet.whostFTP.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 269  University.wirelessNet.accessPoint.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 268  University.wirelessNet.accessPoint.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 22  University.wirelessNet.whttpStudents.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 24  University.wirelessNet.whttpStudents.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 23  University.wirelessNet.whttpStudents.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 48  University.wirelessNet.whostVideoConf.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 50  University.wirelessNet.whostVideoConf.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 49  University.wirelessNet.whostVideoConf.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 74  University.wirelessNet.whostFTP.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 76  University.wirelessNet.whostFTP.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 75  University.wirelessNet.whostFTP.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 84  University.wirelessNet.accessPoint.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 86  University.wirelessNet.accessPoint.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 85  University.wirelessNet.accessPoint.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+16	5496 9 0 0 0 0 1 0 0 0 0
+22	5505 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+23	5521 9 0 0 0 0 1 0 0 0 0
+24	5530 9 0 0 0 0 1 0 0 0 0
+42	5539 9 0 0 0 0 1 0 0 0 0
+48	5548 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+49	5564 9 0 0 0 0 1 0 0 0 0
+50	5573 9 0 0 0 0 1 0 0 0 0
+68	5582 9 0 0 0 0 1 0 0 0 0
+74	5591 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+75	5607 9 0 0 0 0 1 0 0 0 0
+76	5616 9 0 0 0 0 1 0 0 0 0
+78	5625 9 0 0 0 0 1 0 0 0 0
+84	5634 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+85	5650 9 0 0 0 0 1 0 0 0 0
+86	5659 9 0 0 0 0 1 0 0 0 0
+117	5668 10 0 0 0 0 1 0 0 0 0
+118	5678 10 0 0 0 0 1 0 0 0 0
+157	5688 10 0 0 0 0 1 0 0 0 0
+158	5698 10 0 0 0 0 1 0 0 0 0
+168	5708 10 0 0 0 0 1 0 0 0 0
+169	5718 10 0 0 0 0 1 0 0 0 0
+217	5728 10 0 0 0 0 1 0 0 0 0
+218	5738 10 0 0 0 0 1 0 0 0 0
+250	5748 20 0 0 0 0 2 0 0 0 0
+251	5768 20 0 0 0 0 2 0 0 0 0
+256	5788 20 0 0 0 0 2 0 0 0 0
+257	5808 20 0 0 0 0 2 0 0 0 0
+262	5828 20 0 0 0 0 2 0 0 0 0
+263	5848 20 0 0 0 0 2 0 0 0 0
+268	5868 20 0 0 0 0 2 0 0 0 0
+269	5888 20 0 0 0 0 2 0 0 0 0

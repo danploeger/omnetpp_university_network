@@ -1,0 +1,207 @@
+----------------------------------------------------------------------
+
+
+Tcl error: watchinspector.cc#62: can't read "insp": no such variable
+    while executing
+"inspector:bindSideButtons $insp"
+    (procedure "createWatchViewer" line 7)
+    invoked from within
+"createWatchViewer $insp.main"
+    (procedure "createWatchInspector" line 7)
+    invoked from within
+"createWatchInspector .inspector6 {}"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x353b000 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .inspector8.c ptr0x353b000 1"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x33bd960 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x33bd960 1"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x35543b0 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x35543b0 1"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x35599b0 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x35599b0 2"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x35543b0 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x35543b0 1"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x35543b0 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x35543b0 1"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: watchinspector.cc#62: can't read "insp": no such variable
+    while executing
+"inspector:bindSideButtons $insp"
+    (procedure "createWatchViewer" line 7)
+    invoked from within
+"createWatchViewer $insp.main"
+    (procedure "createWatchInspector" line 7)
+    invoked from within
+"createWatchInspector .inspector1 {}"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#631: ptr0x43ac370 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x43ac370 1"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x43ac370 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x43ac370 1"
+
+
+Tcl error: moduleinspector.cc#631: ptr0x43ac370 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .inspector1.c ptr0x43ac370 1"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#631: ptr0x4827e60 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x4827e60 1"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#631: ptr0x33c42c0 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x33c42c0 1"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#631: ptr0x2f06a50 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .network.c ptr0x2f06a50 1"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#561: bad window path name ""
+    while executing
+"winfo toplevel [focus]"
+    invoked from within
+"if [catch {
+
+       opp_displaystring $dispstr parse tags $chanptr 1
+
+       if {![info exists tags(m)]} {set tags(m) {a}}
+
+       set mode [lindex $t..."
+    (procedure "ModuleInspector:drawConnection" line 14)
+    invoked from within
+"ModuleInspector:drawConnection .network.c ptr0x39afbf0 t=10ms,12Mbps ptr0x396b670 ptr0x39696b0 ptr0x39afe40 0 1 0 2 1"
+
+
+Tcl error: moduleinspector.cc#561: bad window path name ""
+    while executing
+"winfo toplevel [focus]"
+    invoked from within
+"if [catch {
+
+       opp_displaystring $dispstr parse tags $chanptr 1
+
+       if {![info exists tags(m)]} {set tags(m) {a}}
+
+       set mode [lindex $t..."
+    (procedure "ModuleInspector:drawConnection" line 14)
+    invoked from within
+"ModuleInspector:drawConnection .network.c ptr0x39afcb0 t=10ms,12Mbps ptr0x39696b0 ptr0x396b670 ptr0x39b0fe0 0 2 0 1 1"
+
+
