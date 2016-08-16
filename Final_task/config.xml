@@ -1,5 +1,4 @@
 <config> 
   <interface hosts='University.*' address='10.x.x.x' netmask='255.x.x.x' />
-  <interface hosts='University.wirelessNet.*' address='10.x.x.x' netmask='255.x.x.x'/>
   <route hosts="mainR" destination='*' interface='ppp0'/>
 </config>

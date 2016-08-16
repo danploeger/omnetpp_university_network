@@ -16,102 +16,72 @@ import ned.DelayChannel;
 import ned.IdealChannel;
 import inet.world.radio.ChannelControl;
 
-
-//Wireless Network with HTTPStudents, FTPStudent and Video Conference Laptop
-module Wireless
-{
-    parameters:
-        int numHTTPHosts;
-    gates:
-        //Gate to connect module to remoteRouter (remoteR). Ethernet (Eth100M)   
-        inout ethg;
-    submodules:
-       //Wireless Network
-
-        whttpStudents[numHTTPHosts]: WirelessHost {
-            @display("p=93,39");
-            @networkNode;
-        }
-
-        whostVideoConf: WirelessHost {
-            @display("p=141,219");
-            @networkNode;
-        }
-        whostFTP: WirelessHost {
-            @display("p=46,175");
-            @networkNode;
-        }
-        accessPoint: AccessPoint {
-            @display("p=127,128");
-            @networkNode;
-        }
-
-    //There are connections between the nodes
-    connections:
-        //Access Router has a ethgInterface to outside world 
-        // its the gate which connects the module to other modules
-        accessPoint.ethg++ <--> ethg;
-
-}
-
-
-
-
 network University
 {
     parameters:
-        int numHTTPstudents = default(5);
-        @display("bgl=2");
+        int numHTTPHosts = default(0);
+        @display("bgl=2;bgb=940,606");
     submodules:
-        wirelessNet: Wireless {
-            @display("p=34,144");
-            @networkNode;
-        }
-
         remoteR: Router {
-            @display("p=223,148");
+            @display("p=428,316");
             @networkNode;
         }
         mainR: Router {
-            @display("p=429,146");
+            @display("p=593,157");
             @networkNode;
         }
 
         ccTVMonitoringHost: StandardHost {
             parameters:
-                @display("i=device/pc2;p=556,276");
+                @display("i=device/pc2;p=790,231");
                 @networkNode;
         }
         profLaptop: StandardHost {
             parameters:
-                @display("i=device/pc2;p=285,27");
+                @display("i=device/pc2;p=467,57");
                 @networkNode;
         }
 
         configurator: IPv4NetworkConfigurator {
             parameters:
-                @display("p=585,107");
+                @display("p=878,43");
         }
 
         channelControl: ChannelControl {
-            @display("p=585,41");
+            @display("p=880,121");
             @networkNode;
         }
 
 
         Server: StandardHost {
-            @display("p=525,31");
+            @display("p=687,57");
             @networkNode;
         }
         CCTV: StandardHost {
-            @display("p=264,253");
+            @display("p=688,424");
+        }
+        whttpStudents[numHTTPHosts]: WirelessHost {
+            @display("p=102,531");
+            @networkNode;
+        }
+
+        whostVideoConf: WirelessHost {
+            @display("p=176,323");
+            @networkNode;
+        }
+        whostFTP: WirelessHost {
+            @display("p=374,534");
+            @networkNode;
+        }
+        accessPoint: AccessPoint {
+            @display("p=272,452");
+            @networkNode;
         }
     connections:
         //AP und rR sind über FastEthernet verbunden. 
-        // accessPoint.ethg++ <--> Eth100M <--> remoteR.ethg++;
-        remoteR.ethg++ <--> Eth100M { @display("t=Eth100M"); } <--> wirelessNet.ethg;
+        accessPoint.ethg++ <--> Eth100M <--> remoteR.ethg++;
         //remoteRouter und der Main Router sind via PPP verbunden
-        remoteR.pppg++ <--> DatarateChannel {  delay = 10ms; datarate = 12Mbps; } <--> mainR.pppg++;
+        remoteR.pppg++ <--> radioLink: DatarateChannel {  delay = 10ms; datarate = 12Mbps; } <--> mainR.pppg++;
         profLaptop.pppg++ <--> DatarateChannel {  delay = 5ms; } <--> mainR.pppg++;
         mainR.pppg++ <--> DatarateChannel {  delay = exponential(30s); datarate = 100Mbps; } <--> Server.pppg++;
         mainR.pppg++ <--> DatarateChannel <--> ccTVMonitoringHost.pppg++;
