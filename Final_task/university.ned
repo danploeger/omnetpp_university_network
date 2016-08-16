@@ -83,7 +83,7 @@ network University
         //remoteRouter und der Main Router sind via PPP verbunden
         remoteR.pppg++ <--> radioLink: DatarateChannel {  delay = 10ms; datarate = 12Mbps; } <--> mainR.pppg++;
         profLaptop.pppg++ <--> DatarateChannel {  delay = 5ms; } <--> mainR.pppg++;
-        mainR.pppg++ <--> DatarateChannel {  delay = exponential(30s); datarate = 100Mbps; } <--> Server.pppg++;
+        mainR.pppg++ <--> DatarateChannel {  delay = exponential(30ms); datarate = 100Mbps; } <--> Server.pppg++;
         mainR.pppg++ <--> DatarateChannel <--> ccTVMonitoringHost.pppg++;
         CCTV.ethg++ <--> Eth100G <--> remoteR.ethg++;
 }
