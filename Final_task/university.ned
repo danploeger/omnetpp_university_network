@@ -85,5 +85,5 @@ network University
         profLaptop.pppg++ <--> DatarateChannel {  delay = 5ms; } <--> mainR.pppg++;
         mainR.pppg++ <--> DatarateChannel {  delay = exponential(30ms); datarate = 100Mbps; } <--> Server.pppg++;
         mainR.pppg++ <--> DatarateChannel <--> ccTVMonitoringHost.pppg++;
-        CCTV.ethg++ <--> Eth100G <--> remoteR.ethg++;
+        CCTV.ethg++ <--> Eth100M <--> remoteR.ethg++;
 }
