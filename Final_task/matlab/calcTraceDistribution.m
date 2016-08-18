@@ -80,31 +80,17 @@ figure
 smplPlot = subplot(3,1,1); % top subplot: trace plot
 histPlot = subplot(3,1,2); % middle subplot: histogram plot
 diffPlot = subplot(3,1,3); % bottom subplot: fitted distribution
-smplPlotRange = linspace (min(trace), max(trace), length(trace));
 
+smplPlotRange = linspace (min(trace), max(trace), length(trace));
 hst = hist(trace, smplPlotRange);
 plot(smplPlot, smplPlotRange, hst', 'b')
 title(smplPlot, 'Trace Sample Data')
 xlabel(smplPlot, 'Message size (bytes)')
 ylabel(smplPlot, 'Messages')
-% 
-% m = plot(histPlot, histPlotRange, trcCounts', fttdPlotRange, expCounts');
-% title(histPlot, 'Histogram Over Sample Data (blue) and Expected Values (red)')
-% xlabel(histPlot, 'Bin number (between min and max of message size)')
-% ylabel(histPlot, 'Sum of messages')
-% m(1).Marker = 'x';
-% m(1).Color = 'b';
-% m(2).Marker = 'x';
-% m(2).Color = 'r';
-% 
-% plot(fttdPlot, fttdPlotRange, (trcCounts' - expCounts').^2, 'k', 'Marker', 'x')
-% title(fttdPlot, 'Difference Between Sample Data and Expected Values')
-% xlabel(fttdPlot, 'Bin number (between min and max of message size)')
-% ylabel(fttdPlot, 'Squared difference')
 
 histCounts = [trcCounts', expCounts'];
 m = bar(histPlot, histCounts, 1);
-title(histPlot, 'Histogram Over Sample Data (blue) and Expected Values (red)')
+title(histPlot, 'Sample Data (blue) and Expected Exponential Distribution (red)')
 xlabel(histPlot, 'Bin number (between min and max of message size)')
 ylabel(histPlot, 'Sum of messages')
 m(1).FaceColor = 'b';

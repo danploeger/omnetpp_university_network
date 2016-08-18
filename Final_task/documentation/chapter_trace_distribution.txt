@@ -1,0 +1,22 @@
+CHAPTER Trace Distribution
+
+In order to model the student web browsing behaviour in a meaningful way, captured browsing statistics have been provided by the customer. This chapter shortly explains the statistical behaviour behind the given HTTP requests and responses. The response sample traces (download statistcs) are widely distributed in the range of less than 500 Bytes up to more than 4 Mbyte (see figure XXX top).
+
+Distribution fitting analysis shows that the statistical behaviour if partitioned in a smaller number of bins roughly behaves like a negative exponential distribution with a mean value of 0.789 Mbyte (see figure XXX center). The phrase "roughly" means that while the statistical goodness of fit tests accepts this distribution, the actual data has an overweight of small messages compared to the expected values (see figure XXX bottom). An exponential distribution with the mean of 0.789 Mbyte is used in this report for simulation nonetheless. This is a conservative approach and guarantees an upper bound in the distribution: if the actual browsing behaviour uses smaller HTTP responses with a slightly higher probability, the QoS assumptions from the following chapters are going to be met in practice as well.
+
+
+CHAPTER Network Behaviour Expectations
+
+The point-to-point radio link between remote and main router has a data rate of 12 Mbit/s and by this is the weakest single link within the proposed network. All other connection speeds are multiples of this data rate. Since all data has to pass this link, for this theoretical behaviour analysis it is considered to be the network bottleneck.
+
+The network contains several applications which have their main impact either on the download connection from the main router to the remote router, or on the upload connection in the other direction. The respective opposite direction of an application may be neglected, since it mainly consists of very small messages for connection management or empty network packets. For this reason, theoretical down- and upload utilization is examined independently from each other in this chapter. 
+
+The only exception is the video conference, which utilizes both, up- and download equally. The video stream consumes 280 kbit/s for transmission of 1388 Bytes of payload plus 12 Byte RTP protocol headers. It does this every 40 ms and in both directions.
+
+Upload Connection, Remote to Main Router
+
+Aside from the video conference which uses 280 kbit/s, two more applications make use of the upload direction. Firstly, the CCTV camera sends 10 KB every 40 ms, which adds up to 2,000 kbit/s. The second application is the FTP upload. It tries to maximize network utilization and should therefore consume the biggest part of the remaining 9,720 kbit/s of the 12,000 kbit/s data rate (see figure XXY left).
+
+Download Connection, Main to Remote Router
+
+Besides the video conference, the only application which makes use of the download direction is the web browsing. As stated before, web browsing is modelled as the download of files with a exponentially distributed size with a mean of 0,789 Mbyte (see chapter TRACE_DISTRIBUTION). The client's assumption states that a web browsing user waits a certain time before he downloads the next file. The waiting time is assumed to be exponentially distributed with a mean of 15 seconds. This leads to an expected average data rate of 420.8 kbit/s per user. Therefore, if all users download in a well-distributed way, up to 27 users are able to browse simultaneously via the network connection (see figure XXY right).
