@@ -54,7 +54,7 @@ mean = max(trace) * pd.mean / nbins;
 %   For Poisson we expect 1 parameter.
 % Alpha — significance level.
 
-[h,p, st] = chi2gof(trcCounts, 'CDF', pd, 'Alpha', alpha);
+[h,p] = chi2gof(trcCounts, 'CDF', pd, 'Alpha', alpha);
                      
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % chi2gof output arguments %
