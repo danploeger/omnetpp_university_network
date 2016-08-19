@@ -7,8 +7,6 @@ function [nbins, pd, trcCounts, expCounts] = calcBinSizeAndPoolTrace(assumedDist
 
 %   Daniel Ploeger, 2016/08/13 13:06:00
 
-
-
 %% initial number of intervals 
 % (initialized with half the trace length to speed up calculations)
 nbins = length(trace)/2;
