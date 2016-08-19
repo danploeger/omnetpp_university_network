@@ -1,0 +1,95 @@
+file 8928 1471515730                                            
+version 2
+run _55on-0-20160818-12:22:08-25461
+attr configname _55on
+attr datetime 20160818-12:22:08
+attr experiment _55on
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network University
+attr processid 25461
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 816  University.whostFTP.tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 798  University.whostVideoConf.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 83  University.profLaptop.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 118  University.CCTV.udpApp[0]  reqStreamBytes:vector  ETV
+attr interpolationmode  none
+attr title  "requested stream bytes, vector"
+vector 119  University.CCTV.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 64  University.ccTVMonitoringHost.udpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 65  University.ccTVMonitoringHost.udpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 716  University.whttpStudents[48].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 176  University.whttpStudents[3].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 174  University.whttpStudents[3].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 101  University.Server.tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 103  University.Server.tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 102  University.Server.tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 797  University.whostVideoConf.udpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 799  University.whostVideoConf.udpApp[0]  rcvdPkLifetime:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, vector"
+attr unit  s
+64	3046 759 662 213582 0.055728467927 1.015728467927 25 10240 10240 256000 2621440000
+65	3805 984 662 213582 0.055728467927 1.015728467927 25 0.017080129996 0.017080129996 0.4270032499 0.0072932710170065
+83	4789 762 234 223994 0.033770629763 1.033770629763 26 1400 1400 36400 50960000
+101	5551 28 211656 211656 0.983153087593 0.983153087593 1 1 1 1 1
+102	5579 33 211656 211656 0.983153087593 0.983153087593 1 407409 407409 407409 165982093281
+103	5612 41 211656 211656 0.983153087593 0.983153087593 1 0.034730973395 0.034730973395 0.034730973395 0.0012062405129642
+118	5653 34 272 272 0.038648337931 0.038648337931 1 1843200000 1843200000 1843200000 3.39738624e+18
+119	5687 782 272 211672 0.038648337931 0.998648337931 25 10240 10240 256000 2621440000
+174	6469 28 210028 210028 0.948422114198 0.948422114198 1 1 1 1 1
+176	6497 28 207771 207771 0.875770036396 0.875770036396 1 1 1 1 1
+716	6525 28 147010 147010 0.599644485874 0.599644485874 1 1 1 1 1
+797	6553 678 215179 225046 1.022076946294 1.035065162278 22 1400 1400 30800 43120000
+798	7231 787 208 213891 0.020358758438 1.020358758438 26 1400 1400 36400 50960000
+799	8018 898 215179 225046 1.022076946294 1.035065162278 22 0.161294532515 0.988306316531 12.644160339506 8.6401646472644
+816	8916 12 191 191 0 0 1 1 1 1 1

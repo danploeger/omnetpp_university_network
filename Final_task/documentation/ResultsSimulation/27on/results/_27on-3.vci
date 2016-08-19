@@ -1,0 +1,817 @@
+file 50729217 1471540424                                        
+version 2
+run _27on-3-20160818-17:51:27-12367
+attr configname _27on
+attr datetime 20160818-17:51:27
+attr experiment _27on
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=3
+attr measurement ""
+attr network University
+attr processid 12367
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 3
+attr seedset 3
+
+vector 480  University.whostFTP.tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 462  University.whostVideoConf.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 83  University.profLaptop.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 118  University.CCTV.udpApp[0]  reqStreamBytes:vector  ETV
+attr interpolationmode  none
+attr title  "requested stream bytes, vector"
+vector 119  University.CCTV.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 64  University.ccTVMonitoringHost.udpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 65  University.ccTVMonitoringHost.udpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 461  University.whostVideoConf.udpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 463  University.whostVideoConf.udpApp[0]  rcvdPkLifetime:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, vector"
+attr unit  s
+vector 82  University.profLaptop.udpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 84  University.profLaptop.udpApp[0]  rcvdPkLifetime:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, vector"
+attr unit  s
+vector 478  University.whostFTP.tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 164  University.whttpStudents[2].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 162  University.whttpStudents[2].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 101  University.Server.tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 103  University.Server.tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 102  University.Server.tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 200  University.whttpStudents[5].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 198  University.whttpStudents[5].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 332  University.whttpStudents[16].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 330  University.whttpStudents[16].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 428  University.whttpStudents[24].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 426  University.whttpStudents[24].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 425  University.whttpStudents[24].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 427  University.whttpStudents[24].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 329  University.whttpStudents[16].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 331  University.whttpStudents[16].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 176  University.whttpStudents[3].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 174  University.whttpStudents[3].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 260  University.whttpStudents[10].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 258  University.whttpStudents[10].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 452  University.whttpStudents[26].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 296  University.whttpStudents[13].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 450  University.whttpStudents[26].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 257  University.whttpStudents[10].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 259  University.whttpStudents[10].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 368  University.whttpStudents[19].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 366  University.whttpStudents[19].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 224  University.whttpStudents[7].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 222  University.whttpStudents[7].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 294  University.whttpStudents[13].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 197  University.whttpStudents[5].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 199  University.whttpStudents[5].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 392  University.whttpStudents[21].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 293  University.whttpStudents[13].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 295  University.whttpStudents[13].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 390  University.whttpStudents[21].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 152  University.whttpStudents[1].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 188  University.whttpStudents[4].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 104  University.Server.tcpApp[1]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 106  University.Server.tcpApp[1]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 105  University.Server.tcpApp[1]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 477  University.whostFTP.tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 479  University.whostFTP.tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 186  University.whttpStudents[4].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 161  University.whttpStudents[2].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 163  University.whttpStudents[2].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 150  University.whttpStudents[1].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 140  University.whttpStudents[0].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 138  University.whttpStudents[0].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 389  University.whttpStudents[21].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 391  University.whttpStudents[21].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 308  University.whttpStudents[14].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 306  University.whttpStudents[14].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 365  University.whttpStudents[19].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 367  University.whttpStudents[19].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 272  University.whttpStudents[11].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 270  University.whttpStudents[11].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 149  University.whttpStudents[1].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 151  University.whttpStudents[1].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 440  University.whttpStudents[25].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 305  University.whttpStudents[14].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 307  University.whttpStudents[14].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 185  University.whttpStudents[4].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 187  University.whttpStudents[4].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 449  University.whttpStudents[26].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 451  University.whttpStudents[26].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 236  University.whttpStudents[8].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 234  University.whttpStudents[8].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 269  University.whttpStudents[11].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 271  University.whttpStudents[11].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 221  University.whttpStudents[7].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 223  University.whttpStudents[7].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 438  University.whttpStudents[25].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 212  University.whttpStudents[6].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 210  University.whttpStudents[6].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 437  University.whttpStudents[25].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 439  University.whttpStudents[25].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 404  University.whttpStudents[22].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 402  University.whttpStudents[22].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 209  University.whttpStudents[6].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 211  University.whttpStudents[6].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 137  University.whttpStudents[0].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 139  University.whttpStudents[0].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 284  University.whttpStudents[12].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 282  University.whttpStudents[12].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 281  University.whttpStudents[12].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 283  University.whttpStudents[12].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 416  University.whttpStudents[23].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 414  University.whttpStudents[23].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 344  University.whttpStudents[17].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 342  University.whttpStudents[17].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 341  University.whttpStudents[17].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 343  University.whttpStudents[17].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 248  University.whttpStudents[9].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 246  University.whttpStudents[9].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 401  University.whttpStudents[22].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 403  University.whttpStudents[22].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 245  University.whttpStudents[9].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 247  University.whttpStudents[9].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 320  University.whttpStudents[15].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 318  University.whttpStudents[15].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 380  University.whttpStudents[20].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 378  University.whttpStudents[20].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 233  University.whttpStudents[8].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 235  University.whttpStudents[8].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 377  University.whttpStudents[20].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 379  University.whttpStudents[20].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 317  University.whttpStudents[15].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 319  University.whttpStudents[15].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 173  University.whttpStudents[3].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 175  University.whttpStudents[3].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 413  University.whttpStudents[23].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 415  University.whttpStudents[23].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 356  University.whttpStudents[18].tcpApp[0]  numActiveSessions:vector  ETV
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, vector"
+vector 354  University.whttpStudents[18].tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 353  University.whttpStudents[18].tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 355  University.whttpStudents[18].tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+64	24089 2744856 565 1340255862 0.055446806216 2984.855478139549 74621 10240 10240 764119040 7824578969600
+65	2768945 3415644 565 1340255862 0.055446806216 2984.855478139549 74621 0.017080129996 0.049755799487 1287.2458807671 22.254735395697
+82	6184589 2662340 72933 1340241224 1.040933578367 2984.826045107057 74568 1400 1400 104395200 146153280000
+83	8846929 2671024 266 1340244768 0.033597961692 2984.833597961692 74621 1400 1400 104469400 146257160000
+84	11517953 3401211 72933 1340241224 1.040933578367 2984.826045107057 74568 0.016345612363 1.032799397213 1370.608059988 36.092165937533
+101	14919164 118008 285592 1340182046 2.095899546207 2984.707681068285 3505 1 1 3505 3505
+102	15037172 136131 285592 1340182046 2.095899546207 2984.707681068285 3505 64 7172809 2897406053 4.6950537696003e+15
+103	15173303 163355 285592 1340182046 2.095899546207 2984.707681068285 3505 0.034818134469 0.065614568898 127.32049586025 4.6414834234685
+104	15336658 10928 2474370 1339307324 8.790079189146 2982.749990787954 275 1048576 1048576 288358400 3.023656976384e+14
+105	15347586 9278 2474370 1339307324 8.790079189146 2982.749990787954 275 1 1 275 275
+106	15356864 12933 2474370 1339307324 8.790079189146 2982.749990787954 275 1.776236971064 44.543062495949 2811.1333990738 36031.889298253
+118	15369797 33 300 300 0.03836667622 0.03836667622 1 1433600000 1433600000 1433600000 2.05520896e+18
+119	15369830 2745646 300 1340247140 0.03836667622 2984.83836667622 74621 10240 10240 764119040 7824578969600
+137	18115476 4972 6115841 1335470197 17.530884751342 2974.923237923733 128 10457 4109003 108311583 1.8298493212704e+14
+138	18120448 4312 3279424 1335318692 10.7998127624 2974.623382516956 128 1 1 128 128
+139	18124760 5987 6115841 1335470197 17.530884751342 2974.923237923733 128 0.219065771789 82.681275455243 993.57398786443 24148.040012522
+140	18130747 8621 3242538 1335470197 10.725604460364 2974.923237923733 256 0 1 128 128
+149	18139368 5277 3966431 1339562639 12.25181134615 2983.2633992079 136 3308 5048809 92032045 1.214165490349e+14
+150	18144645 4578 3227509 1338722418 10.675917279308 2981.523689775028 136 1 1 136 136
+151	18149223 6362 3966431 1339562639 12.25181134615 2983.2633992079 136 0.109273172896 32.475095723138 787.68424831892 9731.5867562282
+152	18155585 9171 2390206 1339562639 8.61878512217 2983.2633992079 272 0 1 136 136
+161	18164756 5103 2512168 1330792073 8.916275305732 2962.771501328322 131 14934 4251275 110617561 1.7034727705196e+14
+162	18169859 4456 283284 1339505234 2.061054299712 2983.148680889402 132 1 1 132 132
+163	18174315 6140 2512168 1330792073 8.916275305732 2962.771501328322 131 0.32840369939 53.513147411461 983.00011659861 16951.870956971
+164	18180455 8872 280366 1339465713 2.013008235156 2983.07005312171 263 0 1 132 132
+173	18189327 5588 18211114 1337869850 42.522250657324 2979.816826294673 144 12079 7172809 119621833 2.3267948035979e+14
+174	18194915 4839 688889 1333100579 4.321102510531 2969.940255611554 144 1 1 144 144
+175	18199754 6729 18211114 1337869850 42.522250657324 2979.816826294673 144 0.19893153434 38.201148146793 936.71231992116 13987.391308945
+176	18206483 9677 685530 1337869850 4.273056466975 2979.816826294673 288 0 1 144 144
+185	18216160 5282 4159162 1340019945 12.636645610367 2984.274648301456 136 1106 3993992 107573565 1.4990944063288e+14
+186	18221442 4572 2484379 1338621796 8.812533495424 2981.313627032005 136 1 1 136 136
+187	18226014 6366 4159162 1340019945 12.636645610367 2984.274648301456 136 0.062470717021 40.816071181723 830.88557022263 10857.086915146
+188	18232380 9151 2438744 1340019945 8.718985230818 2984.274648301456 272 0 1 136 136
+197	18241531 5432 2232884 1339271968 8.26739681699 2982.679708056359 140 1965 3757002 100985371 1.4686678962785e+14
+198	18246963 4713 339796 1336461469 2.414494155967 2976.898910083078 140 1 1 140 140
+199	18251676 6543 2232884 1339271968 8.26739681699 2982.679708056359 140 0.108059051165 41.036620472279 814.9567714303 11851.258354628
+200	18258219 9435 314678 1339271968 2.356302371193 2982.679708056359 280 0 1 140 140
+209	18267654 4892 5933904 1335492136 17.079759056721 2974.967011231907 126 4464 5897547 106337625 1.9530718995656e+14
+210	18272546 4232 5385695 1333753945 15.75920665435 2971.348785291588 126 1 1 126 126
+211	18276778 5908 5933904 1335492136 17.079759056721 2974.967011231907 126 0.246180907939 49.865812361688 917.09367206567 17093.309192876
+212	18282686 8475 5377895 1335492136 15.710693147455 2974.967011231907 252 0 1 126 126
+221	18291161 4791 5176351 1331866219 15.180024020602 2964.917121471415 123 10991 4080852 117690152 2.0057273379562e+14
+222	18295952 4148 1559914 1322855771 6.771590618652 2945.798809857466 123 1 1 123 123
+223	18300100 5763 5176351 1331866219 15.180024020602 2964.917121471415 123 0.204349370479 73.328749776603 1134.39961378 27162.22991035
+224	18305863 8281 1450242 1331866219 6.552132600329 2964.917121471415 246 0 1 123 123
+233	18314144 4627 12453296 1336695981 30.555181065414 2977.364939768681 119 1815 3434236 90710982 1.3503994997718e+14
+234	18318771 4005 4590793 1334895504 13.585931596084 2973.755284244686 119 1 1 119 119
+235	18322776 5573 12453296 1336695981 30.555181065414 2977.364939768681 119 0.096011006837 27.249476672677 739.42733779548 9453.2781619008
+236	18328349 8027 4499982 1336695981 13.405571309147 2977.364939768681 238 0 1 119 119
+245	18336376 5240 9649242 1339080980 24.911013599067 2982.284500986175 134 11051 5841136 121348093 2.128713161159e+14
+246	18341616 4529 8235884 1337891216 21.951244669882 2979.859577781215 134 1 1 134 134
+247	18346145 6288 9649242 1339080980 24.911013599067 2982.284500986175 134 0.222013262212 64.002390557573 1024.7428905352 19484.409033343
+248	18352433 9061 8147366 1339080980 21.775386743307 2982.284500986175 268 0 1 134 134
+257	18361494 4937 1133886 1339736783 5.755660690159 2983.616791319221 127 2321 5121025 104947978 1.8015368856225e+14
+258	18366431 4284 710630 1338684371 4.549467925694 2981.449398202481 127 1 1 127 127
+259	18370715 5939 1133886 1339736783 5.755660690159 2983.616791319221 127 0.096140014104 41.981496461158 824.30482913538 12660.628951987
+260	18376654 8569 703086 1339736783 4.501430900134 2983.616791319221 254 0 1 127 127
+269	18385223 4887 4725910 1325852549 13.924913573069 2952.610050329645 126 16151 3615352 93657173 1.2620785395199e+14
+270	18390110 4223 3911139 1323211131 12.142249372174 2946.549361043342 126 1 1 126 126
+271	18394333 5886 4725910 1325852549 13.924913573069 2952.610050329645 126 0.199144640001 57.194701902051 786.28487496695 11872.976742753
+272	18400219 8467 3875152 1325852549 12.070299482472 2952.610050329645 252 0 1 126 126
+281	18408686 4556 6552158 1314129388 18.411419277704 2924.865149496613 117 3091 4128110 110863804 1.9820538000893e+14
+282	18413242 3941 6234541 1307665284 17.779197396246 2909.961496766133 117 1 1 117 117
+283	18417183 5476 6552158 1314129388 18.411419277704 2924.865149496613 117 0.11591638662 79.413591862093 952.92731461726 21921.153942829
+284	18422659 7885 6205980 1314129388 17.720353224328 2924.865149496613 234 0 1 117 117
+293	18430544 4749 2254109 1333735728 8.310617918408 2971.311655895581 122 11522 3624898 112030270 1.7856035075157e+14
+294	18435293 4091 2068925 1327023425 7.895050948124 2954.938594435664 122 1 1 122 122
+295	18439384 5703 2254109 1333735728 8.310617918408 2971.311655895581 122 0.203998798153 51.30215351291 923.72390103222 15157.510387646
+296	18445087 8196 825086 1333735728 4.822101506027 2971.311655895581 244 0 1 122 122
+305	18453283 5615 4130894 1335663899 12.579033457572 2975.308916220531 145 8071 3242042 111993584 1.4753234617484e+14
+306	18458898 4858 3770852 1332690832 11.856779185559 2968.738078285297 145 1 1 145 145
+307	18463756 6764 4130894 1335663899 12.579033457572 2975.308916220531 145 0.200739978563 35.389347067133 982.29044747205 13872.806891173
+308	18470520 9724 3747986 1335663899 11.800301348578 2975.308916220531 290 0 1 145 145
+317	18480244 5233 14204208 1322935772 34.022239985325 2946.002481838146 135 924 3107100 103397205 1.433546490871e+14
+318	18485477 4543 10473843 1319849501 26.624311725765 2938.763225536648 135 1 1 135 135
+319	18490020 6311 14204208 1322935772 34.022239985325 2946.002481838146 135 0.048503786462 56.18309472404 894.99940417939 13710.554626281
+320	18496331 9085 9958726 1322935772 25.520890920392 2946.002481838146 270 0 1 135 135
+329	18505416 4845 679062 1320009158 4.193323386267 2939.14535403028 125 10561 5463705 101978680 1.7000289912366e+14
+330	18510261 4228 597038 1321476980 3.812665324955 2942.359545812201 126 1 1 126 126
+331	18514489 5840 679062 1320009158 4.193323386267 2939.14535403028 125 0.207420504142 44.074595103739 907.84536809737 16143.498686303
+332	18520329 8430 593264 1321472676 3.764619343967 2942.31204957142 251 0 1 126 126
+341	18528759 5084 7454508 1338575019 20.236835817744 2981.22163357028 131 4775 5120805 117166310 2.2773161297921e+14
+342	18533843 4443 6959960 1340165769 19.222466617188 2984.671233742628 132 1 1 132 132
+343	18538286 6127 7454508 1338575019 20.236835817744 2981.22163357028 131 0.20605619299 60.424621128538 967.78242874659 17665.665027626
+344	18544413 8853 6853995 1340142141 19.010188084182 2984.621276278877 263 0 1 132 132
+353	18553266 5268 28535746 1339962727 64.311732863028 2984.093078617465 136 1624 3627837 98673597 1.4280930126184e+14
+354	18558534 4576 25954593 1339660590 59.053642945677 2983.462613789702 136 1 1 136 136
+355	18563110 6349 28535746 1339962727 64.311732863028 2984.093078617465 136 0.200600300285 51.541501426926 804.91947542441 12194.770165154
+356	18569459 9156 24447354 1339962727 55.942664457204 2984.093078617465 272 0 1 136 136
+365	18578615 5393 3771917 1338711869 11.858774315871 2981.503459421336 139 1336 4261775 104113480 1.6125937624416e+14
+366	18584008 4688 1178357 1338571342 5.955341158126 2981.214774146739 139 1 1 139 139
+367	18588696 6503 3771917 1338711869 11.858774315871 2981.503459421336 139 0.048792378549 44.65419649522 877.03249834598 12045.917483302
+368	18595199 9358 1163728 1338711869 5.902444301657 2981.503459421336 278 0 1 139 139
+377	18604557 5054 13470351 1327248326 32.568178564097 2955.386368104322 130 4702 3470272 102173530 1.5422538073687e+14
+378	18609611 4395 11226302 1325014118 28.116177078483 2950.782317387649 130 1 1 130 130
+379	18614006 6106 13470351 1327248326 32.568178564097 2955.386368104322 130 0.143835765522 49.82352365336 862.1305125846 14174.993032478
+380	18620112 8789 11186683 1327248326 28.037794090328 2955.386368104322 260 0 1 130 130
+389	18628901 5003 3699991 1333492642 11.637010617861 2970.738766771183 128 7496 4516339 129265722 2.3233429756663e+14
+390	18633904 4331 2271605 1332423696 8.365919396488 2967.613676922043 128 1 1 128 128
+391	18638235 6009 3699991 1333492642 11.637010617861 2970.738766771183 128 0.284116981345 47.902924898168 1064.25134365 18458.160978317
+392	18644244 8653 2245669 1333492642 8.292996501763 2970.738766771183 256 0 1 128 128
+401	18652897 4602 9172302 1336060259 23.952365704738 2976.099110956707 118 13593 4375154 107421963 1.7916542147806e+14
+402	18657499 3975 5425717 1328330809 15.942938260209 2957.813497375981 118 1 1 118 118
+403	18661474 5526 9172302 1336060259 23.952365704738 2976.099110956707 118 0.204177044855 68.681216047298 903.93408408222 16847.308583532
+404	18667000 7953 5417875 1336060259 15.894230184196 2976.099110956707 236 0 1 118 118
+413	18674953 5193 22410057 1335953494 51.148412465889 2975.884735112934 133 64 5257248 122580582 2.112778255891e+14
+414	18680146 4490 6816197 1322358609 18.936375128264 2944.638595149461 133 1 1 133 133
+415	18684636 6244 22410057 1335953494 51.148412465889 2975.884735112934 133 0.057211250062 41.564705071585 998.42625769127 15899.26748141
+416	18690880 8980 6723776 1335953494 18.753693826415 2975.884735112934 266 0 1 133 133
+425	18699860 4793 633811 1327794792 4.07474946511 2956.584398642276 123 2402 3066199 97405988 1.4015531690381e+14
+426	18704653 4189 601960 1338576779 3.872466703585 2981.22507788958 124 1 1 124 124
+427	18708842 5776 633811 1327794792 4.07474946511 2956.584398642276 123 0.141179917607 41.797323721061 995.6134818651 18936.437133888
+428	18714618 8343 597775 1338545814 3.824438672881 2981.164137820263 247 0 1 124 124
+437	18722961 5229 5413239 1331980305 15.875409055476 2965.187768321765 135 2066 4441221 99148321 1.5040364560134e+14
+438	18728190 4544 5363192 1331557445 15.55375765573 2964.306616185237 135 1 1 135 135
+439	18732734 6310 5413239 1331980305 15.875409055476 2965.187768321765 135 0.103964470521 51.307396666199 909.16987004705 17219.966428624
+440	18739044 9094 4046605 1331980305 12.409441903838 2965.187768321765 270 0 1 135 135
+449	18748138 4417 4302806 1337990040 12.925845711873 2980.054209834531 114 749 4981766 98819875 1.7680264971084e+14
+450	18752555 3832 834057 1333577309 4.840417905013 2970.932578470043 114 1 1 114 114
+451	18756387 5340 4302806 1337990040 12.925845711873 2980.054209834531 114 0.085145059396 43.552945070853 807.89498141235 12465.179386595
+452	18761727 7669 765522 1337990040 4.704962135204 2980.054209834531 228 0 1 114 114
+461	18769396 2690149 60449 1340255890 1.009622212548 2984.855692730391 73289 1400 1400 102604600 143646440000
+462	21459545 2745681 112 1340252199 0.008134181154 2984.848134181154 74622 1400 1400 104470800 146259120000
+463	24205226 3416504 60449 1340255890 1.009622212548 2984.855692730391 73289 0.01632012968 1.11411891486 4209.4075575782 414.78770573177
+477	27621730 9274 2482961 1339317387 8.805747902926 2982.769549738166 275 1 1 275 275
+478	27631004 10964 74211 1339368002 1.051813905042 2982.875541356605 276 1048576 1048576 289406976 3.0346520926618e+14
+479	27641968 12936 2482961 1339317387 8.805747902926 2982.769549738166 275 1.789252894019 44.556105418904 2876.8538690026 37390.847922046
+480	27654904 18566 107 1339341624 0 2982.822735273971 551 0 1 276 276
+64	27673470 2293725 1340276190 2443564691 2984.895478139549 5399.975478139549 60378 10240 10240 618270720 6331092172800
+65	29967195 2836495 1340276190 2443564691 2984.895478139549 5399.975478139549 60378 0.017080129996 0.042578129874 1040.2555122577 17.94672520563
+82	32803690 2226996 1340260760 2443570333 2984.86538606299 5399.98662048506 60339 1400 1400 84474600 118264440000
+83	35030686 2234023 1340264923 2443573712 2984.873597961692 5399.993597961692 60379 1400 1400 84530600 118342840000
+84	37264709 2824583 1340260760 2443570333 2984.86538606299 5399.98662048506 60339 0.016345612363 0.232369206744 1099.5552182274 21.28140854208
+101	40089292 99989 1340381213 2443262685 2985.103813484553 5399.379153515159 2866 1 1 2866 2866
+102	40189281 114816 1340381213 2443262685 2985.103813484553 5399.379153515159 2866 332 7633390 2422134227 4.1664092482571e+15
+103	40304097 137087 1340381213 2443262685 2985.103813484553 5399.379153515159 2866 0.034818134469 0.07165416793 104.09872517867 3.7944488019467
+104	40441184 8626 1342704852 2438545590 2991.899805430139 5389.960520495868 211 1048576 1048576 221249536 2.3199695346074e+14
+105	40449810 7360 1342704852 2438545590 2991.899805430139 5389.960520495868 211 1 1 211 211
+106	40457170 10181 1342704852 2438545590 2991.899805430139 5389.960520495868 211 1.927129729237 34.964207866766 2217.6375864843 28041.507330874
+119	40467351 2294402 1340267363 2443576077 2984.87836667622 5399.99836667622 60379 10240 10240 618280960 6331197030400
+137	42761753 4453 1346789817 2415285194 3001.981109992229 5342.160368907721 111 5759 4188979 83298924 1.175315465689e+14
+138	42766206 3868 1346643885 2392593530 3001.554505887881 5295.630764202316 111 1 1 111 111
+139	42770074 5325 1346789817 2415285194 3001.981109992229 5342.160368907721 111 0.155446707453 46.529604705405 718.01831470779 10709.859817552
+140	42775399 7747 1345152283 2415285194 2998.406561549236 5342.160368907721 222 0 1 111 111
+149	42783146 4449 1352240735 2441572204 3013.365305670001 5396.043675415704 111 13250 4782556 90311697 1.4612884030908e+14
+150	42787595 3873 1349795729 2440708291 3008.263955742995 5394.329810247735 111 1 1 111 111
+151	42791468 5333 1352240735 2441572204 3013.365305670001 5396.043675415704 111 0.282021787847 41.925583518991 796.44974813041 13196.336461902
+152	42796801 7751 1348230438 2441572204 3005.145966168338 5396.043675415704 222 0 1 111 111
+161	42804552 4335 1340960185 2438418304 2986.253712253643 5389.710213675777 108 13483 3337481 95838629 1.5249533914461e+14
+162	42808887 3763 1342712517 2440623685 2991.953497373704 5394.159512115707 108 1 1 108 108
+163	42812650 5190 1340960185 2438418304 2986.253712253643 5389.710213675777 108 0.286047818654 55.518332688958 895.24170251917 16707.856361176
+164	42817840 7543 1340960185 2439066190 2986.253712253643 5390.993357177728 216 0 1 108 108
+173	42825383 3772 1343031834 2430731752 2992.934339505384 5373.497182016762 94 6803 5536314 94945415 2.0094242371829e+14
+174	42829155 3312 1343012187 2443244857 2992.788495900732 5399.344299284414 95 1 1 95 95
+175	42832467 4511 1343031834 2430731752 2992.934339505384 5373.497182016762 94 0.145843604652 45.426144458946 780.94745035558 14587.736002973
+176	42836978 6596 1343004796 2443187822 2992.739992889421 5399.231383982539 189 0 1 95 95
+185	42843574 3932 1368173199 2432555077 3050.879771718881 5377.117466154314 98 17478 3769520 83109324 1.244972708506e+14
+186	42847506 3450 1360410613 2433875277 3031.692973855552 5380.194844070863 99 1 1 99 99
+187	42850956 4713 1368173199 2432555077 3050.879771718881 5377.117466154314 98 0.206960232544 37.760132012879 716.90402097712 9852.2745440763
+188	42855669 6875 1360405994 2433781434 3031.643552284207 5380.009188749363 197 0 1 99 99
+197	42862544 4081 1342497028 2431834312 2991.323890416996 5375.685491598076 102 8394 5146765 84175941 1.5651258330261e+14
+198	42866625 3599 1341328527 2433020535 2987.417745287666 5378.299320246792 103 1 1 103 103
+199	42870224 4893 1342497028 2431834312 2991.323890416996 5375.685491598076 102 0.202629125996 58.3375221191 735.01622466771 13940.807583331
+200	42875117 7154 1341311594 2433005406 2987.370655839533 5378.248042232404 205 0 1 103 103
+209	42882271 4528 1340798061 2430831471 2985.931741937043 5373.693981563621 113 1089 4343989 99616873 1.6428790981381e+14
+210	42886799 3973 1340422528 2435264167 2985.18575718716 5383.248950469491 114 1 1 114 114
+211	42890772 5427 1340798061 2430831471 2985.931741937043 5373.693981563621 113 0.051952454367 52.748431811891 788.16159354988 11635.761713214
+212	42896199 7924 1340377550 2435237516 2985.096473282412 5383.195064603869 227 0 1 114 114
+221	42904123 4035 1353369474 2432245385 3015.60950593333 5376.503351631672 101 12956 3142689 73757988 1.0465901831303e+14
+222	42908158 3560 1345416954 2436240358 2998.947547991965 5385.329695594557 102 1 1 102 102
+223	42911718 4839 1353369474 2432245385 3015.60950593333 5376.503351631672 101 0.20647354112 71.40341072381 680.82033255782 14640.099088714
+224	42916557 7081 1345366543 2436179039 2998.843726150421 5385.206507459468 203 0 1 102 102
+233	42923638 4449 1363619369 2438111529 3039.377535791722 5389.099279104595 111 2634 3665177 86152411 1.2472081582468e+14
+234	42928087 3872 1363220494 2426045738 3038.575790356536 5364.006889214405 111 1 1 111 111
+235	42931959 5326 1363619369 2438111529 3039.377535791722 5389.099279104595 111 0.104112606236 38.873592947774 778.51103010446 12429.000690946
+236	42937285 7753 1363181161 2438111529 3038.497243249581 5389.099279104595 222 0 1 111 111
+245	42945038 4058 1344712528 2443523461 2997.45920384403 5399.894108575186 101 6869 4967733 93057598 1.6585498492352e+14
+246	42949096 3519 1343077985 2442857855 2993.442335897323 5398.581925493562 101 1 1 101 101
+247	42952615 4858 1344712528 2443523461 2997.45920384403 5399.894108575186 101 0.169729010567 31.381770886105 777.79232269645 12052.508636405
+248	42957473 7051 1343066907 2443523461 2993.393935334709 5399.894108575186 202 0 1 101 101
+257	42964524 4522 1369377165 2437689458 3053.641129601923 5388.25828345225 113 1315 3174386 83245658 1.1617445684479e+14
+258	42969046 3944 1364897317 2437364099 3043.693027829935 5387.608882358041 113 1 1 113 113
+259	42972990 5418 1369377165 2437689458 3053.641129601923 5388.25828345225 113 0.083946763553 39.541896942319 725.11297541467 10154.522627657
+260	42978408 7883 1364889300 2437689458 3043.643953682642 5388.25828345225 226 0 1 113 113
+269	42986291 4012 1342948139 2417732459 2992.602277685353 5347.137397715985 100 332 7633390 95998228 2.1195285402686e+14
+270	42990303 3523 1341675777 2429479927 2988.214881753958 5370.983062180416 101 1 1 101 101
+271	42993826 4804 1342948139 2417732459 2992.602277685353 5347.137397715985 100 0.063861029406 56.729478672079 817.17268234437 14817.651545921
+272	42998630 7007 1341623788 2429423674 2988.109142206831 5370.872025202923 201 0 1 101 101
+281	43005637 4407 1372096796 2431984193 3059.061338908502 5375.986569058543 110 8787 6786868 83062484 1.3807051236901e+14
+282	43010044 3838 1343334648 2431736203 2994.041183497318 5375.489976445638 110 1 1 110 110
+283	43013882 5285 1372096796 2431984193 3059.061338908502 5375.986569058543 110 0.198924820001 65.020155411184 791.49066215541 15163.688149232
+284	43019167 7677 1343314111 2431984193 2993.978635731649 5375.986569058543 220 0 1 110 110
+293	43026844 3760 1359778264 2427462048 3029.771929901425 5366.829090200655 94 938 3920431 76097462 1.3426653635471e+14
+294	43030604 3312 1356025575 2438326133 3021.372523370323 5389.526595346576 95 1 1 95 95
+295	43033916 4515 1359778264 2427462048 3029.771929901425 5366.829090200655 94 0.079627228431 66.390170682943 729.39745184249 15728.886231579
+296	43038431 6589 1355930313 2438276873 3021.181972677708 5389.428642914844 189 0 1 95 95
+305	43045020 4494 1347711160 2414821155 3004.119096173488 5341.238383402259 112 25651 6389448 109350012 2.210292650758e+14
+306	43049514 3936 1343674357 2418749167 2994.82937373657 5349.295846904803 113 1 1 113 113
+307	43053450 5388 1347711160 2414821155 3004.119096173488 5341.238383402259 112 0.25471640447 56.913885472194 876.09082397971 15486.900145011
+308	43058838 7855 1343592849 2418738458 2994.66891148788 5349.248949293699 225 0 1 113 113
+317	43066693 4756 1346927675 2438541493 3002.513480509931 5389.952735586441 119 2551 3082218 92200393 1.2986400193902e+14
+318	43071449 4186 1344877004 2442649513 2997.855032966512 5398.170230872832 120 1 1 120 120
+319	43075635 5699 1346927675 2438541493 3002.513480509931 5389.952735586441 119 0.096362108791 30.582633145071 768.93199954503 10129.093160851
+320	43081334 8316 1343661597 2442596755 2994.804525995377 5398.066300583844 239 0 1 120 120
+329	43089650 3969 1340913780 2431001535 2986.161788575161 5374.031440616672 99 1584 5707845 87824634 1.6395795100541e+14
+330	43093619 3449 1349198960 2435280345 3007.077616894103 5383.280128068563 99 1 1 99 99
+331	43097068 4741 1340913780 2431001535 2986.161788575161 5374.031440616672 99 0.100028246242 43.80224276296 767.11600107236 12544.125007388
+332	43101809 6906 1340913780 2433891809 2986.161788575161 5380.227526087855 198 0 1 99 99
+341	43108715 3967 1340360743 2436044290 2985.063270188099 5384.920141310931 99 6359 4739143 95123676 1.9670278357744e+14
+342	43112682 3449 1343046919 2441988973 2993.180874209702 5396.865198474332 99 1 1 99 99
+343	43116131 4764 1340360743 2436044290 2985.063270188099 5384.920141310931 99 0.26421863101 55.713805343872 883.21077632209 19219.183262042
+344	43120895 6911 1340360743 2441934342 2985.063270188099 5396.757318962206 198 0 1 99 99
+353	43127806 4289 1341385379 2442041883 2987.563337904371 5396.969631234585 107 3825 7180209 93915971 1.8014620119085e+14
+354	43132095 3736 1340363797 2441746597 2985.068944539409 5396.386854041567 107 1 1 107 107
+355	43135831 5137 1341385379 2442041883 2987.563337904371 5396.969631234585 107 0.109205794985 59.332900408841 787.91482749986 14671.059037269
+356	43140968 7473 1340317585 2442041883 2984.977915442689 5396.969631234585 214 0 1 107 107
+365	43148441 4121 1350412189 2437486453 3009.489949575686 5387.853885127903 103 2934 3119272 86706072 1.3872612134974e+14
+366	43152562 3629 1343876988 2440405916 2995.339768648746 5393.729389076088 104 1 1 104 104
+367	43156191 4942 1350412189 2437486453 3009.489949575686 5387.853885127903 103 0.161094743722 48.095923376349 789.13671407687 13330.4981632
+368	43161133 7220 1343857477 2440356325 2995.29199929336 5393.631378287418 207 0 1 104 104
+377	43168353 4516 1341245682 2433459527 2987.158938903694 5379.242124872662 113 1354 4501021 83974914 1.1955684703629e+14
+378	43172869 3971 1340592891 2435551535 2985.52241721018 5383.889839239213 114 1 1 114 114
+379	43176840 5417 1341245682 2433459527 2987.158938903694 5379.242124872662 113 0.103196696164 46.822814119395 718.40050983458 11056.760543533
+380	43182257 7911 1340541720 2434981746 2985.421080508715 5382.687502756321 227 0 1 114 114
+389	43190168 4912 1350672647 2432640677 3010.025853860047 5377.29637493944 123 8244 5630071 97109778 1.6587997377498e+14
+390	43195080 4320 1349155392 2440884440 3006.989570614681 5394.678376634319 124 1 1 124 124
+391	43199400 5888 1350672647 2432640677 3010.025853860047 5377.29637493944 123 0.200755600501 46.771790259426 787.38896189887 12800.789123592
+392	43205288 8610 1349103173 2440853173 3006.886468904448 5394.615925259245 247 0 1 124 124
+401	43213898 4087 1346641820 2441003548 3001.55066259834 5394.912561946803 102 1584 3343377 92664613 1.5415974579044e+14
+402	43217985 3557 1346260323 2439434725 3000.779270509379 5391.749640921171 102 1 1 102 102
+403	43221542 4898 1346641820 2441003548 3001.55066259834 5394.912561946803 102 0.1952504288 39.120492479461 745.37195245379 11949.553693086
+404	43226440 7114 1346238970 2441003548 3000.728776308189 5394.912561946803 204 0 1 102 102
+413	43233554 4237 1342145731 2439572681 2989.424283672104 5392.071739377676 106 409 4848154 91348846 1.5769721138319e+14
+414	43237791 3736 1341382101 2439951648 2987.556831456532 5392.828685842459 107 1 1 107 107
+415	43241527 5088 1342145731 2439572681 2989.424283672104 5392.071739377676 106 0.05389637755 46.736076175215 781.7624358575 13438.127645502
+416	43246615 7430 1341361241 2439912063 2987.506932927178 5392.750689240707 213 0 1 107 107
+425	43254045 3727 1340446980 2438418576 2985.234227345534 5389.710822750493 93 1943 5806356 81109021 1.6744192930876e+14
+426	43257772 3211 1341677988 2434667502 2988.229259816149 5382.063344349328 92 1 1 92 92
+427	43260983 4478 1340446980 2438418576 2985.234227345534 5389.710822750493 93 0.177406909934 66.797480465015 796.72954033414 18280.399269189
+428	43265461 6459 1340446980 2438418576 2985.234227345534 5389.710822750493 185 0 1 92 92
+437	43271920 4198 1344286278 2441391117 2996.2807312359 5395.686573557289 105 9981 4534079 85117492 1.4778878167195e+14
+438	43276118 3659 1344152418 2440990560 2995.89836336428 5394.88795009543 105 1 1 105 105
+439	43279777 5040 1344286278 2441391117 2996.2807312359 5395.686573557289 105 0.179797636501 55.865159228975 764.11081632867 14294.492012767
+440	43284817 7321 1344112671 2441391117 2995.817107723309 5395.686573557289 210 0 1 105 105
+449	43292138 4196 1342546629 2428697473 2991.520488366903 5369.410383335659 105 14537 3558597 78946490 1.1491351478365e+14
+450	43296334 3703 1342101018 2439679979 2989.290883911096 5392.283165569531 106 1 1 106 106
+451	43300037 5038 1342546629 2428697473 2991.520488366903 5369.410383335659 105 0.25604485499 51.977522815731 701.38528840512 11094.622138935
+452	43305075 7357 1342085801 2439157390 2989.237843979646 5391.180532089864 211 0 1 106 106
+461	43312432 2247037 1340278728 2443550874 2984.900679810095 5399.948494749936 59273 1400 1400 82982200 116175080000
+462	45559469 2294364 1340272318 2443560846 2984.888134181154 5399.968134181154 60378 1400 1400 84529200 118340880000
+463	47853833 2834456 1340278728 2443550874 2984.900679810095 5399.948494749936 59273 0.016336981069 1.046023820484 3450.6493357725 314.98742490682
+477	50688289 7366 1342707769 2438570873 2991.9125638785 5390.009919937762 211 1 1 211 211
+478	50695655 8632 1342722146 2438686703 2992.014010317962 5390.237482076268 211 1048576 1048576 221249536 2.3199695346074e+14
+479	50704287 10196 1342707769 2438570873 2991.9125638785 5390.009919937762 211 1.941406497192 35.056304903714 2266.8087767085 29286.118890028
+480	50714483 14734 1342707769 2438620264 2991.9125638785 5390.106602289978 422 0 1 211 211
