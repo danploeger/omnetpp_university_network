@@ -1,0 +1,38 @@
+Vectors
+'Export Data' -> 'CSV...' -> save to folder 'matlab\qos\[folderName]'
+
+module(University.ccTVMonitoringHost.udpApp[0]) AND name(endToEndDelay:vector)
+\ccTVMonitoringHost_endToEndDelay.csv
+
+module(University.profLaptop.udpApp[0]) AND name(rcvdPkLifetime:vector)
+\profLaptop_rcvdPkLifetime.csv
+
+module(University.whostVideoConf.udpApp[0]) AND name(rcvdPkLifetime:vector)
+\whostVideoConf_rcvdPkLifetime.csv
+
+
+Scalars
+'Copy to Clipboard' -> paste to notepad and save to folder 'matlab\qos\[folderName]\'
+z.B. 'matlab\qos\08on\'
+
+module(University.ccTVMonitoringHost.udpApp[0]) AND name("rcvdPk:sum(packetBytes)")
+ccTVMonitoringHost_rcvdPkSum.csv
+
+module(University.CCTV.udpApp[0]) AND name("sentPk:sum(packetBytes)")
+CCTV_sentPkSum.csv
+
+module(University.profLaptop.udpApp[0]) AND name("rcvdPk:sum(packetBytes)")
+profLaptop_rcvdPkSum.csv
+
+module(University.profLaptop.udpApp[0]) AND name("sentPk:sum(packetBytes)")
+profLaptop_sentPkSum.csv
+
+module(University.whostVideoConf.udpApp[0]) AND name("rcvdPk:sum(packetBytes)")
+whostVideoConf_rcvdPkSum.csv
+
+module(University.whostVideoConf.udpApp[0]) AND name("sentPk:sum(packetBytes)")
+whostVideoConf_sentPkSum.csv
+
+
+module(University.whttpStudents[*].tcpApp[0]) AND name("rcvdPk:sum(packetBytes)")
+module(University.whostFTP.tcpApp[0]) AND name("sentPk:sum(packetBytes)")

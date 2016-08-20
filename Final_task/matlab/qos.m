@@ -4,10 +4,10 @@ function [videoConfDownload, videoConfUpload, cctv] = qos(...
         repeat, ...
         acceptableDelay, ...
         warmupPeriod)
-    %QoSCALCULATION
-    %
+%QoSCALCULATION
+%
 
-    %   Daniel Ploeger, 2016/08/19 17:09:00
+%   Daniel Ploeger, 2016/08/19 17:09:00
 
     %% Initialize variables.
     if nargin < 2
