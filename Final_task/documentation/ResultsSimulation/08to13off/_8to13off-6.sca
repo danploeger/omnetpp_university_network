@@ -1,0 +1,4336 @@
+version 2
+run _8to13off-6-20160819-23:35:35-13360
+attr configname _8to13off
+attr datetime 20160819-23:35:35
+attr experiment _8to13off
+attr inifile omnetpp.ini
+attr iterationvars $0=8
+attr iterationvars2 "$0=8, $repetition=6"
+attr measurement $0=8
+attr network University
+attr processid 13360
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 6
+attr seedset 6
+
+scalar University.remoteR.networkLayer.arp 	initiatedARPResolution:count 	422
+attr title  "ARP initiated resolutions, count"
+scalar University.remoteR.networkLayer.arp 	sentReply:count 	5
+attr title  "ARP replies sent, count"
+scalar University.remoteR.networkLayer.arp 	sentReq:count 	429
+attr title  "ARP request sent, count"
+scalar University.remoteR.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.remoteR.networkLayer.arp 	completedARPResolution:count 	427
+attr title  "ARP completed resolutions, count"
+scalar University.remoteR.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.remoteR.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.remoteR.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.remoteR.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.remoteR.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.remoteR.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.remoteR.eth[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.remoteR.eth[0].outputHook[0] 	"total packets" 	1377241
+scalar University.remoteR.eth[0].outputHook[0] 	"total bits" 	13110052256
+scalar University.remoteR.eth[0].outputHook[0] 	"avg throughput (bit/s)" 	2425541.4654344
+scalar University.remoteR.eth[0].outputHook[0] 	"avg packets/s" 	254.80868330387
+scalar University.remoteR.eth[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.remoteR.eth[0].inputHook[0] 	"total packets" 	1373814
+scalar University.remoteR.eth[0].inputHook[0] 	"total bits" 	5163232592
+scalar University.remoteR.eth[0].inputHook[0] 	"avg throughput (bit/s)" 	955269.62845221
+scalar University.remoteR.eth[0].inputHook[0] 	"avg packets/s" 	254.1746407814
+scalar University.remoteR.eth[0].mac 	"simulated time" 	5405.0002619321
+scalar University.remoteR.eth[0].mac 	full-duplex 	1
+scalar University.remoteR.eth[0].mac 	"frames/sec sent" 	254.80868330387
+scalar University.remoteR.eth[0].mac 	"frames/sec rcvd" 	254.1746407814
+scalar University.remoteR.eth[0].mac 	"bits/sec sent" 	2464751.0753751
+scalar University.remoteR.eth[0].mac 	"bits/sec rcvd" 	989438.95741612
+scalar University.remoteR.eth[0].mac 	"rx channel idle (%)" 	98.994293865574
+scalar University.remoteR.eth[0].mac 	"rx channel utilization (%)" 	1.0057061344261
+scalar University.remoteR.eth[0].mac 	rxPkFromHL:count 	1375770
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar University.remoteR.eth[0].mac 	rxPkFromHL:sum(packetBytes) 	1663537785
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar University.remoteR.eth[0].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar University.remoteR.eth[0].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar University.remoteR.eth[0].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar University.remoteR.eth[0].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar University.remoteR.eth[0].mac 	txPk:count 	1375770
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar University.remoteR.eth[0].mac 	txPk:sum(packetBytes) 	1663537785
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.remoteR.eth[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar University.remoteR.eth[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar University.remoteR.eth[0].mac 	passedUpPk:count 	1372386
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.remoteR.eth[0].mac 	passedUpPk:sum(packetBytes) 	667738160
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.remoteR.eth[0].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.remoteR.eth[0].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.remoteR.eth[0].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.remoteR.eth[0].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.remoteR.eth[0].mac 	rxPkOk:count 	1372386
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.remoteR.eth[0].mac 	rxPkOk:sum(packetBytes) 	667738160
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.remoteR.eth[0].encap 	pauseSent:count 	0
+attr title  "pause sent, count"
+scalar University.remoteR.eth[0].encap 	pauseSent:sum 	0
+attr title  "pause sent, sum"
+scalar University.remoteR.eth[0].encap 	decapPk:count 	1372386
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar University.remoteR.eth[0].encap 	decapPk:sum(packetBytes) 	644675619
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar University.remoteR.eth[0].encap 	encapPk:count 	1375770
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar University.remoteR.eth[0].encap 	encapPk:sum(packetBytes) 	1637075435
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar University.remoteR.eth[1].outputHook[0] 	duration 	5405.0002619321
+scalar University.remoteR.eth[1].outputHook[0] 	"total packets" 	0
+scalar University.remoteR.eth[1].outputHook[0] 	"total bits" 	0
+scalar University.remoteR.eth[1].outputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.remoteR.eth[1].outputHook[0] 	"avg packets/s" 	0
+scalar University.remoteR.eth[1].inputHook[0] 	duration 	5405.0002619321
+scalar University.remoteR.eth[1].inputHook[0] 	"total packets" 	0
+scalar University.remoteR.eth[1].inputHook[0] 	"total bits" 	0
+scalar University.remoteR.eth[1].inputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.remoteR.eth[1].inputHook[0] 	"avg packets/s" 	0
+scalar University.remoteR.eth[1].mac 	"simulated time" 	5405.0002619321
+scalar University.remoteR.eth[1].mac 	full-duplex 	1
+scalar University.remoteR.eth[1].mac 	"frames/sec sent" 	0
+scalar University.remoteR.eth[1].mac 	"frames/sec rcvd" 	0
+scalar University.remoteR.eth[1].mac 	"bits/sec sent" 	0
+scalar University.remoteR.eth[1].mac 	"bits/sec rcvd" 	0
+scalar University.remoteR.eth[1].mac 	"rx channel idle (%)" 	100
+scalar University.remoteR.eth[1].mac 	"rx channel utilization (%)" 	0
+scalar University.remoteR.eth[1].mac 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar University.remoteR.eth[1].mac 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar University.remoteR.eth[1].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar University.remoteR.eth[1].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar University.remoteR.eth[1].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar University.remoteR.eth[1].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar University.remoteR.eth[1].mac 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar University.remoteR.eth[1].mac 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.remoteR.eth[1].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar University.remoteR.eth[1].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar University.remoteR.eth[1].mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.remoteR.eth[1].mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.remoteR.eth[1].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.remoteR.eth[1].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.remoteR.eth[1].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.remoteR.eth[1].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.remoteR.eth[1].mac 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.remoteR.eth[1].mac 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.remoteR.eth[1].encap 	pauseSent:count 	0
+attr title  "pause sent, count"
+scalar University.remoteR.eth[1].encap 	pauseSent:sum 	0
+attr title  "pause sent, sum"
+scalar University.remoteR.eth[1].encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar University.remoteR.eth[1].encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar University.remoteR.eth[1].encap 	encapPk:count 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar University.remoteR.eth[1].encap 	encapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar University.remoteR.ppp[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.remoteR.ppp[0].outputHook[0] 	"total packets" 	1373382
+scalar University.remoteR.ppp[0].outputHook[0] 	"total bits" 	5163135824
+scalar University.remoteR.ppp[0].outputHook[0] 	"avg throughput (bit/s)" 	955251.72503032
+scalar University.remoteR.ppp[0].outputHook[0] 	"avg packets/s" 	254.09471479083
+scalar University.remoteR.ppp[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.remoteR.ppp[0].inputHook[0] 	"total packets" 	1376801
+scalar University.remoteR.ppp[0].inputHook[0] 	"total bits" 	13109953696
+scalar University.remoteR.ppp[0].inputHook[0] 	"avg throughput (bit/s)" 	2425523.2304676
+scalar University.remoteR.ppp[0].inputHook[0] 	"avg packets/s" 	254.72727720236
+statistic University.remoteR.ppp[0].queue 	queueingTime:histogram
+field count 1371959
+field mean 0.00034724952693851
+field stddev 0.0016692856377535
+field sum 476.41211372903
+field sqrsum 3.9884147969521
+field min 0
+field max 0.025968682493
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.000327364436	0
+bin	-0.00028371584453333	0
+bin	-0.00024006725306667	0
+bin	-0.0001964186616	0
+bin	-0.00015277007013333	0
+bin	-0.00010912147866667	0
+bin	-6.54728872e-05	0
+bin	-2.1824295733333e-05	1184467
+bin	2.1824295733333e-05	11615
+bin	6.54728872e-05	7685
+bin	0.00010912147866667	4707
+bin	0.00015277007013333	1549
+bin	0.0001964186616	1695
+bin	0.00024006725306667	1836
+bin	0.00028371584453333	3541
+bin	0.000327364436	11930
+bin	0.00037101302746667	23343
+bin	0.00041466161893333	1484
+bin	0.0004583102104	1863
+bin	0.00050195880186667	1934
+bin	0.00054560739333333	909
+bin	0.0005892559848	1052
+bin	0.00063290457626667	5826
+bin	0.00067655316773333	4150
+bin	0.0007202017592	6965
+bin	0.00076385035066667	7216
+bin	0.00080749894213333	1543
+bin	0.0008511475336	1067
+bin	0.00089479612506667	1075
+bin	0.00093844471653333	793
+bin	0.000982093308	83714
+scalar University.remoteR.ppp[0].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.remoteR.ppp[0].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.remoteR.ppp[0].queue 	queueLength:max 	26
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.remoteR.ppp[0].queue 	queueLength:timeavg 	0.088226254910045
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.remoteR.ppp[0].queue 	rcvdPk:count 	1371959
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.remoteR.ppp[0].queue 	rcvdPk:sum(packetBytes) 	644663663
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	rcvdPkFromHL:count 	1371959
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.remoteR.ppp[0].ppp 	rcvdPkFromHL:sum(packetBytes) 	644663663
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	passedUpPk:count 	1375336
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.remoteR.ppp[0].ppp 	passedUpPk:sum(packetBytes) 	1637063283
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	txPk:count 	1371959
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.remoteR.ppp[0].ppp 	txPk:sum(packetBytes) 	654267376
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.remoteR.ppp[0].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.remoteR.ppp[0].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	rxPkOk:count 	1375336
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.remoteR.ppp[0].ppp 	rxPkOk:sum(packetBytes) 	1646690635
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.remoteR.ppp[0].ppp 	txState:timeavg 	0.080774185301436
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.mainR.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.mainR.networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar University.mainR.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.mainR.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.mainR.networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar University.mainR.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.mainR.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.mainR.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.mainR.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.mainR.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.mainR.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.mainR.ppp[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[0].outputHook[0] 	"total packets" 	1449797
+scalar University.mainR.ppp[0].outputHook[0] 	"total bits" 	13983875288
+scalar University.mainR.ppp[0].outputHook[0] 	"avg throughput (bit/s)" 	2587210.8437237
+scalar University.mainR.ppp[0].outputHook[0] 	"avg packets/s" 	268.23254944334
+scalar University.mainR.ppp[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[0].inputHook[0] 	"total packets" 	1373381
+scalar University.mainR.ppp[0].inputHook[0] 	"total bits" 	5163124400
+scalar University.mainR.ppp[0].inputHook[0] 	"avg throughput (bit/s)" 	955249.6114319
+scalar University.mainR.ppp[0].inputHook[0] 	"avg packets/s" 	254.09452977696
+statistic University.mainR.ppp[0].queue 	queueingTime:histogram
+field count 1375339
+field mean 0.019846759965595
+field stddev 0.031655099114035
+field sum 27296.023004322
+field sqrsum 1919.8885952826
+field min 0
+field max 0.100466583328
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.0352202977435	0
+bin	-0.030524258044367	0
+bin	-0.025828218345233	0
+bin	-0.0211321786461	0
+bin	-0.016436138946967	0
+bin	-0.011740099247833	0
+bin	-0.0070440595487	0
+bin	-0.0023480198495667	764941
+bin	0.0023480198495667	83419
+bin	0.0070440595487	53256
+bin	0.011740099247833	46065
+bin	0.016436138946967	36237
+bin	0.0211321786461	33648
+bin	0.025828218345233	32058
+bin	0.030524258044367	22409
+bin	0.0352202977435	20677
+bin	0.039916337442633	20198
+bin	0.044612377141767	19888
+bin	0.0493084168409	20412
+bin	0.054004456540033	19856
+bin	0.058700496239167	13487
+bin	0.0633965359383	11560
+bin	0.068092575637433	13549
+bin	0.072788615336567	14180
+bin	0.0774846550357	13723
+bin	0.082180694734833	14012
+bin	0.086876734433967	13474
+bin	0.0915727741331	14697
+bin	0.096268813832233	93593
+bin	0.10096485353137	0
+bin	0.1056608932305	0
+scalar University.mainR.ppp[0].queue 	dropPk:count 	72947
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.mainR.ppp[0].queue 	dropPk:sum(packetBytes) 	109167425
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.mainR.ppp[0].queue 	queueLength:max 	100
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.mainR.ppp[0].queue 	queueLength:timeavg 	5.054850955701
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.mainR.ppp[0].queue 	rcvdPk:count 	1448286
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.mainR.ppp[0].queue 	rcvdPk:sum(packetBytes) 	1746235208
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	rcvdPkFromHL:count 	1375339
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.mainR.ppp[0].ppp 	rcvdPkFromHL:sum(packetBytes) 	1637067783
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	passedUpPk:count 	1371959
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.mainR.ppp[0].ppp 	passedUpPk:sum(packetBytes) 	644663663
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	txPk:count 	1375339
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.mainR.ppp[0].ppp 	txPk:sum(packetBytes) 	1646695156
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.mainR.ppp[0].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.mainR.ppp[0].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	rxPkOk:count 	1371959
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.mainR.ppp[0].ppp 	rxPkOk:sum(packetBytes) 	654267376
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.mainR.ppp[0].ppp 	txState:timeavg 	0.20329637642016
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.mainR.ppp[1].outputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[1].outputHook[0] 	"total packets" 	135124
+scalar University.mainR.ppp[1].outputHook[0] 	"total bits" 	1543656576
+scalar University.mainR.ppp[1].outputHook[0] 	"avg throughput (bit/s)" 	285597.8725611
+scalar University.mainR.ppp[1].outputHook[0] 	"avg packets/s" 	24.999813774606
+scalar University.mainR.ppp[1].inputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[1].inputHook[0] 	"total packets" 	135125
+scalar University.mainR.ppp[1].inputHook[0] 	"total bits" 	1543668000
+scalar University.mainR.ppp[1].inputHook[0] 	"avg throughput (bit/s)" 	285599.98615952
+scalar University.mainR.ppp[1].inputHook[0] 	"avg packets/s" 	24.999998788473
+statistic University.mainR.ppp[1].queue 	queueingTime:histogram
+field count 135000
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	135000
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.mainR.ppp[1].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.mainR.ppp[1].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.mainR.ppp[1].queue 	queueLength:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.mainR.ppp[1].queue 	queueLength:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.mainR.ppp[1].queue 	rcvdPk:count 	135000
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.mainR.ppp[1].queue 	rcvdPk:sum(packetBytes) 	192780000
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	rcvdPkFromHL:count 	135000
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.mainR.ppp[1].ppp 	rcvdPkFromHL:sum(packetBytes) 	192780000
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	passedUpPk:count 	135000
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.mainR.ppp[1].ppp 	passedUpPk:sum(packetBytes) 	192780000
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	txPk:count 	135000
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.mainR.ppp[1].ppp 	txPk:sum(packetBytes) 	193725000
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.mainR.ppp[1].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.mainR.ppp[1].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	rxPkOk:count 	135000
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.mainR.ppp[1].ppp 	rxPkOk:sum(packetBytes) 	193725000
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.mainR.ppp[1].ppp 	txState:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.mainR.ppp[2].outputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[2].outputHook[0] 	"total packets" 	1238257
+scalar University.mainR.ppp[2].outputHook[0] 	"total bits" 	3619467824
+scalar University.mainR.ppp[2].outputHook[0] 	"avg throughput (bit/s)" 	669651.7388708
+scalar University.mainR.ppp[2].outputHook[0] 	"avg packets/s" 	229.09471600236
+scalar University.mainR.ppp[2].inputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[2].inputHook[0] 	"total packets" 	1314672
+scalar University.mainR.ppp[2].inputHook[0] 	"total bits" 	12440207288
+scalar University.mainR.ppp[2].inputHook[0] 	"avg throughput (bit/s)" 	2301610.8575641
+scalar University.mainR.ppp[2].inputHook[0] 	"avg packets/s" 	243.23255065487
+statistic University.mainR.ppp[2].queue 	queueingTime:histogram
+field count 1236959
+field mean 1.4024009054409e-06
+field stddev 1.0969068170347e-05
+field sum 1.7347124215933
+field sqrsum 0.00015126411353385
+field min 0
+field max 8.9226667e-05
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1236959
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.mainR.ppp[2].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.mainR.ppp[2].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.mainR.ppp[2].queue 	queueLength:max 	3
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.mainR.ppp[2].queue 	queueLength:timeavg 	0.00032151392348352
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.mainR.ppp[2].queue 	rcvdPk:count 	1236959
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.mainR.ppp[2].queue 	rcvdPk:sum(packetBytes) 	451883663
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	rcvdPkFromHL:count 	1236959
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.mainR.ppp[2].ppp 	rcvdPkFromHL:sum(packetBytes) 	451883663
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	passedUpPk:count 	1313286
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.mainR.ppp[2].ppp 	passedUpPk:sum(packetBytes) 	1553455208
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	txPk:count 	1236959
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.mainR.ppp[2].ppp 	txPk:sum(packetBytes) 	460542376
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.mainR.ppp[2].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.mainR.ppp[2].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	rxPkOk:count 	1313286
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.mainR.ppp[2].ppp 	rxPkOk:sum(packetBytes) 	1562648210
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.mainR.ppp[2].ppp 	txState:timeavg 	0.0068229056412446
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.mainR.ppp[3].outputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[3].outputHook[0] 	"total packets" 	0
+scalar University.mainR.ppp[3].outputHook[0] 	"total bits" 	0
+scalar University.mainR.ppp[3].outputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.mainR.ppp[3].outputHook[0] 	"avg packets/s" 	0
+scalar University.mainR.ppp[3].inputHook[0] 	duration 	5405.0002619321
+scalar University.mainR.ppp[3].inputHook[0] 	"total packets" 	0
+scalar University.mainR.ppp[3].inputHook[0] 	"total bits" 	0
+scalar University.mainR.ppp[3].inputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.mainR.ppp[3].inputHook[0] 	"avg packets/s" 	0
+statistic University.mainR.ppp[3].queue 	queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.mainR.ppp[3].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.mainR.ppp[3].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.mainR.ppp[3].queue 	queueLength:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.mainR.ppp[3].queue 	queueLength:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.mainR.ppp[3].queue 	rcvdPk:count 	0
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.mainR.ppp[3].queue 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.mainR.ppp[3].ppp 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.mainR.ppp[3].ppp 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	txPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.mainR.ppp[3].ppp 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.mainR.ppp[3].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.mainR.ppp[3].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.mainR.ppp[3].ppp 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.mainR.ppp[3].ppp 	txState:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.ccTVMonitoringHost.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.ccTVMonitoringHost.networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar University.ccTVMonitoringHost.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.ccTVMonitoringHost.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.ccTVMonitoringHost.networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar University.ccTVMonitoringHost.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.ccTVMonitoringHost.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.ccTVMonitoringHost.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.ccTVMonitoringHost.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.ccTVMonitoringHost.ppp[0].outputHook[0] 	"total packets" 	0
+scalar University.ccTVMonitoringHost.ppp[0].outputHook[0] 	"total bits" 	0
+scalar University.ccTVMonitoringHost.ppp[0].outputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.ccTVMonitoringHost.ppp[0].outputHook[0] 	"avg packets/s" 	0
+scalar University.ccTVMonitoringHost.ppp[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.ccTVMonitoringHost.ppp[0].inputHook[0] 	"total packets" 	0
+scalar University.ccTVMonitoringHost.ppp[0].inputHook[0] 	"total bits" 	0
+scalar University.ccTVMonitoringHost.ppp[0].inputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.ccTVMonitoringHost.ppp[0].inputHook[0] 	"avg packets/s" 	0
+statistic University.ccTVMonitoringHost.ppp[0].queue 	queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.ccTVMonitoringHost.ppp[0].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.ccTVMonitoringHost.ppp[0].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].queue 	queueLength:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.ccTVMonitoringHost.ppp[0].queue 	queueLength:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.ccTVMonitoringHost.ppp[0].queue 	rcvdPk:count 	0
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.ccTVMonitoringHost.ppp[0].queue 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	txPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.ccTVMonitoringHost.ppp[0].ppp 	txState:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.profLaptop.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.profLaptop.networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar University.profLaptop.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.profLaptop.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.profLaptop.networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar University.profLaptop.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.profLaptop.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.profLaptop.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.profLaptop.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.profLaptop.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.profLaptop.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.profLaptop.ppp[0].outputHook[0] 	"total packets" 	135125
+scalar University.profLaptop.ppp[0].outputHook[0] 	"total bits" 	1543668000
+scalar University.profLaptop.ppp[0].outputHook[0] 	"avg throughput (bit/s)" 	285599.98615952
+scalar University.profLaptop.ppp[0].outputHook[0] 	"avg packets/s" 	24.999998788473
+scalar University.profLaptop.ppp[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.profLaptop.ppp[0].inputHook[0] 	"total packets" 	135124
+scalar University.profLaptop.ppp[0].inputHook[0] 	"total bits" 	1543656576
+scalar University.profLaptop.ppp[0].inputHook[0] 	"avg throughput (bit/s)" 	285597.8725611
+scalar University.profLaptop.ppp[0].inputHook[0] 	"avg packets/s" 	24.999813774606
+statistic University.profLaptop.ppp[0].queue 	queueingTime:histogram
+field count 135000
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	135000
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.profLaptop.ppp[0].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.profLaptop.ppp[0].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].queue 	queueLength:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.profLaptop.ppp[0].queue 	queueLength:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.profLaptop.ppp[0].queue 	rcvdPk:count 	135000
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.profLaptop.ppp[0].queue 	rcvdPk:sum(packetBytes) 	192780000
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	rcvdPkFromHL:count 	135000
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.profLaptop.ppp[0].ppp 	rcvdPkFromHL:sum(packetBytes) 	192780000
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	passedUpPk:count 	135000
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.profLaptop.ppp[0].ppp 	passedUpPk:sum(packetBytes) 	192780000
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	txPk:count 	135000
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.profLaptop.ppp[0].ppp 	txPk:sum(packetBytes) 	193725000
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.profLaptop.ppp[0].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.profLaptop.ppp[0].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	rxPkOk:count 	135000
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.profLaptop.ppp[0].ppp 	rxPkOk:sum(packetBytes) 	193725000
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.profLaptop.ppp[0].ppp 	txState:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.profLaptop.udpApp[0] 	"packets sent" 	135125
+scalar University.profLaptop.udpApp[0] 	"packets received" 	135124
+scalar University.profLaptop.udpApp[0] 	sentPk:count 	135000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.profLaptop.udpApp[0] 	sentPk:sum(packetBytes) 	189000000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.profLaptop.udpApp[0] 	rcvdPk:count 	135000
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.profLaptop.udpApp[0] 	rcvdPk:sum(packetBytes) 	189000000
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.profLaptop.udpApp[0] 	rcvdPkLifetime:stats
+field count 135000
+field mean 0.016835568591082
+field stddev 0.0023451318686442
+field sum 2272.8017597961
+field sqrsum 39.006356291314
+field min 0.016345621603
+field max 0.170687647844
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar University.profLaptop.udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar University.profLaptop.udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar University.profLaptop.udp 	passedUpPk:count 	135000
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar University.profLaptop.udp 	sentPk:count 	135000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.profLaptop.udp 	sentPk:sum(packetBytes) 	190080000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.profLaptop.udp 	rcvdPk:count 	135000
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.profLaptop.udp 	rcvdPk:sum(packetBytes) 	190080000
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar University.Server.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.Server.networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar University.Server.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.Server.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.Server.networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar University.Server.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.Server.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.Server.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.Server.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.Server.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.Server.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.Server.ppp[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.Server.ppp[0].outputHook[0] 	"total packets" 	1359308
+scalar University.Server.ppp[0].outputHook[0] 	"total bits" 	12975388840
+scalar University.Server.ppp[0].outputHook[0] 	"avg throughput (bit/s)" 	2400626.8660867
+scalar University.Server.ppp[0].outputHook[0] 	"avg packets/s" 	251.49082962562
+scalar University.Server.ppp[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.Server.ppp[0].inputHook[0] 	"total packets" 	1238257
+scalar University.Server.ppp[0].inputHook[0] 	"total bits" 	3619467824
+scalar University.Server.ppp[0].inputHook[0] 	"avg throughput (bit/s)" 	669651.7388708
+scalar University.Server.ppp[0].inputHook[0] 	"avg packets/s" 	229.09471600236
+statistic University.Server.ppp[0].queue 	queueingTime:histogram
+field count 1313168
+field mean 8.6485343086347e-05
+field stddev 0.00064788822506329
+field sum 113.56978501001
+field sqrsum 0.56103598840589
+field min 0
+field max 0.012056
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-6.028e-05	0
+bin	-5.2242666666667e-05	0
+bin	-4.4205333333333e-05	0
+bin	-3.6168e-05	0
+bin	-2.8130666666667e-05	0
+bin	-2.0093333333333e-05	0
+bin	-1.2056e-05	0
+bin	-4.0186666666667e-06	947846
+bin	4.0186666666667e-06	54
+bin	1.2056e-05	49
+bin	2.0093333333333e-05	62
+bin	2.8130666666667e-05	26
+bin	3.6168e-05	61
+bin	4.4205333333333e-05	68
+bin	5.2242666666667e-05	50
+bin	6.028e-05	42
+bin	6.8317333333333e-05	28
+bin	7.6354666666667e-05	28
+bin	8.4392e-05	141
+bin	9.2429333333333e-05	21
+bin	0.00010046666666667	26
+bin	0.000108504	17
+bin	0.00011654133333333	348010
+bin	0.00012457866666667	54
+bin	0.000132616	46
+bin	0.00014065333333333	56
+bin	0.00014869066666667	37
+bin	0.000156728	65
+bin	0.00016476533333333	53
+bin	0.00017280266666667	51
+bin	0.00018084	16277
+scalar University.Server.ppp[0].queue 	dropPk:count 	44189
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar University.Server.ppp[0].queue 	dropPk:sum(packetBytes) 	66228907
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar University.Server.ppp[0].queue 	queueLength:max 	100
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar University.Server.ppp[0].queue 	queueLength:timeavg 	0.021031927281243
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar University.Server.ppp[0].queue 	rcvdPk:count 	1357357
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar University.Server.ppp[0].queue 	rcvdPk:sum(packetBytes) 	1619508571
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	rcvdPkFromHL:count 	1313168
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.Server.ppp[0].ppp 	rcvdPkFromHL:sum(packetBytes) 	1553279664
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	passedUpPk:count 	1236959
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.Server.ppp[0].ppp 	passedUpPk:sum(packetBytes) 	451883663
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	txPk:count 	1313168
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, count"
+scalar University.Server.ppp[0].ppp 	txPk:sum(packetBytes) 	1562471840
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.Server.ppp[0].ppp 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.Server.ppp[0].ppp 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	rxPkOk:count 	1236959
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.Server.ppp[0].ppp 	rxPkOk:sum(packetBytes) 	460542376
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.Server.ppp[0].ppp 	txState:timeavg 	0.023148206951411
+attr interpolationmode  sample-hold
+attr title  "tx state, timeavg"
+scalar University.Server.tcpApp[0] 	sentPk:count 	1576
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.Server.tcpApp[0] 	sentPk:sum(packetBytes) 	1365268449
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.Server.tcpApp[0] 	rcvdPk:count 	1576
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.Server.tcpApp[0] 	rcvdPk:sum(packetBytes) 	1576
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.Server.tcpApp[0] 	endToEndDelay:histogram
+field count 1576
+field mean 0.0780832225694
+field stddev 0.00099048208014295
+field sum 123.05915876937
+field sqrsum 9.6104008446252
+field min 0.077818280245
+field max 0.093381828474
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	0.0718627785395	0
+bin	0.072656845433567	0
+bin	0.073450912327633	0
+bin	0.0742449792217	0
+bin	0.075039046115767	0
+bin	0.075833113009833	0
+bin	0.0766271799039	0
+bin	0.077421246797967	1365
+bin	0.078215313692033	110
+bin	0.0790093805861	57
+bin	0.079803447480167	21
+bin	0.080597514374233	6
+bin	0.0813915812683	2
+bin	0.082185648162367	2
+bin	0.082979715056433	1
+bin	0.0837737819505	1
+bin	0.084567848844567	2
+bin	0.085361915738633	2
+bin	0.0861559826327	2
+bin	0.086950049526767	0
+bin	0.087744116420833	2
+bin	0.0885381833149	0
+bin	0.089332250208967	1
+bin	0.090126317103033	1
+bin	0.0909203839971	0
+bin	0.091714450891167	0
+bin	0.092508517785233	0
+bin	0.0933025846793	1
+bin	0.094096651573367	0
+bin	0.094890718467433	0
+bin	0.0956847853615	0
+scalar University.Server.tcpApp[1] 	sentPk:count 	373
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.Server.tcpApp[1] 	sentPk:sum(packetBytes) 	373
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.Server.tcpApp[1] 	rcvdPk:count 	373
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.Server.tcpApp[1] 	rcvdPk:sum(packetBytes) 	391118848
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.Server.tcpApp[1] 	endToEndDelay:histogram
+field count 373
+field mean 13.949022523381
+field stddev 5.7354419425353
+field sum 5202.985401221
+field sqrsum 84813.610021195
+field min 3.539705419582
+field max 41.652050936747
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-10.632531373761	0
+bin	-8.6533498651875	0
+bin	-6.6741683566141	0
+bin	-4.6949868480406	0
+bin	-2.7158053394671	0
+bin	-0.73662383089367	0
+bin	1.2425576776798	0
+bin	3.2217391862533	16
+bin	5.2009206948267	20
+bin	7.1801022034002	35
+bin	9.1592837119737	41
+bin	11.138465220547	64
+bin	13.117646729121	66
+bin	15.096828237694	54
+bin	17.076009746268	31
+bin	19.055191254841	13
+bin	21.034372763414	6
+bin	23.013554271988	6
+bin	24.992735780561	7
+bin	26.971917289135	6
+bin	28.951098797708	2
+bin	30.930280306282	1
+bin	32.909461814855	3
+bin	34.888643323429	0
+bin	36.867824832002	1
+bin	38.847006340576	0
+bin	40.826187849149	1
+bin	42.805369357723	0
+bin	44.784550866296	0
+bin	46.76373237487	0
+bin	48.742913883443	0
+scalar University.CCTV.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.CCTV.networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar University.CCTV.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.CCTV.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.CCTV.networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar University.CCTV.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.CCTV.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.CCTV.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.CCTV.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.CCTV.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.CCTV.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.CCTV.eth[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.CCTV.eth[0].outputHook[0] 	"total packets" 	0
+scalar University.CCTV.eth[0].outputHook[0] 	"total bits" 	0
+scalar University.CCTV.eth[0].outputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.CCTV.eth[0].outputHook[0] 	"avg packets/s" 	0
+scalar University.CCTV.eth[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.CCTV.eth[0].inputHook[0] 	"total packets" 	0
+scalar University.CCTV.eth[0].inputHook[0] 	"total bits" 	0
+scalar University.CCTV.eth[0].inputHook[0] 	"avg throughput (bit/s)" 	0
+scalar University.CCTV.eth[0].inputHook[0] 	"avg packets/s" 	0
+scalar University.CCTV.eth[0].mac 	"simulated time" 	5405.0002619321
+scalar University.CCTV.eth[0].mac 	full-duplex 	1
+scalar University.CCTV.eth[0].mac 	"frames/sec sent" 	0
+scalar University.CCTV.eth[0].mac 	"frames/sec rcvd" 	0
+scalar University.CCTV.eth[0].mac 	"bits/sec sent" 	0
+scalar University.CCTV.eth[0].mac 	"bits/sec rcvd" 	0
+scalar University.CCTV.eth[0].mac 	"rx channel idle (%)" 	100
+scalar University.CCTV.eth[0].mac 	"rx channel utilization (%)" 	0
+scalar University.CCTV.eth[0].mac 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar University.CCTV.eth[0].mac 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar University.CCTV.eth[0].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar University.CCTV.eth[0].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar University.CCTV.eth[0].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar University.CCTV.eth[0].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar University.CCTV.eth[0].mac 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar University.CCTV.eth[0].mac 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.CCTV.eth[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar University.CCTV.eth[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar University.CCTV.eth[0].mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.CCTV.eth[0].mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.CCTV.eth[0].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.CCTV.eth[0].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.CCTV.eth[0].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.CCTV.eth[0].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.CCTV.eth[0].mac 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.CCTV.eth[0].mac 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar University.CCTV.eth[0].encap 	pauseSent:count 	0
+attr title  "pause sent, count"
+scalar University.CCTV.eth[0].encap 	pauseSent:sum 	0
+attr title  "pause sent, sum"
+scalar University.CCTV.eth[0].encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar University.CCTV.eth[0].encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar University.CCTV.eth[0].encap 	encapPk:count 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar University.CCTV.eth[0].encap 	encapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar University.whttpStudents[0].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[0].networkLayer.arp 	sentReply:count 	42
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[0].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[0].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[0].networkLayer.arp 	completedARPResolution:count 	422
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[0].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[0].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[0].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[0].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[0].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[0].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[0].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[0].wlan[0].outputHook[0] 	"total packets" 	122166
+scalar University.whttpStudents[0].wlan[0].outputHook[0] 	"total bits" 	39103520
+scalar University.whttpStudents[0].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	7234.6934514341
+scalar University.whttpStudents[0].wlan[0].outputHook[0] 	"avg packets/s" 	22.602404085052
+scalar University.whttpStudents[0].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[0].wlan[0].inputHook[0] 	"total packets" 	122354
+scalar University.whttpStudents[0].wlan[0].inputHook[0] 	"total bits" 	1451899768
+scalar University.whttpStudents[0].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	268621.59068259
+scalar University.whttpStudents[0].wlan[0].inputHook[0] 	"avg packets/s" 	22.637186692062
+scalar University.whttpStudents[0].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[0].wlan[0].agent 	acceptConfirm:count 	0
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[0].wlan[0].agent 	sentRequest:count 	0
+attr title  "sent requests, count"
+scalar University.whttpStudents[0].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[0].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[0].wlan[0].mgmt 	dataQueueLen:max 	9
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[0].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0036518270746826
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[0].wlan[0].mac 	"number of received packets" 	121927
+scalar University.whttpStudents[0].wlan[0].mac 	"number of collisions" 	88273
+scalar University.whttpStudents[0].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[0].wlan[0].mac 	"number of retry for AC 0" 	8390
+scalar University.whttpStudents[0].wlan[0].mac 	"sent and received bits" 	80152512
+scalar University.whttpStudents[0].wlan[0].mac 	"sent packet within AC 0" 	122169
+scalar University.whttpStudents[0].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[0].wlan[0].mac 	"sentWithoutRetry AC 0" 	113818
+scalar University.whttpStudents[0].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[0].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[0].wlan[0].mac 	rcvdPkFromHL:count 	121356
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[0].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	9952495
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[0].wlan[0].mac 	passedUpPk:count 	175136
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[0].wlan[0].mac 	passedUpPk:sum(packetBytes) 	189563552
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[0].wlan[0].mac 	rcvdPkFromLL:count 	5364917
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[0].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2479615981
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[0].wlan[0].mac 	sentDownPk:count 	250812
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[0].wlan[0].mac 	sentDownPk:sum(packetBytes) 	12332208
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[0].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[0].wlan[0].radio 	lossRate:max 	0.16
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[0].wlan[0].radio 	lossRate:timeavg 	0.0080203114405994
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[0].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[0].wlan[0].radio 	radioState:count 	11242480
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[0].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[0].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[0].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[0].tcpApp[0] 	numActiveSessions:max 	0
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[0].tcpApp[0] 	numActiveSessions:timeavg 	-0.54224676043553
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[0].tcpApp[0] 	numSessions:last 	199
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[0].tcpApp[0] 	sentPk:count 	199
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[0].tcpApp[0] 	sentPk:sum(packetBytes) 	199
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[0].tcpApp[0] 	rcvdPk:count 	199
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[0].tcpApp[0] 	rcvdPk:sum(packetBytes) 	172276867
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[0].tcpApp[0] 	endToEndDelay:histogram
+field count 199
+field mean 12.130538206668
+field stddev 16.860458263825
+field sum 2413.9771031269
+field sqrsum 85569.301947006
+field min 0.532431967986
+field max 124.00315210367
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-61.202928099858	0
+bin	-52.971546757478	0
+bin	-44.740165415099	0
+bin	-36.50878407272	0
+bin	-28.277402730341	0
+bin	-20.046021387962	0
+bin	-11.814640045583	0
+bin	-3.5832587032036	102
+bin	4.6481226391756	36
+bin	12.879503981555	18
+bin	21.110885323934	9
+bin	29.342266666313	20
+bin	37.573648008692	8
+bin	45.805029351071	1
+bin	54.03641069345	0
+bin	62.26779203583	4
+bin	70.499173378209	0
+bin	78.730554720588	0
+bin	86.961936062967	0
+bin	95.193317405346	0
+bin	103.42469874773	0
+bin	111.6560800901	0
+bin	119.88746143248	1
+bin	128.11884277486	0
+bin	136.35022411724	0
+bin	144.58160545962	0
+bin	152.812986802	0
+bin	161.04436814438	0
+bin	169.27574948676	0
+bin	177.50713082914	0
+bin	185.73851217152	0
+scalar University.whttpStudents[1].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[1].networkLayer.arp 	sentReply:count 	42
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[1].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[1].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[1].networkLayer.arp 	completedARPResolution:count 	422
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[1].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[1].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[1].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[1].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[1].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[1].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[1].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[1].wlan[0].outputHook[0] 	"total packets" 	120144
+scalar University.whttpStudents[1].wlan[0].outputHook[0] 	"total bits" 	38457208
+scalar University.whttpStudents[1].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	7115.1167689773
+scalar University.whttpStudents[1].wlan[0].outputHook[0] 	"avg packets/s" 	22.228306045827
+scalar University.whttpStudents[1].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[1].wlan[0].inputHook[0] 	"total packets" 	120323
+scalar University.whttpStudents[1].wlan[0].inputHook[0] 	"total bits" 	1426758184
+scalar University.whttpStudents[1].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	263970.04900236
+scalar University.whttpStudents[1].wlan[0].inputHook[0] 	"avg packets/s" 	22.261423528033
+scalar University.whttpStudents[1].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[1].wlan[0].agent 	acceptConfirm:count 	0
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[1].wlan[0].agent 	sentRequest:count 	0
+attr title  "sent requests, count"
+scalar University.whttpStudents[1].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[1].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[1].wlan[0].mgmt 	dataQueueLen:max 	11
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[1].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0040876439470644
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[1].wlan[0].mac 	"number of received packets" 	119896
+scalar University.whttpStudents[1].wlan[0].mac 	"number of collisions" 	87772
+scalar University.whttpStudents[1].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[1].wlan[0].mac 	"number of retry for AC 0" 	8760
+scalar University.whttpStudents[1].wlan[0].mac 	"sent and received bits" 	78826808
+scalar University.whttpStudents[1].wlan[0].mac 	"sent packet within AC 0" 	120147
+scalar University.whttpStudents[1].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[1].wlan[0].mac 	"sentWithoutRetry AC 0" 	111434
+scalar University.whttpStudents[1].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[1].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[1].wlan[0].mac 	rcvdPkFromHL:count 	120050
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[1].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	9845494
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[1].wlan[0].mac 	passedUpPk:count 	173952
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[1].wlan[0].mac 	passedUpPk:sum(packetBytes) 	187450319
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[1].wlan[0].mac 	rcvdPkFromLL:count 	5367126
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[1].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2479307038
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[1].wlan[0].mac 	sentDownPk:count 	248603
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[1].wlan[0].mac 	sentDownPk:sum(packetBytes) 	12240570
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[1].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[1].wlan[0].radio 	lossRate:max 	0.18
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[1].wlan[0].radio 	lossRate:timeavg 	0.0079457540948407
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[1].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[1].wlan[0].radio 	radioState:count 	11242976
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[1].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[1].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[1].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[1].tcpApp[0] 	numActiveSessions:max 	0
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[1].tcpApp[0] 	numActiveSessions:timeavg 	-0.55591262915088
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[1].tcpApp[0] 	numSessions:last 	210
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[1].tcpApp[0] 	sentPk:count 	210
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[1].tcpApp[0] 	sentPk:sum(packetBytes) 	210
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[1].tcpApp[0] 	rcvdPk:count 	211
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[1].tcpApp[0] 	rcvdPk:sum(packetBytes) 	170927581
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[1].tcpApp[0] 	endToEndDelay:histogram
+field count 211
+field mean 11.182231918189
+field stddev 15.042301086055
+field sum 2359.4509347378
+field sqrsum 73900.800164169
+field min 0.177185550494
+field max 68.99609054683
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-33.965379597269	0
+bin	-29.389314257531	0
+bin	-24.813248917794	0
+bin	-20.237183578056	0
+bin	-15.661118238318	0
+bin	-11.08505289858	0
+bin	-6.5089875588426	0
+bin	-1.9329222191049	112
+bin	2.6431431206329	24
+bin	7.2192084603706	13
+bin	11.795273800108	8
+bin	16.371339139846	3
+bin	20.947404479584	11
+bin	25.523469819322	4
+bin	30.099535159059	8
+bin	34.675600498797	16
+bin	39.251665838535	4
+bin	43.827731178272	3
+bin	48.40379651801	2
+bin	52.979861857748	0
+bin	57.555927197486	1
+bin	62.131992537223	1
+bin	66.708057876961	1
+bin	71.284123216699	0
+bin	75.860188556437	0
+bin	80.436253896174	0
+bin	85.012319235912	0
+bin	89.58838457565	0
+bin	94.164449915388	0
+bin	98.740515255125	0
+bin	103.31658059486	0
+scalar University.whttpStudents[2].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[2].networkLayer.arp 	sentReply:count 	43
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[2].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[2].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[2].networkLayer.arp 	completedARPResolution:count 	422
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[2].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[2].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[2].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[2].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[2].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[2].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[2].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[2].wlan[0].outputHook[0] 	"total packets" 	127721
+scalar University.whttpStudents[2].wlan[0].outputHook[0] 	"total bits" 	40880656
+scalar University.whttpStudents[2].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	7563.4882551118
+scalar University.whttpStudents[2].wlan[0].outputHook[0] 	"avg packets/s" 	23.630156116652
+scalar University.whttpStudents[2].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[2].wlan[0].inputHook[0] 	"total packets" 	127911
+scalar University.whttpStudents[2].wlan[0].inputHook[0] 	"total bits" 	1518641552
+scalar University.whttpStudents[2].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	280969.74623589
+scalar University.whttpStudents[2].wlan[0].inputHook[0] 	"avg packets/s" 	23.665308751396
+scalar University.whttpStudents[2].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[2].wlan[0].agent 	acceptConfirm:count 	3
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[2].wlan[0].agent 	sentRequest:count 	3
+attr title  "sent requests, count"
+scalar University.whttpStudents[2].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[2].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[2].wlan[0].mgmt 	dataQueueLen:max 	15
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[2].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0042075968087224
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[2].wlan[0].mac 	"number of received packets" 	127488
+scalar University.whttpStudents[2].wlan[0].mac 	"number of collisions" 	88225
+scalar University.whttpStudents[2].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[2].wlan[0].mac 	"number of retry for AC 0" 	8642
+scalar University.whttpStudents[2].wlan[0].mac 	"sent and received bits" 	83797344
+scalar University.whttpStudents[2].wlan[0].mac 	"sent packet within AC 0" 	127727
+scalar University.whttpStudents[2].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[2].wlan[0].mac 	"sentWithoutRetry AC 0" 	119139
+scalar University.whttpStudents[2].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[2].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[2].wlan[0].mac 	rcvdPkFromHL:count 	127671
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[2].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	10470091
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[2].wlan[0].mac 	passedUpPk:count 	181250
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[2].wlan[0].mac 	passedUpPk:sum(packetBytes) 	199289572
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[2].wlan[0].mac 	rcvdPkFromLL:count 	5351989
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[2].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2478458154
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[2].wlan[0].mac 	sentDownPk:count 	263740
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[2].wlan[0].mac 	sentDownPk:sum(packetBytes) 	12962449
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[2].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[2].wlan[0].radio 	lossRate:max 	0.16
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[2].wlan[0].radio 	lossRate:timeavg 	0.0080518091811512
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[2].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[2].wlan[0].radio 	radioState:count 	11242866
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[2].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[2].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[2].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[2].tcpApp[0] 	numActiveSessions:max 	0
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[2].tcpApp[0] 	numActiveSessions:timeavg 	-0.48195561775002
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[2].tcpApp[0] 	numSessions:last 	192
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[2].tcpApp[0] 	sentPk:count 	192
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[2].tcpApp[0] 	sentPk:sum(packetBytes) 	192
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[2].tcpApp[0] 	rcvdPk:count 	193
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[2].tcpApp[0] 	rcvdPk:sum(packetBytes) 	179777375
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[2].tcpApp[0] 	endToEndDelay:histogram
+field count 193
+field mean 14.253216223066
+field stddev 16.590197946194
+field sum 2750.8707310518
+field sqrsum 92053.811567013
+field min 0.552447611272
+field max 80.364286532702
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-22.95313339617	0
+bin	-19.819055928511	0
+bin	-16.684978460852	0
+bin	-13.550900993193	0
+bin	-10.416823525534	0
+bin	-7.2827460578755	0
+bin	-4.1486685902165	0
+bin	-1.0145911225575	88
+bin	2.1194863451015	12
+bin	5.2535638127605	9
+bin	8.3876412804195	7
+bin	11.521718748078	8
+bin	14.655796215737	7
+bin	17.789873683396	4
+bin	20.923951151055	5
+bin	24.058028618714	4
+bin	27.192106086373	4
+bin	30.326183554032	4
+bin	33.460261021691	15
+bin	36.59433848935	8
+bin	39.728415957009	7
+bin	42.862493424668	4
+bin	45.996570892327	4
+bin	49.130648359986	1
+bin	52.264725827645	0
+bin	55.398803295304	0
+bin	58.532880762963	0
+bin	61.666958230622	0
+bin	64.801035698281	0
+bin	67.93511316594	1
+bin	71.069190633599	1
+scalar University.whttpStudents[3].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[3].networkLayer.arp 	sentReply:count 	41
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[3].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[3].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[3].networkLayer.arp 	completedARPResolution:count 	425
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[3].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[3].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[3].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[3].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[3].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[3].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[3].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[3].wlan[0].outputHook[0] 	"total packets" 	112426
+scalar University.whttpStudents[3].wlan[0].outputHook[0] 	"total bits" 	35986664
+scalar University.whttpStudents[3].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	6658.031869759
+scalar University.whttpStudents[3].wlan[0].outputHook[0] 	"avg packets/s" 	20.800369019744
+scalar University.whttpStudents[3].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[3].wlan[0].inputHook[0] 	"total packets" 	112620
+scalar University.whttpStudents[3].wlan[0].inputHook[0] 	"total bits" 	1335141976
+scalar University.whttpStudents[3].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	247019.78007356
+scalar University.whttpStudents[3].wlan[0].inputHook[0] 	"avg packets/s" 	20.836261709956
+scalar University.whttpStudents[3].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[3].wlan[0].agent 	acceptConfirm:count 	0
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[3].wlan[0].agent 	sentRequest:count 	0
+attr title  "sent requests, count"
+scalar University.whttpStudents[3].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[3].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[3].wlan[0].mgmt 	dataQueueLen:max 	10
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[3].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0034132326793946
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[3].wlan[0].mac 	"number of received packets" 	112191
+scalar University.whttpStudents[3].wlan[0].mac 	"number of collisions" 	88648
+scalar University.whttpStudents[3].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[3].wlan[0].mac 	"number of retry for AC 0" 	7800
+scalar University.whttpStudents[3].wlan[0].mac 	"sent and received bits" 	73763016
+scalar University.whttpStudents[3].wlan[0].mac 	"sent packet within AC 0" 	112429
+scalar University.whttpStudents[3].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[3].wlan[0].mac 	"sentWithoutRetry AC 0" 	104670
+scalar University.whttpStudents[3].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[3].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[3].wlan[0].mac 	rcvdPkFromHL:count 	112426
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[3].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	9220225
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[3].wlan[0].mac 	passedUpPk:count 	166423
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[3].wlan[0].mac 	passedUpPk:sum(packetBytes) 	175819385
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[3].wlan[0].mac 	rcvdPkFromLL:count 	5383317
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[3].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2480523449
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[3].wlan[0].mac 	sentDownPk:count 	232412
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[3].wlan[0].mac 	sentDownPk:sum(packetBytes) 	11430431
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[3].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[3].wlan[0].radio 	lossRate:max 	0.16
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[3].wlan[0].radio 	lossRate:timeavg 	0.0080697295295558
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[3].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[3].wlan[0].radio 	radioState:count 	11241694
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[3].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[3].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[3].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[3].tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[3].tcpApp[0] 	numActiveSessions:timeavg 	0.41782396119292
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[3].tcpApp[0] 	numSessions:last 	196
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[3].tcpApp[0] 	sentPk:count 	196
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[3].tcpApp[0] 	sentPk:sum(packetBytes) 	196
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[3].tcpApp[0] 	rcvdPk:count 	196
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[3].tcpApp[0] 	rcvdPk:sum(packetBytes) 	158719233
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[3].tcpApp[0] 	endToEndDelay:histogram
+field count 196
+field mean 11.26135964154
+field stddev 14.806443371703
+field sum 2207.2264897418
+field sqrsum 67606.370548607
+field min 0.35607249346
+field max 70.292183069961
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-34.344660165181	0
+bin	-29.694133799175	0
+bin	-25.043607433169	0
+bin	-20.393081067162	0
+bin	-15.742554701156	0
+bin	-11.09202833515	0
+bin	-6.4415019691435	0
+bin	-1.7909756031372	99
+bin	2.8595507628692	25
+bin	7.5100771288755	14
+bin	12.160603494882	10
+bin	16.811129860888	7
+bin	21.461656226895	3
+bin	26.112182592901	6
+bin	30.762708958907	14
+bin	35.413235324914	10
+bin	40.06376169092	4
+bin	44.714288056926	1
+bin	49.364814422932	0
+bin	54.015340788939	0
+bin	58.665867154945	0
+bin	63.316393520951	2
+bin	67.966919886958	1
+bin	72.617446252964	0
+bin	77.267972618971	0
+bin	81.918498984977	0
+bin	86.569025350983	0
+bin	91.219551716989	0
+bin	95.870078082996	0
+bin	100.520604449	0
+bin	105.17113081501	0
+scalar University.whttpStudents[4].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[4].networkLayer.arp 	sentReply:count 	41
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[4].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[4].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[4].networkLayer.arp 	completedARPResolution:count 	425
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[4].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[4].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[4].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[4].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[4].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[4].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[4].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[4].wlan[0].outputHook[0] 	"total packets" 	113907
+scalar University.whttpStudents[4].wlan[0].outputHook[0] 	"total bits" 	36460944
+scalar University.whttpStudents[4].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	6745.7802466352
+scalar University.whttpStudents[4].wlan[0].outputHook[0] 	"avg packets/s" 	21.074374556881
+scalar University.whttpStudents[4].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[4].wlan[0].inputHook[0] 	"total packets" 	114097
+scalar University.whttpStudents[4].wlan[0].inputHook[0] 	"total bits" 	1352971728
+scalar University.whttpStudents[4].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	250318.53144006
+scalar University.whttpStudents[4].wlan[0].inputHook[0] 	"avg packets/s" 	21.109527191626
+scalar University.whttpStudents[4].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[4].wlan[0].agent 	acceptConfirm:count 	0
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[4].wlan[0].agent 	sentRequest:count 	0
+attr title  "sent requests, count"
+scalar University.whttpStudents[4].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[4].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[4].wlan[0].mgmt 	dataQueueLen:max 	11
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[4].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0033988254164034
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[4].wlan[0].mac 	"number of received packets" 	113668
+scalar University.whttpStudents[4].wlan[0].mac 	"number of collisions" 	88614
+scalar University.whttpStudents[4].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[4].wlan[0].mac 	"number of retry for AC 0" 	7859
+scalar University.whttpStudents[4].wlan[0].mac 	"sent and received bits" 	74734912
+scalar University.whttpStudents[4].wlan[0].mac 	"sent packet within AC 0" 	113910
+scalar University.whttpStudents[4].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[4].wlan[0].mac 	"sentWithoutRetry AC 0" 	106092
+scalar University.whttpStudents[4].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[4].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[4].wlan[0].mac 	rcvdPkFromHL:count 	113907
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[4].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	9341712
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[4].wlan[0].mac 	passedUpPk:count 	167875
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[4].wlan[0].mac 	passedUpPk:sum(packetBytes) 	178108188
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[4].wlan[0].mac 	rcvdPkFromLL:count 	5380299
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[4].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2480436981
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[4].wlan[0].mac 	sentDownPk:count 	235430
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[4].wlan[0].mac 	sentDownPk:sum(packetBytes) 	11577555
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[4].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[4].wlan[0].radio 	lossRate:max 	0.18
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[4].wlan[0].radio 	lossRate:timeavg 	0.0080521819334725
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[4].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[4].wlan[0].radio 	radioState:count 	11241706
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[4].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[4].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[4].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[4].tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[4].tcpApp[0] 	numActiveSessions:timeavg 	0.45921619972
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[4].tcpApp[0] 	numSessions:last 	201
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[4].tcpApp[0] 	sentPk:count 	201
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[4].tcpApp[0] 	sentPk:sum(packetBytes) 	201
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[4].tcpApp[0] 	rcvdPk:count 	200
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[4].tcpApp[0] 	rcvdPk:sum(packetBytes) 	161585989
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[4].tcpApp[0] 	endToEndDelay:histogram
+field count 200
+field mean 12.052692268485
+field stddev 23.522569472545
+field sum 2410.5384536969
+field sqrsum 139162.42182731
+field min 0.531396879472
+field max 277.35378332268
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-21.476052139298	0
+bin	-18.541244561063	0
+bin	-15.606436982828	0
+bin	-12.671629404593	0
+bin	-9.7368218263574	0
+bin	-6.8020142481222	0
+bin	-3.8672066698869	0
+bin	-0.93239909165163	85
+bin	2.0024084865836	18
+bin	4.9372160648189	21
+bin	7.8720236430542	15
+bin	10.806831221289	9
+bin	13.741638799525	6
+bin	16.67644637776	9
+bin	19.611253955995	5
+bin	22.54606153423	4
+bin	25.480869112466	0
+bin	28.415676690701	2
+bin	31.350484268936	3
+bin	34.285291847172	7
+bin	37.220099425407	7
+bin	40.154907003642	3
+bin	43.089714581877	1
+bin	46.024522160113	0
+bin	48.959329738348	0
+bin	51.894137316583	1
+bin	54.828944894818	0
+bin	57.763752473054	0
+bin	60.698560051289	0
+bin	63.633367629524	0
+bin	66.568175207759	4
+scalar University.whttpStudents[5].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[5].networkLayer.arp 	sentReply:count 	42
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[5].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[5].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[5].networkLayer.arp 	completedARPResolution:count 	422
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[5].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[5].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[5].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[5].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[5].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[5].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[5].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[5].wlan[0].outputHook[0] 	"total packets" 	119991
+scalar University.whttpStudents[5].wlan[0].outputHook[0] 	"total bits" 	38407528
+scalar University.whttpStudents[5].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	7105.925280061
+scalar University.whttpStudents[5].wlan[0].outputHook[0] 	"avg packets/s" 	22.199998924164
+scalar University.whttpStudents[5].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[5].wlan[0].inputHook[0] 	"total packets" 	120177
+scalar University.whttpStudents[5].wlan[0].inputHook[0] 	"total bits" 	1425830296
+scalar University.whttpStudents[5].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	263798.37685527
+scalar University.whttpStudents[5].wlan[0].inputHook[0] 	"avg packets/s" 	22.23441150344
+scalar University.whttpStudents[5].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[5].wlan[0].agent 	acceptConfirm:count 	3
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[5].wlan[0].agent 	sentRequest:count 	3
+attr title  "sent requests, count"
+scalar University.whttpStudents[5].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[5].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[5].wlan[0].mgmt 	dataQueueLen:max 	12
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[5].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0039120710243197
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[5].wlan[0].mac 	"number of received packets" 	119754
+scalar University.whttpStudents[5].wlan[0].mac 	"number of collisions" 	88326
+scalar University.whttpStudents[5].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[5].wlan[0].mac 	"number of retry for AC 0" 	8542
+scalar University.whttpStudents[5].wlan[0].mac 	"sent and received bits" 	78726936
+scalar University.whttpStudents[5].wlan[0].mac 	"sent packet within AC 0" 	119997
+scalar University.whttpStudents[5].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[5].wlan[0].mac 	"sentWithoutRetry AC 0" 	111489
+scalar University.whttpStudents[5].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[5].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[5].wlan[0].mac 	rcvdPkFromHL:count 	119995
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[5].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	9840715
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[5].wlan[0].mac 	passedUpPk:count 	173567
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[5].wlan[0].mac 	passedUpPk:sum(packetBytes) 	187440493
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[5].wlan[0].mac 	rcvdPkFromLL:count 	5367442
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[5].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2479175889
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[5].wlan[0].mac 	sentDownPk:count 	248287
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[5].wlan[0].mac 	sentDownPk:sum(packetBytes) 	12217620
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[5].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[5].wlan[0].radio 	lossRate:max 	0.16
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[5].wlan[0].radio 	lossRate:timeavg 	0.0079922892329063
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[5].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[5].wlan[0].radio 	radioState:count 	11242679
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[5].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[5].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[5].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[5].tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[5].tcpApp[0] 	numActiveSessions:timeavg 	0.45873458956249
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[5].tcpApp[0] 	numSessions:last 	199
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[5].tcpApp[0] 	sentPk:count 	199
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[5].tcpApp[0] 	sentPk:sum(packetBytes) 	199
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[5].tcpApp[0] 	rcvdPk:count 	198
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[5].tcpApp[0] 	rcvdPk:sum(packetBytes) 	170149798
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[5].tcpApp[0] 	endToEndDelay:histogram
+field count 198
+field mean 12.140271433477
+field stddev 16.099278669243
+field sum 2403.7737438285
+field sqrsum 80242.260127725
+field min 0.838250208744
+field max 97.257411456014
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-47.287056077963	0
+bin	-40.862857520898	0
+bin	-34.438658963832	0
+bin	-28.014460406766	0
+bin	-21.590261849701	0
+bin	-15.166063292635	0
+bin	-8.7418647355695	0
+bin	-2.3176661785038	100
+bin	4.1065323785618	30
+bin	10.530730935628	17
+bin	16.954929492693	11
+bin	23.379128049759	7
+bin	29.803326606825	16
+bin	36.22752516389	9
+bin	42.651723720956	2
+bin	49.075922278022	2
+bin	55.500120835087	0
+bin	61.924319392153	2
+bin	68.348517949218	1
+bin	74.772716506284	0
+bin	81.19691506335	0
+bin	87.621113620416	0
+bin	94.045312177481	1
+bin	100.46951073455	0
+bin	106.89370929161	0
+bin	113.31790784868	0
+bin	119.74210640574	0
+bin	126.16630496281	0
+bin	132.59050351988	0
+bin	139.01470207694	0
+bin	145.43890063401	0
+scalar University.whttpStudents[6].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[6].networkLayer.arp 	sentReply:count 	41
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[6].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[6].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[6].networkLayer.arp 	completedARPResolution:count 	423
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[6].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[6].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[6].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[6].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[6].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[6].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[6].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[6].wlan[0].outputHook[0] 	"total packets" 	123244
+scalar University.whttpStudents[6].wlan[0].outputHook[0] 	"total bits" 	39448088
+scalar University.whttpStudents[6].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	7298.4433095843
+scalar University.whttpStudents[6].wlan[0].outputHook[0] 	"avg packets/s" 	22.801849033758
+scalar University.whttpStudents[6].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[6].wlan[0].inputHook[0] 	"total packets" 	123438
+scalar University.whttpStudents[6].wlan[0].inputHook[0] 	"total bits" 	1465319016
+scalar University.whttpStudents[6].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	271104.3376483
+scalar University.whttpStudents[6].wlan[0].inputHook[0] 	"avg packets/s" 	22.837741723971
+scalar University.whttpStudents[6].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[6].wlan[0].agent 	acceptConfirm:count 	3
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[6].wlan[0].agent 	sentRequest:count 	3
+attr title  "sent requests, count"
+scalar University.whttpStudents[6].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[6].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[6].wlan[0].mgmt 	dataQueueLen:max 	13
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[6].wlan[0].mgmt 	dataQueueLen:timeavg 	0.003680262886519
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[6].wlan[0].mac 	"number of received packets" 	123015
+scalar University.whttpStudents[6].wlan[0].mac 	"number of collisions" 	88526
+scalar University.whttpStudents[6].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[6].wlan[0].mac 	"number of retry for AC 0" 	8339
+scalar University.whttpStudents[6].wlan[0].mac 	"sent and received bits" 	80860504
+scalar University.whttpStudents[6].wlan[0].mac 	"sent packet within AC 0" 	123250
+scalar University.whttpStudents[6].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[6].wlan[0].mac 	"sentWithoutRetry AC 0" 	114959
+scalar University.whttpStudents[6].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[6].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[6].wlan[0].mac 	rcvdPkFromHL:count 	123248
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[6].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	10107411
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[6].wlan[0].mac 	passedUpPk:count 	176831
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[6].wlan[0].mac 	passedUpPk:sum(packetBytes) 	192513817
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[6].wlan[0].mac 	rcvdPkFromLL:count 	5361132
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[6].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2479032092
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[6].wlan[0].mac 	sentDownPk:count 	254597
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[6].wlan[0].mac 	sentDownPk:sum(packetBytes) 	12513394
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[6].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[6].wlan[0].radio 	lossRate:max 	0.16
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[6].wlan[0].radio 	lossRate:timeavg 	0.0080457885151439
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[6].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[6].wlan[0].radio 	radioState:count 	11242425
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[6].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[6].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[6].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[6].tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[6].tcpApp[0] 	numActiveSessions:timeavg 	0.40306794834879
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[6].tcpApp[0] 	numSessions:last 	193
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[6].tcpApp[0] 	sentPk:count 	193
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[6].tcpApp[0] 	sentPk:sum(packetBytes) 	193
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[6].tcpApp[0] 	rcvdPk:count 	193
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[6].tcpApp[0] 	rcvdPk:sum(packetBytes) 	176032029
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[6].tcpApp[0] 	endToEndDelay:histogram
+field count 193
+field mean 11.051174809108
+field stddev 14.203128622922
+field sum 2132.8767381578
+field sqrsum 62302.735314082
+field min 0.714983443985
+field max 78.77447128301
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-38.314760475527	0
+bin	-33.110794619592	0
+bin	-27.906828763657	0
+bin	-22.702862907722	0
+bin	-17.498897051787	0
+bin	-12.294931195852	0
+bin	-7.0909653399175	0
+bin	-1.8869994839825	98
+bin	3.3169663719525	19
+bin	8.5209322278875	21
+bin	13.724898083823	16
+bin	18.928863939758	5
+bin	24.132829795693	8
+bin	29.336795651627	4
+bin	34.540761507563	11
+bin	39.744727363498	7
+bin	44.948693219432	1
+bin	50.152659075367	1
+bin	55.356624931302	0
+bin	60.560590787238	0
+bin	65.764556643172	1
+bin	70.968522499107	0
+bin	76.172488355043	1
+bin	81.376454210977	0
+bin	86.580420066912	0
+bin	91.784385922847	0
+bin	96.988351778782	0
+bin	102.19231763472	0
+bin	107.39628349065	0
+bin	112.60024934659	0
+bin	117.80421520252	0
+scalar University.whttpStudents[7].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar University.whttpStudents[7].networkLayer.arp 	sentReply:count 	41
+attr title  "ARP replies sent, count"
+scalar University.whttpStudents[7].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar University.whttpStudents[7].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whttpStudents[7].networkLayer.arp 	completedARPResolution:count 	424
+attr title  "ARP completed resolutions, count"
+scalar University.whttpStudents[7].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[7].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[7].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[7].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[7].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whttpStudents[7].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whttpStudents[7].wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[7].wlan[0].outputHook[0] 	"total packets" 	120846
+scalar University.whttpStudents[7].wlan[0].outputHook[0] 	"total bits" 	38680144
+scalar University.whttpStudents[7].wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	7156.3630204475
+scalar University.whttpStudents[7].wlan[0].outputHook[0] 	"avg packets/s" 	22.358185780513
+scalar University.whttpStudents[7].wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whttpStudents[7].wlan[0].inputHook[0] 	"total packets" 	121050
+scalar University.whttpStudents[7].wlan[0].inputHook[0] 	"total bits" 	1436804968
+scalar University.whttpStudents[7].wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	265828.84336187
+scalar University.whttpStudents[7].wlan[0].inputHook[0] 	"avg packets/s" 	22.395928609396
+scalar University.whttpStudents[7].wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whttpStudents[7].wlan[0].agent 	acceptConfirm:count 	0
+attr title  "accepted confirms, count"
+scalar University.whttpStudents[7].wlan[0].agent 	sentRequest:count 	0
+attr title  "sent requests, count"
+scalar University.whttpStudents[7].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whttpStudents[7].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whttpStudents[7].wlan[0].mgmt 	dataQueueLen:max 	11
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whttpStudents[7].wlan[0].mgmt 	dataQueueLen:timeavg 	0.0037305624141983
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whttpStudents[7].wlan[0].mac 	"number of received packets" 	120622
+scalar University.whttpStudents[7].wlan[0].mac 	"number of collisions" 	87901
+scalar University.whttpStudents[7].wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whttpStudents[7].wlan[0].mac 	"number of retry for AC 0" 	8576
+scalar University.whttpStudents[7].wlan[0].mac 	"sent and received bits" 	79285616
+scalar University.whttpStudents[7].wlan[0].mac 	"sent packet within AC 0" 	120849
+scalar University.whttpStudents[7].wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whttpStudents[7].wlan[0].mac 	"sentWithoutRetry AC 0" 	112317
+scalar University.whttpStudents[7].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whttpStudents[7].wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whttpStudents[7].wlan[0].mac 	rcvdPkFromHL:count 	120846
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whttpStudents[7].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	9910550
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whttpStudents[7].wlan[0].mac 	passedUpPk:count 	174825
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whttpStudents[7].wlan[0].mac 	passedUpPk:sum(packetBytes) 	188879135
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whttpStudents[7].wlan[0].mac 	rcvdPkFromLL:count 	5365689
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whttpStudents[7].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2479238923
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whttpStudents[7].wlan[0].mac 	sentDownPk:count 	250040
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whttpStudents[7].wlan[0].mac 	sentDownPk:sum(packetBytes) 	12302514
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whttpStudents[7].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whttpStudents[7].wlan[0].radio 	lossRate:max 	0.14
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whttpStudents[7].wlan[0].radio 	lossRate:timeavg 	0.0080027039552758
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whttpStudents[7].wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whttpStudents[7].wlan[0].radio 	radioState:count 	11242750
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whttpStudents[7].wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whttpStudents[7].wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whttpStudents[7].wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whttpStudents[7].tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whttpStudents[7].tcpApp[0] 	numActiveSessions:timeavg 	0.45400000198608
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whttpStudents[7].tcpApp[0] 	numSessions:last 	186
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whttpStudents[7].tcpApp[0] 	sentPk:count 	186
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whttpStudents[7].tcpApp[0] 	sentPk:sum(packetBytes) 	186
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whttpStudents[7].tcpApp[0] 	rcvdPk:count 	186
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whttpStudents[7].tcpApp[0] 	rcvdPk:sum(packetBytes) 	172170773
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whttpStudents[7].tcpApp[0] 	endToEndDelay:histogram
+field count 186
+field mean 12.951367003913
+field stddev 15.745605551502
+field sum 2408.9542627278
+field sqrsum 77065.208176173
+field min 0.533395070799
+field max 70.010701457277
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-34.20525812244	0
+bin	-29.573437696675	0
+bin	-24.94161727091	0
+bin	-20.309796845144	0
+bin	-15.677976419379	0
+bin	-11.046155993614	0
+bin	-6.4143355678488	0
+bin	-1.7825151420836	86
+bin	2.8493052836816	20
+bin	7.4811257094468	15
+bin	12.112946135212	13
+bin	16.744766560977	5
+bin	21.376586986742	7
+bin	26.008407412508	9
+bin	30.640227838273	6
+bin	35.272048264038	10
+bin	39.903868689803	8
+bin	44.535689115568	3
+bin	49.167509541334	0
+bin	53.799329967099	0
+bin	58.431150392864	1
+bin	63.062970818629	2
+bin	67.694791244394	1
+bin	72.32661167016	0
+bin	76.958432095925	0
+bin	81.59025252169	0
+bin	86.222072947455	0
+bin	90.85389337322	0
+bin	95.485713798986	0
+bin	100.11753422475	0
+bin	104.74935465052	0
+scalar University.whostVideoConf.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.whostVideoConf.networkLayer.arp 	sentReply:count 	45
+attr title  "ARP replies sent, count"
+scalar University.whostVideoConf.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.whostVideoConf.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whostVideoConf.networkLayer.arp 	completedARPResolution:count 	422
+attr title  "ARP completed resolutions, count"
+scalar University.whostVideoConf.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whostVideoConf.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whostVideoConf.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whostVideoConf.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whostVideoConf.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whostVideoConf.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whostVideoConf.wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whostVideoConf.wlan[0].outputHook[0] 	"total packets" 	135172
+scalar University.whostVideoConf.wlan[0].outputHook[0] 	"total bits" 	1543678528
+scalar University.whostVideoConf.wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	285601.93398551
+scalar University.whostVideoConf.wlan[0].outputHook[0] 	"avg packets/s" 	25.008694440226
+scalar University.whostVideoConf.wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whostVideoConf.wlan[0].inputHook[0] 	"total packets" 	134202
+scalar University.whostVideoConf.wlan[0].inputHook[0] 	"total bits" 	1528285248
+scalar University.whostVideoConf.wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	282753.96372574
+scalar University.whostVideoConf.wlan[0].inputHook[0] 	"avg packets/s" 	24.829230989163
+scalar University.whostVideoConf.wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whostVideoConf.wlan[0].agent 	acceptConfirm:count 	0
+attr title  "accepted confirms, count"
+scalar University.whostVideoConf.wlan[0].agent 	sentRequest:count 	0
+attr title  "sent requests, count"
+scalar University.whostVideoConf.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whostVideoConf.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whostVideoConf.wlan[0].mgmt 	dataQueueLen:max 	2
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whostVideoConf.wlan[0].mgmt 	dataQueueLen:timeavg 	9.2702493762554e-05
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whostVideoConf.wlan[0].mac 	"number of received packets" 	133775
+scalar University.whostVideoConf.wlan[0].mac 	"number of collisions" 	87433
+scalar University.whostVideoConf.wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whostVideoConf.wlan[0].mac 	"number of retry for AC 0" 	9097
+scalar University.whostVideoConf.wlan[0].mac 	"sent and received bits" 	1589096976
+scalar University.whostVideoConf.wlan[0].mac 	"sent packet within AC 0" 	135174
+scalar University.whostVideoConf.wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whostVideoConf.wlan[0].mac 	"sentWithoutRetry AC 0" 	128049
+scalar University.whostVideoConf.wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.whostVideoConf.wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whostVideoConf.wlan[0].mac 	rcvdPkFromHL:count 	135045
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whostVideoConf.wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	198453150
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whostVideoConf.wlan[0].mac 	passedUpPk:count 	187802
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whostVideoConf.wlan[0].mac 	passedUpPk:sum(packetBytes) 	200683080
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whostVideoConf.wlan[0].mac 	rcvdPkFromLL:count 	5337952
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whostVideoConf.wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2285671827
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whostVideoConf.wlan[0].mac 	sentDownPk:count 	277777
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whostVideoConf.wlan[0].mac 	sentDownPk:sum(packetBytes) 	213676302
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whostVideoConf.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whostVideoConf.wlan[0].radio 	lossRate:max 	0.16
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whostVideoConf.wlan[0].radio 	lossRate:timeavg 	0.0079922533951571
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whostVideoConf.wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whostVideoConf.wlan[0].radio 	radioState:count 	11243451
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whostVideoConf.wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whostVideoConf.wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whostVideoConf.wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whostVideoConf.udpApp[0] 	"packets sent" 	135125
+scalar University.whostVideoConf.udpApp[0] 	"packets received" 	133770
+scalar University.whostVideoConf.udpApp[0] 	sentPk:count 	135000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whostVideoConf.udpApp[0] 	sentPk:sum(packetBytes) 	189000000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whostVideoConf.udpApp[0] 	rcvdPk:count 	133648
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whostVideoConf.udpApp[0] 	rcvdPk:sum(packetBytes) 	187107200
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whostVideoConf.udpApp[0] 	rcvdPkLifetime:stats
+field count 133648
+field mean 0.023156188955725
+field stddev 0.023210365728602
+field sum 3094.7783415547
+field sqrsum 143.66172786508
+field min 0.016323964295
+field max 0.200037549874
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar University.whostVideoConf.udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar University.whostVideoConf.udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar University.whostVideoConf.udp 	passedUpPk:count 	133648
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar University.whostVideoConf.udp 	sentPk:count 	135000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whostVideoConf.udp 	sentPk:sum(packetBytes) 	190080000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whostVideoConf.udp 	rcvdPk:count 	133648
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whostVideoConf.udp 	rcvdPk:sum(packetBytes) 	188176384
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar University.whostFTP.networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar University.whostFTP.networkLayer.arp 	sentReply:count 	44
+attr title  "ARP replies sent, count"
+scalar University.whostFTP.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar University.whostFTP.networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar University.whostFTP.networkLayer.arp 	completedARPResolution:count 	421
+attr title  "ARP completed resolutions, count"
+scalar University.whostFTP.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whostFTP.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whostFTP.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whostFTP.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whostFTP.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.whostFTP.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.whostFTP.wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.whostFTP.wlan[0].outputHook[0] 	"total packets" 	322718
+scalar University.whostFTP.wlan[0].outputHook[0] 	"total bits" 	3845668672
+scalar University.whostFTP.wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	711502.03249487
+scalar University.whostFTP.wlan[0].outputHook[0] 	"avg packets/s" 	59.707305154623
+scalar University.whostFTP.wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.whostFTP.wlan[0].inputHook[0] 	"total packets" 	269440
+scalar University.whostFTP.wlan[0].inputHook[0] 	"total bits" 	86205864
+scalar University.whostFTP.wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	15949.280263158
+scalar University.whostFTP.wlan[0].inputHook[0] 	"avg packets/s" 	49.850136344616
+scalar University.whostFTP.wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar University.whostFTP.wlan[0].agent 	acceptConfirm:count 	3
+attr title  "accepted confirms, count"
+scalar University.whostFTP.wlan[0].agent 	sentRequest:count 	3
+attr title  "sent requests, count"
+scalar University.whostFTP.wlan[0].mgmt 	dropPkByQueue:count 	44465
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.whostFTP.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	68478894
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.whostFTP.wlan[0].mgmt 	dataQueueLen:max 	50
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.whostFTP.wlan[0].mgmt 	dataQueueLen:timeavg 	0.72220664006214
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.whostFTP.wlan[0].mac 	"number of received packets" 	269187
+scalar University.whostFTP.wlan[0].mac 	"number of collisions" 	70435
+scalar University.whostFTP.wlan[0].mac 	"number of internal collisions" 	0
+scalar University.whostFTP.wlan[0].mac 	"number of retry for AC 0" 	26442
+scalar University.whostFTP.wlan[0].mac 	"sent and received bits" 	3405606496
+scalar University.whostFTP.wlan[0].mac 	"sent packet within AC 0" 	278204
+scalar University.whostFTP.wlan[0].mac 	"sent in TXOP " 	0
+scalar University.whostFTP.wlan[0].mac 	"sentWithoutRetry AC 0" 	255736
+scalar University.whostFTP.wlan[0].mac 	"numGivenUp AC 0" 	2
+scalar University.whostFTP.wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.whostFTP.wlan[0].mac 	rcvdPkFromHL:count 	277860
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.whostFTP.wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	425177680
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.whostFTP.wlan[0].mac 	passedUpPk:count 	322759
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.whostFTP.wlan[0].mac 	passedUpPk:sum(packetBytes) 	26250715
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.whostFTP.wlan[0].mac 	rcvdPkFromLL:count 	5042519
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.whostFTP.wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2042797360
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.whostFTP.wlan[0].mac 	sentDownPk:count 	573210
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.whostFTP.wlan[0].mac 	sentDownPk:sum(packetBytes) 	469573668
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.whostFTP.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.whostFTP.wlan[0].radio 	lossRate:max 	0.14
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.whostFTP.wlan[0].radio 	lossRate:timeavg 	0.0065435674277497
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.whostFTP.wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.whostFTP.wlan[0].radio 	radioState:count 	11248735
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.whostFTP.wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.whostFTP.wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.whostFTP.wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.whostFTP.tcpApp[0] 	numActiveSessions:max 	0
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar University.whostFTP.tcpApp[0] 	numActiveSessions:timeavg 	-0.013116720278211
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar University.whostFTP.tcpApp[0] 	numSessions:last 	373
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar University.whostFTP.tcpApp[0] 	sentPk:count 	373
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar University.whostFTP.tcpApp[0] 	sentPk:sum(packetBytes) 	391118848
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar University.whostFTP.tcpApp[0] 	rcvdPk:count 	373
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar University.whostFTP.tcpApp[0] 	rcvdPk:sum(packetBytes) 	373
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic University.whostFTP.tcpApp[0] 	endToEndDelay:histogram
+field count 373
+field mean 14.099990926911
+field stddev 5.7683655651679
+field sum 5259.2966157378
+field sqrsum 86533.977924987
+field min 3.638631047006
+field max 41.778028186093
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-10.533250999266	0
+bin	-8.5540722110529	0
+bin	-6.5748934228399	0
+bin	-4.5957146346268	0
+bin	-2.6165358464137	0
+bin	-0.63735705820067	0
+bin	1.3418217300124	0
+bin	3.3210005182255	16
+bin	5.3001793064385	20
+bin	7.2793580946516	35
+bin	9.2585368828647	41
+bin	11.237715671078	61
+bin	13.216894459291	67
+bin	15.196073247504	53
+bin	17.175252035717	31
+bin	19.15443082393	16
+bin	21.133609612143	6
+bin	23.112788400356	6
+bin	25.091967188569	6
+bin	27.071145976782	7
+bin	29.050324764995	2
+bin	31.029503553208	1
+bin	33.008682341421	3
+bin	34.987861129635	0
+bin	36.967039917848	1
+bin	38.946218706061	0
+bin	40.925397494274	1
+bin	42.904576282487	0
+bin	44.8837550707	0
+bin	46.862933858913	0
+bin	48.842112647126	0
+scalar University.accessPoint.relayUnit 	"number of received BPDUs from STP module" 	0
+scalar University.accessPoint.relayUnit 	"number of received frames from network (including BPDUs)" 	2751055
+scalar University.accessPoint.relayUnit 	"number of dropped frames (including BPDUs)" 	0
+scalar University.accessPoint.relayUnit 	"number of delivered BPDUs to the STP module" 	0
+scalar University.accessPoint.relayUnit 	"number of dispatched BPDU frames to the network" 	0
+scalar University.accessPoint.relayUnit 	"number of dispatched non-BDPU frames to the network" 	2751055
+scalar University.accessPoint.wlan[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.accessPoint.wlan[0].outputHook[0] 	"total packets" 	1377241
+scalar University.accessPoint.wlan[0].outputHook[0] 	"total bits" 	13321980208
+scalar University.accessPoint.wlan[0].outputHook[0] 	"avg throughput (bit/s)" 	2464751.0753751
+scalar University.accessPoint.wlan[0].outputHook[0] 	"avg packets/s" 	254.80868330387
+scalar University.accessPoint.wlan[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.accessPoint.wlan[0].inputHook[0] 	"total packets" 	1373814
+scalar University.accessPoint.wlan[0].inputHook[0] 	"total bits" 	5347917824
+scalar University.accessPoint.wlan[0].inputHook[0] 	"avg throughput (bit/s)" 	989438.95741612
+scalar University.accessPoint.wlan[0].inputHook[0] 	"avg packets/s" 	254.1746407814
+scalar University.accessPoint.wlan[0].mgmt 	dropPkByQueue:count 	15181
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar University.accessPoint.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	10934461
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar University.accessPoint.wlan[0].mgmt 	dataQueueLen:max 	50
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar University.accessPoint.wlan[0].mgmt 	dataQueueLen:timeavg 	1.9095655754261
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar University.accessPoint.wlan[0].mac 	"number of received packets" 	1373856
+scalar University.accessPoint.wlan[0].mac 	"number of collisions" 	4610
+scalar University.accessPoint.wlan[0].mac 	"number of internal collisions" 	0
+scalar University.accessPoint.wlan[0].mac 	"number of retry for AC 0" 	91642
+scalar University.accessPoint.wlan[0].mac 	"sent and received bits" 	13518392984
+scalar University.accessPoint.wlan[0].mac 	"sent packet within AC 0" 	1361523
+scalar University.accessPoint.wlan[0].mac 	"sent in TXOP " 	0
+scalar University.accessPoint.wlan[0].mac 	"sentWithoutRetry AC 0" 	1274219
+scalar University.accessPoint.wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar University.accessPoint.wlan[0].mac 	"numDropped AC 0" 	0
+scalar University.accessPoint.wlan[0].mac 	rcvdPkFromHL:count 	1414608
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar University.accessPoint.wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	1688136308
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar University.accessPoint.wlan[0].mac 	passedUpPk:count 	1372400
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.accessPoint.wlan[0].mac 	passedUpPk:sum(packetBytes) 	702316359
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.accessPoint.wlan[0].mac 	rcvdPkFromLL:count 	2737180
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar University.accessPoint.wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	723496098
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar University.accessPoint.wlan[0].mac 	sentDownPk:count 	2878549
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar University.accessPoint.wlan[0].mac 	sentDownPk:sum(packetBytes) 	1819021195
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar University.accessPoint.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar University.accessPoint.wlan[0].radio 	lossRate:max 	0.12
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar University.accessPoint.wlan[0].radio 	lossRate:timeavg 	0.00093390834331839
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic University.accessPoint.wlan[0].radio 	channelNo:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar University.accessPoint.wlan[0].radio 	radioState:count 	11306583
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar University.accessPoint.wlan[0].radio 	bitrate:min 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar University.accessPoint.wlan[0].radio 	bitrate:max 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar University.accessPoint.wlan[0].radio 	bitrate:timeavg 	-nan
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar University.accessPoint.eth[0].outputHook[0] 	duration 	5405.0002619321
+scalar University.accessPoint.eth[0].outputHook[0] 	"total packets" 	1373814
+scalar University.accessPoint.eth[0].outputHook[0] 	"total bits" 	5347917824
+scalar University.accessPoint.eth[0].outputHook[0] 	"avg throughput (bit/s)" 	989438.95741612
+scalar University.accessPoint.eth[0].outputHook[0] 	"avg packets/s" 	254.1746407814
+scalar University.accessPoint.eth[0].inputHook[0] 	duration 	5405.0002619321
+scalar University.accessPoint.eth[0].inputHook[0] 	"total packets" 	1377241
+scalar University.accessPoint.eth[0].inputHook[0] 	"total bits" 	13321980208
+scalar University.accessPoint.eth[0].inputHook[0] 	"avg throughput (bit/s)" 	2464751.0753751
+scalar University.accessPoint.eth[0].inputHook[0] 	"avg packets/s" 	254.80868330387
+scalar University.accessPoint.eth[0].mac 	"simulated time" 	5405.0002619321
+scalar University.accessPoint.eth[0].mac 	full-duplex 	1
+scalar University.accessPoint.eth[0].mac 	"frames/sec sent" 	254.1746407814
+scalar University.accessPoint.eth[0].mac 	"frames/sec rcvd" 	254.80868330387
+scalar University.accessPoint.eth[0].mac 	"bits/sec sent" 	989438.95741612
+scalar University.accessPoint.eth[0].mac 	"bits/sec rcvd" 	2464751.0753751
+scalar University.accessPoint.eth[0].mac 	"rx channel idle (%)" 	97.518941168894
+scalar University.accessPoint.eth[0].mac 	"rx channel utilization (%)" 	2.4810588311056
+scalar University.accessPoint.eth[0].mac 	rxPkFromHL:count 	1372386
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar University.accessPoint.eth[0].mac 	rxPkFromHL:sum(packetBytes) 	667738160
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar University.accessPoint.eth[0].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar University.accessPoint.eth[0].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar University.accessPoint.eth[0].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar University.accessPoint.eth[0].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar University.accessPoint.eth[0].mac 	txPk:count 	1372386
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar University.accessPoint.eth[0].mac 	txPk:sum(packetBytes) 	667738160
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar University.accessPoint.eth[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar University.accessPoint.eth[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar University.accessPoint.eth[0].mac 	passedUpPk:count 	1375770
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar University.accessPoint.eth[0].mac 	passedUpPk:sum(packetBytes) 	1663537785
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar University.accessPoint.eth[0].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar University.accessPoint.eth[0].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar University.accessPoint.eth[0].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar University.accessPoint.eth[0].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar University.accessPoint.eth[0].mac 	rxPkOk:count 	1375770
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar University.accessPoint.eth[0].mac 	rxPkOk:sum(packetBytes) 	1663537785
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
