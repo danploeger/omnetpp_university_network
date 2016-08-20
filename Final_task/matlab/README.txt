@@ -22,10 +22,12 @@ alpha = @default: 0.05						% significance level
         folderName, ...
         cctvOn, ...
         repeat, ...
-        acceptableDelay)
+        acceptableDelay, ...
+        warmupPeriod))
 		
 		
 folderName = @default: '10on';		% subfolder name within the script folder
+warmupPeriod = @default: 5;	
 acceptableDelay = @default: 0.1;	% 100 ms delay
 repeat = @default: 10;            	% Number of simulation runs with different seed
 cctvOn = @default: 1;	

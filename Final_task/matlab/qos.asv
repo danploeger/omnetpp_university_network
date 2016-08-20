@@ -1,15 +1,17 @@
-function [totalLossRate, exceededDelayRate, droppedPacketRate, avgDelay] = qos(...
+function [videoConfDownload, videoConfUpload, cctv] = qos(...
         folderName, ...
         cctvOn, ...
         repeat, ...
-        acceptableDelay)
-    %QOSCALCULATION
+        acceptableDelay, ...
+        warmupPeriod)
+    %QoSCALCULATION
     %
 
     %   Daniel Ploeger, 2016/08/19 17:09:00
 
     %% Initialize variables.
     if nargin < 2
+        warmupPeriod = 5;
         acceptableDelay = 0.1;  % 100 ms delay
         repeat = 10;            % Number of simulation runs with different seed
         cctvOn = 1;
@@ -21,21 +23,21 @@ function [totalLossRate, exceededDelayRate, droppedPacketRate, avgDelay] = qos(.
     %% Data Import
     path = strcat('qos/', folderName, '/');
 
-    videoConfSimTime=cell(repeat,1);
-    videoConfE2eDelay=cell(repeat,1);
+    videoConfSimTime = cell(repeat,1);
+    videoConfE2eDelay = cell(repeat,1);
     for i = 1:repeat
         [videoConfSimTime{i}, videoConfE2eDelay{i}] = ...
             rcvdPkLifetimeVectorImport(strcat(path, 'whostVideoConf_rcvdPkLifetime-', num2str(i), '.csv'));
     end
-    profLaptopSimTime=cell(repeat,1);
-    profLaptopE2eDelay=cell(repeat,1);
+    profLaptopSimTime = cell(repeat,1);
+    profLaptopE2eDelay = cell(repeat,1);
     for i = 1:repeat
         [profLaptopSimTime{i}, profLaptopE2eDelay{i}] = ...
             rcvdPkLifetimeVectorImport(strcat(path, 'profLaptop_rcvdPkLifetime-', num2str(i), '.csv'));
     end
     if cctvOn == 1
-        cctvSimTime=cell(repeat,1);
-        cctvE2eDelay=cell(repeat,1);
+        cctvSimTime = cell(repeat,1);
+        cctvE2eDelay = cell(repeat,1);
         for i = 1:repeat
             [cctvSimTime{i}, cctvE2eDelay{i}] = ...
                 rcvdPkLifetimeVectorImport(strcat(path, 'ccTVMonitoringHost_endToEndDelay-', num2str(i), '.csv'));
@@ -67,11 +69,11 @@ function [totalLossRate, exceededDelayRate, droppedPacketRate, avgDelay] = qos(.
     
     %% Delay CCTV
     if cctvOn == 1
-    [cctvExceededDelayRate, cctvUploadAvgDelay] = calcDelay(...
+    [cctvExceededDelayRate, cctvAvgDelay] = calcDelay(...
         repeat, cctvE2eDelay, acceptableDelay);        
     else
-        cctvExceededDelayRate = double(NaN);
-        cctvUploadAvgDelay = double(NaN);
+        cctvExceededDelayRate(1:repeat) = double(NaN);
+        cctvAvgDelay(1:repeat) = double(NaN);
     end
     
     %% Nested function for delay calculation
@@ -93,42 +95,35 @@ function [totalLossRate, exceededDelayRate, droppedPacketRate, avgDelay] = qos(.
 
     %% Drops download profLaptop -> whostVideoConf
     videoConfDownloadDroppedPacketRate = calcDroppedPacketRate(...
-        repeat, profLaptopSentPkSum, videoConfDownloadAvgDelay, videoConfSimTime, whostVideoConfRcvdPkSum);
+        repeat, profLaptopSentPkSum, videoConfDownloadAvgDelay, videoConfSimTime, whostVideoConfRcvdPkSum, warmupPeriod);
     
     %% Drops upload whostVideoConf -> profLaptop
     videoConfUploadDroppedPacketRate = calcDroppedPacketRate(...
-        repeat, whostVideoConfSentPkSum, videoConfUploadAvgDelay, profLaptopSimTime, profLaptopRcvdPkSum);
+        repeat, whostVideoConfSentPkSum, videoConfUploadAvgDelay, profLaptopSimTime, profLaptopRcvdPkSum, warmupPeriod);
     
     %% Drops CCTV
     if cctvOn == 1
     cctvDroppedPacketRate = calcDroppedPacketRate(...
-        repeat, cctvSentPkSum, cctvUploadAvgDelay, cctvSimTime, cctvMonitoringHostRcvdPkSum);     
+        repeat, cctvSentPkSum, cctvAvgDelay, cctvSimTime, cctvMonitoringHostRcvdPkSum, warmupPeriod);     
     else
-        cctvDroppedPacketRate = double(NaN);
+        cctvDroppedPacketRate(1:repeat) = double(NaN);
     end
     
     %% Nested function for packet drop calculation
-    function droppedPacketRate = calcDroppedPacketRate(repeat, sentPkSum, avgDelay, simTime, rcvdPkSum)
+    function droppedPacketRate = calcDroppedPacketRate(repeat, sentPkSum, avgDelay, simTime, rcvdPkSum, warmupPeriod)
         sentPkPerPkLifetime(1:repeat) = double(NaN);
         droppedPacketRate(1:repeat) = double(NaN);
         for j = 1:repeat
             % Subtract packets still in the pipeline at sim-time end
-            sentPkPerPkLifetime(j) = sentPkSum(j) * avgDelay(j) / max(simTime{j}); 
+            sentPkPerPkLifetime(j) = sentPkSum(j) * avgDelay(j) / (max(simTime{j} - warmupPeriod)); 
             droppedPacketRate(j) = (sentPkSum(j) - rcvdPkSum(j) - sentPkPerPkLifetime(j)) ...
                 / sentPkSum(j);
+            % Remove 
+            if droppedPacketRate(j) < 0
+                droppedPacketRate(j) = 0;
+            end
         end
     end
-%     %% Drops download profLaptop -> whostVideoConf
-%     function droppedPacketRate = calcDroppedPacketRate(repeat, profLaptopSentPkSum, avgDelay, videoConfSimTime, whostVideoConfRcvdPkSum)
-%         sentPkPerPkLifetime(1:repeat) = double(Inf);
-%         droppedPacketRate(1:repeat) = double(Inf);
-%         for j = 1:repeat
-%             % Subtract packets still in the pipeline at sim-time end
-%             sentPkPerPkLifetime(j) = profLaptopSentPkSum(j) * avgDelay(j) / max(videoConfSimTime{j}); 
-%             droppedPacketRate(j) = (profLaptopSentPkSum(j) - whostVideoConfRcvdPkSum(j) - sentPkPerPkLifetime(j)) ...
-%                 / profLaptopSentPkSum(j);
-%         end
-%     end
 
     %% Sum up
     videoConfDownloadLossRate(1:repeat) = double(NaN);
@@ -139,32 +134,63 @@ function [totalLossRate, exceededDelayRate, droppedPacketRate, avgDelay] = qos(.
     for i = 1:repeat
         videoConfUploadLossRate(i) = videoConfUploadExceededDelayRate(i) + videoConfUploadDroppedPacketRate(i);
     end
-    if cctvOn == 1
         cctvLossRate(1:repeat) = double(NaN);
+    if cctvOn == 1
         for i = 1:repeat
             cctvLossRate(i) = cctvExceededDelayRate(i) + cctvDroppedPacketRate(i);
-        end   
-    else
-        cctvLossRate = double(NaN);
+        end
     end
     
-    videoConfDownload = cell(4,1);
-    videoConfDownload{1} = videoConfDownloadLossRate;
-    videoConfDownload{2} = videoConfDownloadExceededDelayRate;
-    videoConfDownload{3} = videoConfDownloadDroppedPacketRate;
-    videoConfDownload{4} = videoConfDownloadAvgDelay;
-    videoConfUpload = cell(4,1);
-    videoConfUpload{1} = videoConfUploadLossRate;
-    videoConfUpload{2} = videoConfUploadExceededDelayRate;
-    videoConfUpload{3} = videoConfUploadDroppedPacketRate;
-    videoConfUpload{4} = videoConfUploadAvgDelay;
+    %% Function output
+    videoConfDownload = struct('videoConfDownloadLossRate', videoConfDownloadLossRate, ...
+        'videoConfDownloadExceededDelayRate', videoConfDownloadExceededDelayRate, ...
+        'videoConfDownloadDroppedPacketRate', videoConfDownloadDroppedPacketRate, ...
+        'videoConfDownloadAvgDelay', videoConfDownloadAvgDelay);
+    videoConfUpload = struct('videoConfUploadLossRate', videoConfUploadLossRate, ...
+        'videoConfUploadExceededDelayRate', videoConfUploadExceededDelayRate, ...
+        'videoConfUploadDroppedPacketRate', videoConfUploadDroppedPacketRate, ...
+        'videoConfUploadAvgDelay', videoConfUploadAvgDelay);   
     if cctvOn == 1
-    cctv = cell(4,1);
-    cctv{1} = cctvLossRate;
-    cctv{2} = cctvDelayRate;
-    cctv{3} = cctvDroppedPacketRate;
-    cctv{4} = cctvAvgDelay;
+        cctv = struct('cctvLossRate', cctvLossRate, ...
+            'cctvExceededDelayRate', cctvExceededDelayRate, ...
+            'cctvDroppedPacketRate', cctvDroppedPacketRate, ...
+            'cctvAvgDelay', cctvAvgDelay);
     else
-        cctv = [];
+        cctv = struct('cctvLossRate', zeros(1,repeat), ...
+            'cctvExceededDelayRate', zeros(1,repeat), ...
+            'cctvDroppedPacketRate', zeros(1,repeat), ...
+            'cctvAvgDelay', zeros(1,repeat));
     end
+    
+    %% Data export
+    A = [videoConfDownloadLossRate; ...
+        videoConfDownloadExceededDelayRate; ...
+        videoConfDownloadDroppedPacketRate; ...
+        videoConfDownloadAvgDelay; ...
+        videoConfUploadLossRate; ...
+        videoConfUploadExceededDelayRate; ...
+        videoConfUploadDroppedPacketRate; ...
+        videoConfUploadAvgDelay; ...
+        cctvLossRate; ...
+        cctvExceededDelayRate; ...
+        cctvDroppedPacketRate; ...
+        cctvAvgDelay ...
+        ]; 
+    
+    T = array2table(A','VariableNames',{ ...
+        'videoConfDownloadLossRate', ...
+        'videoConfDownloadExceededDelayRate', ...
+        'videoConfDownloadDroppedPacketRate', ...
+        'videoConfDownloadAvgDelay', ...
+        'videoConfUploadLossRate', ...
+        'videoConfUploadExceededDelayRate', ...
+        'videoConfUploadDroppedPacketRate', ...
+        'videoConfUploadAvgDelay', ...
+        'cctvLossRate', ...
+        'cctvExceededDelayRate', ...
+        'cctvDroppedPacketRate', ...
+        'cctvAvgDelay' ...
+        });
+    
+    writetable(T,strcat(path, '_results.xls'));
 end
