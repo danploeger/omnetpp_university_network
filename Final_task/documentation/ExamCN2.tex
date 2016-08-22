@@ -31,8 +31,8 @@ In the following, the new network configuration as depicted in \ref{fig:network}
     \caption{University Network}
 \end{figure}
 
-\section{General Discription of the Main Components of the Network}
-The network core is a set up with 2 Routers, Main Router (M) and Remote Router (R), connected with a Point-to-Point Link. 
+\section{General Description of the Network's Main Components\\ {\large Nina Piontek}}
+The network core is a set up with 2 Routers, Main Router and Remote Router, connected with a Point-to-Point Link. 
 Towards the Main Router the Porters Office' Computer and the Computer of the Professor giving the remote Lecture are connected.
 The Main Router is the Gateway for the shared Internet Connection of the University.
 
@@ -42,7 +42,7 @@ is connected via WLAN as well.
 
 
 
-\section{Network Services and Requirements}
+\section{Network Services and Requirements\\ {\large Nina Piontek}}
 
 In this set up the Network performance regarding the Video Lecture is evaluated with the following Services in
 use:\\
@@ -61,12 +61,13 @@ The Criteria are:\\
 \end{enumerate}
 
 \chapter{Network Modeling}
-\section{General Assumptions on the Model}
+\section{General Assumptions on the Model\\ {\large Nina Piontek}}
 Since the overall Goal is to evaluate the network performance regarding the Qos during the Video Lecture, we will assume an assessment period
 of around 90 minutes. The WLAN at Channel 4 will in general be used by the Students, which surf the Web during the Video Lecture and the Student 
 who uploads a file. Optional the Camera will be turned on or switched off to evaluate the networks behavior with and without the additional
 traffic load.
-\subsection{HTTP Traffic}
+\subsection{HTTP Traffic\\ {\large Daniel Ploeger}}
+\label{chapter_http_traffic}
 In order to model the student web browsing behaviour in 
 a meaningful way, captured browsing statistics have been provided by the computer center in a trace file. 
 This chapter shortly explains the statistical behaviour behind the given HTTP 
@@ -85,7 +86,8 @@ This is a conservative approach and guarantees an upper bound in the distributio
  if the actual browsing behaviour uses smaller HTTP responses with a slightly higher
  probability, the QoS assumptions from the following chapters are going to be met 
 in practice as well.
-\subsection{Network Behaviour - General Expectations}
+\section{Network Behavior  Expectations without CCTV camera\\ {\large Nina Piontek}}
+
 \begin{minipage}[t]{0.5\textwidth}
 \begin{tabular}{|l|l|l|l|l|}
 \cline{1-4}
@@ -100,11 +102,12 @@ in practice as well.
  Main Router$\leftrightarrow $ Internet &100Mbit/s &HTTP& FTP \\ \cline{1-4}
 \end{tabular}
 \end{minipage}
+\section{Network Behavior  Expectations with CCTV camera\\ {\large Daniel Ploeger}}
 
 The point-to-point radio link between remote and main router has a data rate 
 of 12 Mbit/s and by this is the weakest single link within the proposed network. 
 All other connection speeds are multiples of this data rate. Since all data has 
-to pass this link, for this theoretical behaviour analysis it is considered to 
+to pass this link, for this theoretical behavior analysis it is considered to 
 be the network bottleneck.
 
 The network contains several applications which have their main impact either
@@ -117,7 +120,13 @@ equally. The video stream consumes 280 kbit/s for transmission of 1388 Bytes of
 payload plus 12 Byte RTP protocol headers. It does this every 40 ms and in both 
 directions.
 
-\section{Evaluation without Camera\\ {\large Nina Piontek}}
+\subsection{Upload Connection, Remote to Main Router}
+Aside from the video conference which uses 280 kbit/s, two more applications make use of the upload direction. Firstly, the CCTV camera sends 10 KB every 40 ms, which adds up to 2,000 kbit/s. The second application is the FTP upload. It tries to maximize network utilization and should therefore consume the biggest part of the remaining 9,720 kbit/s of the 12,000 kbit/s data rate (see figure XXY left).
+
+\subsection{Download Connection, Main to Remote Router}
+Apart from the video conference, the only application which makes use of the download direction is the web browsing. As stated before, web browsing is modeled as the download of files with a exponentially distributed size with a mean of 0,789 Mbyte (see chapter \ref{chapter_http_traffic}). The client's assumption states that a web browsing user waits a certain time before he downloads the next file. The waiting time is assumed to be exponentially distributed with a mean of 15 seconds. This leads to an expected average data rate of 420.8 kbit/s per user. Therefore, if all users download in a well-distributed way, up to 27 users are able to browse simultaneously via the network connection (see figure XXY right).
+
+\chapter{Evaluation without Camera \\ {\large Nina Piontek}}
 Since the default configuration for the Links is full-duplex, the performance of the Uplink and the Downlink is evaluated independently.
 
 When the Camera is turned off, the Point-to-Point Link to the Main Campus is shared between the FTP Upload and the Video Lecture (Video Conference).
@@ -125,7 +134,7 @@ Since the Video Conference is sending with a constant Data Rate of 280kbit/s, th
 11,72 Mbit/s can be used by the FTP Upload.
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.9\textwidth]{graphics-02.png}
+    \includegraphics[width=0.9\textwidth]{graphics-02.eps}
     \label{fig:g2}
     \caption{Utilization of the Radio Link without the Security Camera streaming}
 \end{figure}
@@ -134,34 +143,26 @@ On the Downlink the Data Rate of 12Mbit/s is shared between the Students browsin
 Since the Downlink is utilized by the Video Lecture by 280kbit/s , the remaining 11,7Mbit/s 
 can be theoretically used by the HTTP Service.
 
+\section{Simulation Results}
 
-
-
-\subsection{Simulation Results}
-
+Text.
 
 
 
 
+\chapter{Evaluation with Camera\\ {\large Daniel Ploeger}}
 
-\section{Expectations on the Network Behavior - with Camera}
-
+Text.
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.9\textwidth]{graphics-01.png}
+    \includegraphics[width=0.9\textwidth]{graphics-01.eps}
     \label{fig:g1}
     \caption{Utilization of the Radio Link with the Security Camera streaming}
 \end{figure}
-
-
-
-
-
-
-
-
-
-
-
 \end{document}          
+
+\chapter{Conclusion}
+
+Text.
+Text
