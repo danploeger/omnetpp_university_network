@@ -1,4 +1,5 @@
 Vectors
+First: sort by run number
 'Export Data' -> 'CSV...' -> save to folder 'matlab\qos\[folderName]'
 
 module(University.ccTVMonitoringHost.udpApp[0]) AND name(endToEndDelay:vector)
@@ -12,6 +13,7 @@ module(University.whostVideoConf.udpApp[0]) AND name(rcvdPkLifetime:vector)
 
 
 Scalars
+First: sort by run number
 'Copy to Clipboard' -> paste to notepad and save to folder 'matlab\qos\[folderName]\'
 z.B. 'matlab\qos\08on\'
 
@@ -35,4 +37,5 @@ whostVideoConf_sentPkSum.csv
 
 
 module(University.whttpStudents[*].tcpApp[0]) AND name("rcvdPk:sum(packetBytes)")
+
 module(University.whostFTP.tcpApp[0]) AND name("sentPk:sum(packetBytes)")

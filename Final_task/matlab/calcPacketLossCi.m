@@ -12,29 +12,29 @@ function calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
         cctvOn = 1;
     end
     if nargin < 1
-        maxNumberHttpUser = 1;
+        maxNumberHttpUser = 15;
     end
     
     warmupPeriod = 5;
     acceptableDelay = 0.1;  % 100 ms delay
-    if cctvOn == 1
-        cctvPath = 'on';
-    else 
-        cctvPath = 'off';
-    end
+%     if cctvOn == 1
+%         cctvPath = 'on';
+%     else 
+%         cctvPath = 'off';
+%     end
     
     %% Loop over number of HTTP user
     videoConfDownload = cell(1,maxNumberHttpUser + 1);
     videoConfUpload = cell(1,maxNumberHttpUser + 1);
     cctv = cell(1,maxNumberHttpUser + 1);
     for i = 1 : maxNumberHttpUser + 1
-        if i - 1 < 10
-            path = strcat('0', num2str(i - 1), cctvPath);
-        else
-            path = strcat(num2str(i - 1), cctvPath);
-        end
+%         if i - 1 < 10
+%             path = strcat('0', num2str(i - 1), cctvPath);
+%         else
+%             path = strcat(num2str(i - 1), cctvPath);
+%         end
         [videoConfDownload{i}, videoConfUpload{i}, cctv{i}] = qos(...
-            path, ...
+            i - 1, ...
             cctvOn, ...
             repeat, ...
             acceptableDelay, ...
@@ -80,6 +80,8 @@ function calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
     title(strcat('Confidence Intervals and Mean Values of the Video Conference Download for ', repeat, ' Runs'))
     xlabel('Number of HTTP users web browsing simultaneously')
     ylabel('Packet Loss Rate')
+    plotUpperBound = maxNumberHttpUser + 1;
+    set(figure(1), 'XLim', [0 plotUpperBound]);
     
     figure(2);
     for i = 1:maxNumberHttpUser + 1
@@ -105,4 +107,3 @@ function calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
     xlabel('Number of HTTP users web browsing simultaneously')
     ylabel('Packet Loss Rate')
 end
-
