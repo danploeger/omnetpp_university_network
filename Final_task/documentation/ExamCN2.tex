@@ -86,8 +86,7 @@ This is a conservative approach and guarantees an upper bound in the distributio
  probability, the QoS assumptions from the following chapters are going to be met 
 in practice as well.
 \subsection{Network Behaviour - General Expectations}
-
-\begin{minipage}[H]{\textwidth} 
+\begin{minipage}[t]{0.5\textwidth}
 \begin{tabular}{|l|l|l|l|l|}
 \cline{1-4}
  Link & Data Rate  & Downlink  & Uplink  \\ \cline{1-4}
@@ -118,28 +117,9 @@ equally. The video stream consumes 280 kbit/s for transmission of 1388 Bytes of
 payload plus 12 Byte RTP protocol headers. It does this every 40 ms and in both 
 directions.
 
-\section{Upload Connection, Remote to Main Router}
+\section{Evaluation without Camera\\ {\large Nina Piontek}}
+Since the default configuration for the Links is full-duplex, the performance of the Uplink and the Downlink is evaluated independently.
 
-Aside from the video conference which uses 280 kbit/s, two more applications make use of the upload direction. Firstly, the CCTV camera 
-sends 10 KB every 40 ms, which adds up to 2,000 kbit/s. The second application is the FTP upload. It tries to maximize 
-network utilization and should therefore consume the biggest part of the remaining 9,720 kbit/s of the 12,000 kbit/s data rate 
-(see figure XXY left).
-
-\section{Download Connection, Main to Remote Router}
-
-Apart from the video conference, the only application which makes use of the download direction is the web browsing. 
-As stated before, web browsing is modelled as the download of files with a exponentially distributed size with a mean of 
-0,789 Mbyte (see chapter section HTTPTRaffic). The client's assumption states that a web browsing user waits a certain time before he 
-downloads the next file. The waiting time is assumed to be exponentially distributed with a mean of 15 seconds. 
-This leads to an expected average data rate of 420.8 kbit/s per user. Therefore, if all users download in a well-distributed way, 
-up to 27 users are able to browse simultaneously via the network connection (see figure XXY right).
-
-
-\chapter{Simulation Results}
-\section{Without Camera\\ {\large Nina Piontek}}
-
-Since the default configuration for the Links is full-duplex, we evaluate the performance of the Uplink and the Downlink independently.
-\section{Expectations on Uplink}
 When the Camera is turned off, the Point-to-Point Link to the Main Campus is shared between the FTP Upload and the Video Lecture (Video Conference).
 Since the Video Conference is sending with a constant Data Rate of 280kbit/s, the remaining 
 11,72 Mbit/s can be used by the FTP Upload.
@@ -150,18 +130,21 @@ Since the Video Conference is sending with a constant Data Rate of 280kbit/s, th
     \caption{Utilization of the Radio Link without the Security Camera streaming}
 \end{figure}
 
-\section{Expecations on Downlink}
-
 On the Downlink the Data Rate of 12Mbit/s is shared between the Students browsing the Web (HTTP Service) and the Video Lecture (Video Conference).
 Since the Downlink is utilized by the Video Lecture by 280kbit/s , the remaining 11,7Mbit/s 
 can be theoretically used by the HTTP Service.
 
 
 
-\chapter{Expectations on the Network Behavior - with Camera}
+
+\subsection{Simulation Results}
 
 
 
+
+
+
+\section{Expectations on the Network Behavior - with Camera}
 
 
 \begin{figure}[!ht]
@@ -180,64 +163,5 @@ can be theoretically used by the HTTP Service.
 
 
 
-% The Network should be able to provide good quality of service regarding a situation where the traffic load is determined by the following 
-% services:
-% \begin{enumerate}
-%  \item Remote Video Lecture
-%  \item Surveillance of the Entrance
-%  \item WebBrowsing
-%  
-% \end{enumerate}
-% 
-% 
-% The Network should be able to provide good quality of service regarding a remote Video Lecture. The Network performance will be evaluated 
-% regarding 
-% 
-% 
-% 
-% 
-% 
-% 
-% Key Apects are:
-% \begin{enumerate}
-%  \item How many User can surf the Web 
-% \end{enumerate}
-% 
-% The considered situation is determined by the following assumptions:
-% 
-% \begin{enumerate}
-%  \item A
-% \end{enumerate}
-
-
-% 
-% 
-% 
-% \chapter{HTTP Service}
-% average download rate of the http client
-% how many students can use the web while the file is uploaded, the camera is streaming and the professor is giving the lecture, so that the
-% Qos  requirements ( delay, loss rate ) are still met?
-% \section{Expectations and theoretical Justification}
-% \section{Video Conference}
-% How do  the other apps influence the call.
-% Is it required to Pause the CCTV camera during the video lecture?
-% Is the Radio Link sufficient for the Video Call? Improvements of the Qos?
-% \subsection{Influence of CCTV Camera on Video Conference}
-% Where is the main bootleneck of the network, when the CCTV camera is turned on?
-% Where is the main bootleneck of the network, when the CCTV camera is turned off?
-% \subsubsection{Expectations and theoretical Justification}
-% Confidence Intervals 
-% \chapter{Simulation Results and Interpretation regarding the Expectations}
-% \section{Radio Link}
-% Is the radio link sufficient for all services to meet te Qos of all Apps?
-% \subsection{Expectations and theoretical Justification}
-% Confidence Intervals 
-% \subsection{Simulation Results and Interpretation regarding the Expectations}
-% 
-% \section{FTP Service}
-% average data rate of the ftp upload
-% \subsection{Expectations and theoretical Justification}
-% Confidence Intervals 
-% \subsection{Simulation Results and Interpretation regarding the Expectations}
 
 \end{document}          
