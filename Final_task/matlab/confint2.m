@@ -1,15 +1,17 @@
-function [ci_lower,ci_higher] = confint2(mean,user)
+function [ci_lower,ci_higher,samplemean] = confint2(mean,user)
 %Function to calculate the Confidence Interval for Avg. Throughput
 
 %Get samplesize
-m=length(mean);
+m=columns(mean);
 %Calculate the sample mean estimate y_m (mean  of all means)
 y_m=0;
 for i=1:m
 y_m=y_m+mean(i);
 end
-
 y_m=y_m/m;
+samplemean=y_m;     %Samplemean(aka avg Downloadrate über gesamtes 
+                    %Experiment mit bestimmter useranzahl)
+	            % ausgeben für plots zu task 4 
 
 %Computing Sample Variance S^2 used to estimate the population
 %parameter: avg.throughput.
@@ -29,8 +31,8 @@ ci_higher=y_m + zValue *sqrt(s_2)/sqrt(m);
 zValue=4.781;    % mit 99.9%iger sicherheit liegt der echte parameter in zukunft im CI
 ci2_lower =y_m-zValue *sqrt(s_2)/sqrt(m);
 ci2_higher=y_m + zValue *sqrt(s_2)/sqrt(m);
-x=ci2_higher -ci2_lower;
-% printf('CI fuer 10 runs ,%d user und 99.9  confidence level : %d \n',user,(ci2_higher - ci2_lower))
-% printf('CI fuer 10 runs ,%d user und 90 confidence level : %d \n',user,ci_higher -ci_lower)
+x=ci2_higher -ci2_lower
+printf("CI fuer 10 runs ,%d user und 99.9  confidence level : %d \n",user,(ci2_higher - ci2_lower))
+printf("CI fuer 10 runs ,%d user und 90 confidence level : %d \n",user,ci_higher -ci_lower)
 
 end
