@@ -236,7 +236,7 @@ function calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
             i, httpMean(i), 'xb');
         hold on
     end
-    legend('HTTP download confidence interval', 'HTTP download mean', 'Location', 'southeast')
+    legend('HTTP download confidence interval', 'HTTP upload mean', 'Location', 'southeast')
     title(strcat('Average Download Rate of Each Web Browsing User'))
     xlabel('Number of HTTP users web browsing simultaneously')
     ylabel('kbit/s')
@@ -252,20 +252,6 @@ function calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
     end
     legend('Packet drop confidence interval', 'Packet drop mean', 'Location', 'northwest')
     title(strcat('Radio Link Download Bytes Dropped (Main Router Output Queue)'))
-    xlabel('Number of HTTP users web browsing simultaneously')
-    ylabel('kbit/s')
-    ylim([0 inf])
-    
-    % Remote router
-    figure(7);
-    for i = 1:maxNumberHttpUser + 1
-        j = i - 1;
-        plot([j j], [rRouterDropLower(i) rRouterDropHigher(i)], 'b', ...
-            j, rRouterDropMean(i), 'xb');
-        hold on
-    end
-    legend('Packet drop confidence interval', 'Packet drop mean', 'Location', 'northwest')
-    title(strcat('Radio Link Upload Bytes Dropped (Remote Router Output Queue)'))
     xlabel('Number of HTTP users web browsing simultaneously')
     ylabel('kbit/s')
     ylim([0 inf])

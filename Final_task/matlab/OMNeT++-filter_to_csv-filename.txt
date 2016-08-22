@@ -39,3 +39,7 @@ whostVideoConf_sentPkSum.csv
 module(University.whttpStudents[*].tcpApp[0]) AND name("rcvdPk:sum(packetBytes)")
 
 module(University.whostFTP.tcpApp[0]) AND name("sentPk:sum(packetBytes)")
+
+University.mainR.ppp[0].queue AND dropPk:sum(packetBytes)
+
+University.remoteR.ppp[0].queue AND dropPk:sum(packetBytes)
