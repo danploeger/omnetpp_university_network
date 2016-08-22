@@ -1,4 +1,6 @@
-\documentclass[a4paper,10pt]{book}
+\documentclass[a4paper,10pt]{book}\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update} % only regenerate pdf files when eps file is newer
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -24,7 +26,7 @@ a point-to-point radio link should be implemented to ensure network connection.
 In the following, the new network configuration as depicted in \ref{fig:network} will be evaluated.
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.9\textwidth]{graphics-03.png}
+    \includegraphics[width=0.9\textwidth]{graphics-03.eps}
     \label{fig:network}
     \caption{University Network}
 \end{figure}
@@ -58,8 +60,8 @@ The Criteria are:\\
  \item There should only be a loss of data at most of 5$ \% $
 \end{enumerate}
 
-\chapter{Simulation}
-\section{Assumptions for the Model}
+\chapter{Network Modeling}
+\section{General Assumptions on the Model}
 Since the overall Goal is to evaluate the network performance regarding the Qos during the Video Lecture, we will assume an assessment period
 of around 90 minutes. The WLAN at Channel 4 will in general be used by the Students, which surf the Web during the Video Lecture and the Student 
 who uploads a file. Optional the Camera will be turned on or switched off to evaluate the networks behavior with and without the additional
@@ -133,7 +135,8 @@ This leads to an expected average data rate of 420.8 kbit/s per user. Therefore,
 up to 27 users are able to browse simultaneously via the network connection (see figure XXY right).
 
 
-\chapter{Evaluation - without Camera}
+\chapter{Simulation Results}
+\section{Without Camera\\ {\large Nina Piontek}}
 
 Since the default configuration for the Links is full-duplex, we evaluate the performance of the Uplink and the Downlink independently.
 \section{Expectations on Uplink}
