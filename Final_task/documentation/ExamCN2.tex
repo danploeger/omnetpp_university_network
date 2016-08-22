@@ -20,19 +20,21 @@
 
 
 \chapter{Network Description}
+By Nina Piontek.\\
+
 Because of a construction site near Channel 4 which might accidentally damage the cables 
 used for internet connection,
 a point-to-point radio link should be implemented to ensure network connection.
 In the following, the new network configuration as depicted in \ref{fig:network} will be evaluated.
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{graphics-03.eps}
+    \caption{University Network with a remote site connected by the remote router (purple) and a main campus connected by the main router (navy blue)}
     \label{fig:network}
-    \caption{University Network}
+  \end{center}
 \end{figure}
 
 \section{General Description of the Network's Main Components}
-By Nina Piontek.\\
 
 The network core is a set up with 2 Routers, Main Router and Remote Router, connected with a Point-to-Point Link. 
 Towards the Main Router the Porters Office' Computer and the Computer of the Professor giving the remote Lecture are connected.
@@ -45,7 +47,6 @@ is connected via WLAN as well.
 
 
 \section{Network Services and Requirements}
-By Nina Piontek.\\
 
 In this set up the Network performance regarding the Video Lecture is evaluated with the following Services in
 use:\\
@@ -82,10 +83,11 @@ requests and responses. The response sample traces (download statistics) are wid
 distributed in the range of less than 500 Bytes up to more than 4 Mbyte 
 (see figure \ref{fig:trace} top).
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{trace_distribution.eps}
-    \label{fig:trace}
     \caption{HTTP Traffic Analysis}
+    \label{fig:trace}
+    \end{center}
 \end{figure}
 
 Distribution fitting analysis shows that the statistical behavior if
@@ -123,10 +125,11 @@ Since the Video Conference is sending with a constant Data Rate of 280kbit/s, th
 11,72 Mbit/s can be used by the FTP Upload. That means, that the Upload could theoretically run with 11,72Mbit/s.
 
 \begin{figure}[!ht]
-  \centering
-    \includegraphics[width=0.9\textwidth]{graphics-02.png}
-    
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{graphics-02.eps}
     \caption{Utilization of the Radio Link without the Security Camera}
+    \label{fig:rLink}
+    \end{center}
 \end{figure}
 
 On the Downlink the Data Rate of 12Mbit/s is shared between the Students browsing the Web (HTTP Service) and the Video Lecture (Video Conference).
@@ -136,18 +139,19 @@ can be theoretically used by the HTTP Service. With
  \frac{0.789MiB}{15s}=\frac{441.24kbit}{s}
 \end{equation}
 we can see, that, theoretically up to 26 Users can use the Downlink for HTTP Traffic.
-The value $0.789MiB$ is the value extracted from the trace file. It is the Mean of the packetlength downloaded by the Students whne surfing the web. For Details see \ref{chapter_http_traffic}
+The value $0.789MiB$ is the value extracted from the trace file. It is the Mean of the packet length downloaded by the Students when surfing the web. For Details see \ref{chapter_http_traffic}
 
-\section{Network Behavior Expectations with CCTV camera turned on}
+\section{Network Behavior Expectations with CCTV Camera Turned On}
 \label{chapter_expectations}
 By Daniel Plöger.\\
 
 The point-to-point radio link between remote and main router has a full duplex data rate of 12 Mbit/s and by this is the weakest single link within the proposed network. All other connection speeds are multiples of this data rate. Since all data has to pass this link, for this theoretical behavior analysis it is considered to be the network bottleneck.
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{graphics-01.eps}
-    \label{fig:radio_link_theory_on}
     \caption{Max. possible utilization of upload (left) and download (right) of the radio link with the CCTV camera streaming.}
+    \label{fig:radioLinkTheoryOn}
+    \end{center}
 \end{figure}
 
 The network contains several applications which have their main impact either on the download connection from the main router to the remote router, or on the upload connection in the other direction. The respective opposite direction of an application may be neglected, since it mainly consists of very small messages for connection management or empty network packets. For this reason, theoretical down- and upload utilization is examined independently from each other in this chapter. 
@@ -155,23 +159,22 @@ The network contains several applications which have their main impact either on
 The only exception is the video conference, which utilizes both, up- and download equally. The video stream consumes 280 kbit/s for transmission of 1388 Bytes of payload plus 12 Byte RTP protocol headers. It does this every 40 ms and in both directions.
 
 \subsection{Upload Connection, Remote to Main Router}
-Aside from the video conference which uses 280 kbit/s, two more applications make use of the upload direction. Firstly, the CCTV camera sends 10 kByte every 40 ms, which adds up to 2,000 kbit/s. The second application is the FTP upload. It tries to maximize network utilization and should therefore consume the biggest part of the remaining 9,720 kbit/s of the total 12,000 kbit/s data rate (see figure \ref{fig:radio_link_theory_on} left).
+Aside from the video conference which uses 280 kbit/s, two more applications make use of the upload direction. Firstly, the CCTV camera sends 10 kByte every 40 ms, which adds up to 2,000 kbit/s. The second application is the FTP upload. It tries to maximize network utilization and should therefore consume the biggest part of the remaining 9,720 kbit/s of the total 12,000 kbit/s data rate (see figure \ref{fig:radioLinkTheoryOn} left).
 
 \subsection{Download Connection, Main to Remote Router}
-Other than the video conference, the only application which makes use of the download direction is the web browsing. As stated before, web browsing is modeled as the download of files with an exponentially distributed size with a mean of 0.789 Mbyte (see chapter \ref{chapter_http_traffic}). The client's assumption states that a web browsing user waits a certain time before he downloads the next file. The waiting time is assumed to be exponentially distributed with a mean of 15 seconds. This leads to an expected average data rate of 420.8 kbit/s per user. Therefore, if all users download in a well-distributed way, up to 27 users are able to browse simultaneously via the network connection (see figure \ref{fig:radio_link_theory_on} right).
+Other than the video conference, the only application which makes use of the download direction is the web browsing. As stated before, web browsing is modeled as the download of files with an exponentially distributed size with a mean of 0.789 Mbyte (see chapter \ref{chapter_http_traffic}). The client's assumption states that a web browsing user waits a certain time before he downloads the next file. The waiting time is assumed to be exponentially distributed with a mean of 15 seconds. This leads to an expected average data rate of 420.8 kbit/s per user. Therefore, if all users download in a well-distributed way, up to 27 users are able to browse simultaneously via the network connection (see figure \ref{fig:radioLinkTheoryOn} right).
 
 \subsection{Conclusion}
 For a fully-functional network that guarantees both the CCTV camera and the video lecture conference to satisfy all quality of service requirements, the proposed network is not able to allow for many additional applications or users. In theory, a classroom in the given size could host up to 800 tightly seated students for lecture \cite{sitzkultur}. The expected behavior suggests that in theory up to 27 of them are able to browse the web at the same time without restricting the video streams. 
 
-In practice however the network is expected to permit even less simultaneous users. This is due to the nature of HTTP requests and responses: the requested data is not perfectly distributed over time. Instead, high peaks of transmitted data occur at certain points in time, alternated with moments of complete silence. The video streams on the other hand are expected to transmit reliable at any point in time.
+In practice however the network is expected to permit even less simultaneous users. This is due to the nature of HTTP requests and responses: the requested data is not perfectly distributed over time. Instead, high peaks of transmitted data occur at certain points in time, alternated with moments of complete silence. The video streams on the other hand are expected to transmit reliably at any point in time.
 
 Meanwhile, the FTP upload and the CCTV camera stream is expected to be mostly independent of the number of web clients. The main transmission direction of these applications is upwards from the remote site to the main campus, opposite to the web browsing downloads. With higher numbers of web clients, the uploads are expected to slow down very little only due to the rising number of session handling messages from the underlying protocols.
 
 \chapter{Evaluation Without Camera}
 By Nina Piontek.\\
 
-\subsection{Simulation Results}
-\section{Video Lecture}
+\subsection{Video Lecture}
 The overall goal is to ensure a good Quality of Service for the Video Lecture in both directions.
 A good Quality of Service is achieved, if there are only up 5 $\%$ loss of data
 on the way from the Professors Laptop to the Students watching the Lecture in Channel 4. Also the average delay of data travelling from the professor to the Students has to be smaller than 100ms.
@@ -196,24 +199,25 @@ The confidence interval for 6 users does not cross the 5$\%$ acceptable packet l
 rate indicated by the red line. So the Quality of service is guaranteed with a probability of 90$\%$, because the actual mean of the
 underlying distribution will have its mean in the depicted interval with a probabiity of 90$\%$.
 
-Investigating the source of the packet drops, Figure ~\ref{fig:mainRdrops} shows the packet drops at the main router, which increase with the number of 
+Investigating the source of the packet drops, figure \ref{fig:mainRdrops} shows the packet drops at the main router, which increase with the number of 
 web users. With increasing Webusers more data is lost at at the main router. Further investigation of the loss rate at the Access Point showed no indication that 
 the loss of data is caused by collisions during transmission from Access Point to Wlan clients.
 
 \begin{figure}[!ht]
-  \centering
-    \label{fig:losslecdown}
-    \includegraphics[width=0.9\textwidth]{off_loss_conf_download.eps}
-  
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{off_loss_conf_download.eps} 
     \caption{Loss Downlink}
+    \label{fig:losslecdown} 
+  \end{center}
 \end{figure}
 The bootleneck of that configuration without the security camera constantly streaming to the main campus 
 is the radio link.
 \begin{figure}[!ht]
- \label{fig:mainRdrops}
-  \centering
-    \includegraphics[width=0.9\textwidth]{off_main_router_drops.eps}
-    \caption{Drops Main Router (Downlink)}
+  \begin{center}
+  \includegraphics[width=0.9\textwidth]{off_main_router_drops.eps}
+  \caption{Drops Main Router (Downlink)}
+  \label{fig:mainRdrops}
+  \end{center}
 \end{figure}
 
 It is recommended to increase the radio links data rate to solve the problem of packet loss at the main routers output. It would also be possible to increase the Quality of Service for the Video Lecture 
@@ -222,17 +226,19 @@ by priorising the video data or a better video codec to make the data smaller.
 In the Uplink there is no loss of data at the remote routers queue on the radio link.(See ~\ref{fig:remoteRdrops}).
 This means no impact on the Quality of Service for the Video Lecture.
 \begin{figure}[!ht]
-  \centering
-  
-    \includegraphics[width=0.9\textwidth]{off_loss_conf_upload.eps}
+  \begin{center}
+  \includegraphics[width=0.9\textwidth]{off_loss_conf_upload.eps}
     \caption{Loss Uplink}
      \label{fig:losslecup}
+     \end{center}
 \end{figure}
+
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_remote_router_drops.eps}
     \caption{Drops Remote Router (Uplink)}
      \label{fig:remoteRdrops}
+     \end{center}
 \end{figure}
 
 
@@ -243,17 +249,19 @@ The Video Conference is using UDP and sending with constant datarate of 280kbit/
 The Problem might be our implementation of the FTP Upload. 
 
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{off_http_download.eps}
-    \label{fig:httpDR}
     \caption{Average Download Rate depending on number of Users surfing the Web}
+    \label{fig:httpDR}
+  \end{center}
 \end{figure}
 
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{off_ftp_upload.eps}
-    \label{fig:ftpUpR}
     \caption{Average Upload Rate for the FTP Upload depending on the number of users}
+    \label{fig:ftpUpR}
+    \end{center}
 \end{figure}
 
 \section{Webbrowsing}
@@ -265,68 +273,82 @@ To provide a higher download rate the data rate of the radio link has to be incr
 \chapter{Evaluation With Camera Turned On}
 By Daniel Plöger.\\
 
-In order to assess the proposed network, the behavior was simulated and will be evaluated in this chapter. The evaluation is divided into the sections \textit{loss rates and delays analysis}, \textit{HTTP data rates}, \textit{FTP data rate}, and \textit{main bottlenecks}. In each section, the results are examined with regards to the number of HTTP users that are web browsing simultaneously and compared to the expected behavior from chapter \ref{chapter_expectations}.
+In order to assess the proposed network, the behavior was simulated and will be evaluated in this chapter. The evaluation is divided into the sections \textit{loss rates and delays analysis}, \textit{HTTP data rates}, \textit{FTP data rate}, and \textit{main bottlenecks}. In each section, the results are examined with regards to the number of HTTP users that are web browsing simultaneously and compared to the expected behavior from chapter \ref{chapter_expectations}. This is because the main aim of the evaluation is to show how the quality of service of the video streams changes with the number of HTTP users. 
+
+The total packet drop rate plus the rate of packets exceeding 100 ms in delay must not be more than 5\% for the quality of service to be satisfied. This combined drop-and-delay-rate will be called \textit{packet loss rate} in this chapter. The network is simulated with up to 13 HTTP users instead of up to 27 as suggested in the theoretical analysis. It will be seen that the network is already working to capacity with less users. In addition to the mean loss and data rates, the evaluating figures indicate intervals inside which all actual values stay with 90\% confidence.
 
 \section{Loss Rates and Delays Analysis}
 
-The conference stream of the video lecture is analyzed in both directions. In the upload from the remote classroom to the professor's laptop, the video quality-of-service is not becoming worse with more number of users. The loss rate is  negligible the whole time. This was predicted in the expected performance, since the direction of the video upstream is opposite to the HTTP download.
+The conference stream of the video lecture is analyzed in both directions. In the upload from the remote classroom to the professor's laptop, the video quality-of-service is not becoming worse with more number of users (see figure \ref{fig:onLossConfUpload}). The loss rate is  negligible the whole time. This was predicted in the expected performance, since the direction of the video upstream is opposite to the HTTP download. The average delay also stays constant below 20 ms, which is much less than the maximum acceptable 100 ms.
 
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_loss_conf_upload.eps}
-    \label{fig:on_loss_conf_upload}
-    \caption{TODO}
+    \caption{Video conference upstream loss rates and delays depending on the number of HTTP users}
+    \label{fig:onLossConfUpload}
+  \end{center}
 \end{figure}
 
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_loss_conf_download.eps}
-    \label{fig:on_loss_conf_download}
-    \caption{TODO}
+    \caption{Video conference downstream loss rates and delays depending on the number of HTTP users}
+    \label{fig:onLossConfDownload}
+  \end{center}
 \end{figure}
 
+The download gives a different picture: with an increasing amount of users, the service quality approximately decreases linearly (see figure \ref{fig:onLossConfDownload}). While there is no video packet loss without any user, it can be used safely with up to six users, only. For a higher number the quality of service hits an unacceptable level. The average delay increases as well, but always stays on a safe level. This is a misleading however, as the delay variance increases a lot over time. For seven users, for example, the delay rate exceeding 100 ms is already above 4\%.
+
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_loss_cctv.eps}
-    \label{fig:on_loss_cctv}
-    \caption{TODO}
+    \caption{CCTV video stream loss rates and delays depending on the number of HTTP users}
+    \label{fig:onLossCctv}
+    \end{center}
 \end{figure}
 
+Just like the video conference upstream, the CCTV camera stream is independent of the number of users (see figure \ref{fig:onLossCctv}). The loss rate is negligible for all number of users and the average delay stays close to the theoretical minimum of 10 ms.
 
-\section{TODO}
+\section{HTTP Data Rates}
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_http_download.eps}
-    \label{fig:on_http_download}
-    \caption{TODO}
+    \caption{Average download rate per HTTP user depending on the total number of HTTP users}
+    \label{fig:onHttpDownload}
+    \end{center}
 \end{figure}
 
+The average download rate per web browsing user almost stays constant when the number of users increases (see figure \ref{fig:onHttpDownload}). On average, is stays between 350 and 275 kbit/s, which is more than two third of the expected theoretical download rate from chapter \ref{chapter_expectations}. This result indicates that the users have a comfortable web browsing experience for this number of clients. Only for overlapping peaks of downloads, the download speed will have to be shared between users and thus decreases notably which leads to a minor drop on the time average between one and 13 users. While higher number of users were not simulated, the average download rate is expected to drop faster from around 27 HTTP users upwards. This is because with that number of users, the radio link bandwidth is filled to capacity not in peaks only but also on average.
+
+\section{FTP Data Rate}
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_ftp_upload.eps}
-    \label{fig:on_ftp_upload}
-    \caption{TODO}
+    \caption{Average upload rate of the FTP connection depending on the number of HTTP users}
+    \label{fig:onFtpUpload}
+    \end{center}
 \end{figure}
 
+FTP upload changes only little with the number of HTTP users increasing (see figure \ref{fig:onFtpUpload}). Its mean value decreases from 1300 kbit/s without any web surfing down to 1000 kbit/s with 13 users. Just as expected, that the influence is so small can be explained by the direction within the network, which is opposite between web browsing data download and FTP upload. Only protocol handshakes and control data of the FTP connection may get stuck in queues together with the HTTP data and thus slows down the FTP upload.
+
+The general speed of the FTP connection stays far below the expected data rate however. It was expected to be almost 10,000 kbit/s instead of a tenth of it. This behavior can not be explained with the simulation results and is assumed to be caused by faulty ftp protocol implementation in the simulation. This topic would need further investigation.
+
+\section{Main Bottlenecks and Conclusion}
+
+The initially assumed bottleneck at the radio link connection proves true: the main router output queue buffers the packets which are waiting to be transmitted via the radio link. With six HTTP users active, around 175 kbit worth of packets are dropped each second (see figure \ref{fig:onMainRouterDrops}). The average throughput at this connection is 2,400 kbit/s with six users. This means that 7.3\% of all transmitted Bytes are lost at the main router only. The second worst packet drop rate belongs to the WLAN access point connections, which have average packet loss rates of around .6\%, only a fraction of the main router packet drops.
 
 \begin{figure}[!ht]
-  \centering
+  \begin{center}
     \includegraphics[width=0.9\textwidth]{on_main_router_drops.eps}
-    \label{fig:on_main_router_drops}
-    \caption{TODO}
+    \caption{kbits dropped per second at the main router output queue (see figure \ref{fig:network})}
+    \label{fig:onMainRouterDrops}
+    \end{center}
 \end{figure}
 
-\begin{figure}[!ht]
-  \centering
-    \includegraphics[width=0.9\textwidth]{on_remote_router_drops.eps}
-    \label{fig:on_remote_router_drops}
-    \caption{TODO}
-\end{figure}
-         
+On top of this, packets which are not dropped at the main router output queue often have a very long queuing time of up to 100 ms. While the mean queuing time ranges between 15 and 20 ms with six HTTP users, a high variance leads to a high number of unacceptable delays for the video connections. This means, simply increasing the maximum queuing length of the router is not an option. It may lead to less dropped packets but the video streams will still have a bad performance due to even higher delays caused by longer queues.
 
-\chapter{Conclusion and Suggestions}
+As seen in the evaluation, the video stream down-link quality-of-service strongly depends on the number of HTTP users. Other applications do not seem to have high influence on the quality-of-service because without HTTP users and with all other applications active, both video streams work flawlessly. This means in conclusion that more bandwidth is needed in the down-link between main and remote router if more than six users should be able to browse on the web during a video conference with these parameters. This part of the network turns out to be the single bottleneck for the given scenario. 
 
-Text.
 
 	\bibliographystyle{plain}
 	\bibliography{bibliography}
