@@ -22,7 +22,7 @@
 \chapter{Network Description}
 By Nina Piontek.\\
 
-Because of a construction site near Channel 4 which might accidentally damage the cables 
+Because of a construction site near the remote building which might accidentally damage the cables 
 used for internet connection,
 a point-to-point radio link should be implemented to ensure network connection.
 In the following, the new network configuration as depicted in \ref{fig:network} will be evaluated.
@@ -41,7 +41,7 @@ Towards the main router the porters office's computer and the computer of the pr
 The main router is the gateway for the shared internet connection of the university.
 
 Towards the remote router the access point for WLAN and the security camera are connected.
-The access point provides Wireless Lan for students at Channel 4. The computer for the video lecture at Channel 4 
+The access point provides Wireless Lan for students at the remote building. The computer for the video lecture at the remote building 
 is connected via WLAN as well.
 
 \section{Network Services and Requirements}
@@ -52,7 +52,7 @@ use:\\
  \item WLAN for webbrowsing
  \item FTP service for uploading a file to a server in the internet (used by one student) 
  \item Video lecture streamed in both directions from the main Campus to channel 4
- \item Security camera streaming from Channel 4 to the porter's office  at the main campus
+ \item Security camera streaming from the remote building to the porter's office  at the main campus
 \end{enumerate}
 
 The network should provide a certain Quality of Service for the video lecture and the security camera.
@@ -66,8 +66,8 @@ The criteria are:\\
 \section{General Assumptions on the Model}
 By Nina Piontek.\\
 
-Since the overall goal is to evaluate the network performance regarding the QoS during the video lecture, we will assume an assessment period
-of around 90 minutes. The WLAN at Channel 4 will in general be used by the students, which surf the web during the video lecture and the student 
+Since the overall goal is to evaluate the network performance regarding the Quality of Service (QoS) during the video lecture, we will assume an assessment period
+of around 90 minutes. The WLAN at the remote building will in general be used by the students, which surf the web during the video lecture and the student 
 who uploads a file. Optional the camera will be switched on or switched off to evaluate the networks behavior with and without the additional
 traffic load.
 
@@ -117,6 +117,7 @@ By Nina Piontek.\\
  Main Router$\leftrightarrow $ Professor & -  &Video Lecture&Video Lecture \\ \cline{1-4}
  Main Router$\leftrightarrow $ Internet &100Mbit/s &HTTP& FTP \\ \cline{1-4}
 \end{tabular}}
+\caption{Uplink/downlink futilization}
 \end{table}
 
 The performance of the uplink and the downlink is evaluated independently because the default configuration for the links is full-duplex. When the camera is switched off, the uplink to the main campus is shared between the FTP upload and the video lecture (video conference). The video conference is sending with a constant data rate of 280 kbit/s, the remaining 11,72 Mbit/s can be used by the FTP upload. 
@@ -173,31 +174,32 @@ By Nina Piontek.\\
 \section{Video Lecture}
 The overall goal is to ensure a good Quality of Service for the video lecture in both directions.
 A good Quality of Service is achieved, if there are only up 5 $\%$ loss of data
-on the way from the professor's laptop to the students watching the lecture in Channel 4. Also the average delay of data travelling from the professor to the students has to be smaller than 100ms.
-Data loss (named packet loss in ~\ref{fig:losslecdown}) occurs, when the traffic load on the network is too high, and the network nodes cannot process all packets.
+on the way from the professor's laptop to the students watching the lecture at the remote building. Also the average delay of data travelling from the professor to the students has to be smaller than 100ms.
+Data loss (named packet loss in ~\ref{fig:losslecdown} and ~\ref{fig:losslecup}) occurs, when the traffic load on the network is too high, and the network nodes cannot process all packets.
 The data is then dropped. Data is delayed for example by queuing at routers.
 In figure  ~\ref{fig:losslecdown} the packet loss rate depending on the number of
-webusers is depicted. Packet loss is calculated with
+webusers is depicted. The packet loss rate (PLR) is calculated with
 \begin{equation}
- \frac{\textnormal{total number bits sent}}{\textnormal{total number of packets received}} + \textnormal{number of packets arrived at time} > 100ms
+ PLR=\frac{\textnormal{total number bits sent}}{\textnormal{total number of packets received}} + \textnormal{packets arrived at time} > 100ms
 \end{equation}
 The packet loss should not exceed 5$\%$ during the simulation.
-With increasing number of users, the packet loss increses, because the 
+With increasing number of users, the packet loss increases, because the 
 workload on the network nodes like routers is too high.
 The simulation results indicate, that the maximum number of clients surfing the 
-web without impairing the video lecture is about 7 users.
+web without impairing the video lecture is about seven users.
 The blue lines indicate the confidence intervals. Confidence intervals give the area in which 
 the true mean of the probability distribution that underlies the gathered data will lie with a probability of 90$\%$.
 The mean we are estimating is the average packet loss rate. The estimated mean taken from the simulation results is depicted in the figure with a blue star.
-The estimated mean lies within the calculated confidence intervals for each number of users. This indicates that the estimated mean is a good estimate of the true mean.
+It lies within the calculated confidence intervals for each number of users. This indicates that it is a close estimate of the true mean.
 It is safe to assume that only 6 users can use the web, while the video lecture is running.
 The confidence interval for 6 users does not cross the 5$\%$ acceptable packet loss 
-rate indicated by the red line. So the Quality of Service is guaranteed with a probability of 90$\%$, because the actual mean of the
+rate indicated by the red line. So the Quality of Service is met with a probability of 90$\%$, because the true mean of the
 underlying distribution will have its mean in the depicted interval with a probabiity of 90$\%$.
-data is caused by collisions during transmission from Access Point to Wlan clients.
+
 
 Investigating the source of the packet drops, figure ~\ref{fig:mainRdrops} shows the packet drops at the main router, which increase with the number of 
-web users. With increasing webusers more data are lost at the main router and the Quality of Service for the video lecture decreases. Further investigation of the loss rate at the access point showed no indication that 
+web users. With increasing webusers more data are lost at the main router and the Quality of Service for the video lecture decreases.
+Further investigation of the loss rate at the access point showed no indication that 
 the loss of data is caused by collisions during transmission from access point to WLAN clients.
 
 \begin{figure}[!ht]
@@ -234,16 +236,17 @@ This means no impact on the Quality of Service for the video lecture (see~\ref{s
      \label{fig:remoteRdrops}
      \end{center}
 \end{figure}
-
-
-It is recommended to increase the radio link's data rate to solve the problem of packet loss at the main routers output and to increase therefore the number of webusers that can surf the web simultaneously to the video lecture. It would also be possible to increase the Quality of Service for the video lecture 
-by priorising the video data or a better video codec to make the data smaller.
-\section{Problems with FTP}
+\section{FTP Upload}
+When the number of users increases,  the amount of connection establishment messages (TCP-Handshake) from the HTTP 
+users to the server increases as well. The upload data from the FTP client to the server will therefeore experience longer queuing times in the network.
+In ~\ref{fig:ftpUpR} we can see as a result a decreasing average upload rate. 
+\subsection{Problems with FTP}
 \label{sec:ftp}
-The networks behaviour on the uplink is very unusual. Since the FTP client uploading a file is using TCP it therefore adjusts its upload speed if the network can provide a higher datarate.
-As we can see in ~\ref{fig:ftpUpR}, the FTP Client starts with an average upload rate of around 1250 kbit/s , despite the fact, that it could theoretically transmit with a datarate of up  11,7 Mbit/s.
-The Video Conference is using UDP and sending with constant datarate of 280 kbit/s without adjusting its upload rate. This means, that the FTP client really has 11,7 Mbit/s for upload. The Problem might be our implementation of the FTP upload. 
 
+The networks behaviour on the uplink is very unusual. The Video Conference is using UDP and sending with constant datarate of 280 kbit/s not adjusting its upload rate. This means, that the FTP client really has 11,7 Mbit/s for upload.
+Since the FTP client uploading a file is using TCP I would expect that it adjusts its upload speed if the network can provide a higher datarate.
+But, as we can see in ~\ref{fig:ftpUpR}, the FTP Client transmits with an average upload rate of around 1250 kbit/s , despite the fact, that it could theoretically transmit with a datarate of up 11,7 Mbit/s.
+The Problem might be our implementation of the FTP upload and needs further investigation.
 \begin{figure}[!ht]
   \begin{center}
     \includegraphics[width=0.9\textwidth]{off_http_download.eps}
