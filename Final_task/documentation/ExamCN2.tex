@@ -170,7 +170,6 @@ Meanwhile, the FTP upload and the CCTV camera stream is expected to be mostly in
 \chapter{Evaluation Without Camera}
 By Nina Piontek.\\
 
-\subsection{Simulation Results}
 \section{Video Lecture}
 The overall goal is to ensure a good Quality of Service for the video lecture in both directions.
 A good Quality of Service is achieved, if there are only up 5 $\%$ loss of data
@@ -271,7 +270,7 @@ To provide a higher download rate the data rate of the radio link has to be incr
 \chapter{Evaluation With Camera Turned On}
 By Daniel Plöger.\\
 
-In order to assess the proposed network, the behavior was simulated and will be evaluated in this chapter. The evaluation is divided into the sections \textit{loss rates and delays analysis}, \textit{HTTP data rates}, \textit{FTP data rate}, and \textit{main bottlenecks}. In each section, the results are examined with regards to the number of HTTP users that are web browsing simultaneously and compared to the expected behavior from chapter \ref{chapter_expectations}. This is because the main aim of the evaluation is to show how the quality of service of the video streams changes with the number of HTTP users. 
+In order to assess the proposed network, the behavior was simulated and will be evaluated in this chapter. The evaluation is divided into the sections \textit{loss rates and delays analysis}, \textit{HTTP data rates}, \textit{FTP data rate}, and \textit{main bottlenecks}. In each section, the results are examined with regard to the number of HTTP users that are web browsing simultaneously and compared to the expected behavior from chapter \ref{chapter_expectations}. This is because the main aim of the evaluation is to show how the quality of service of the video streams changes with the number of HTTP users. 
 
 The total packet drop rate plus the rate of packets exceeding 100 ms in delay must not be more than 5\% for the quality of service to be satisfied. This combined drop-and-delay-rate will be called \textit{packet loss rate} in this chapter. The network is simulated with up to 13 HTTP users instead of up to 27 as suggested in the theoretical analysis. It will be seen that the network is already working to capacity with less users. In addition to the mean loss and data rates, the evaluating figures indicate intervals inside which all actual values stay with 90\% confidence.
 
@@ -333,7 +332,7 @@ FTP upload changes only little with the number of HTTP users increasing (see fig
 
 The general speed of the FTP connection stays far below the expected data rate however. More about this topic in chapter \ref{chapter_conclusion} (conclusion).
 
-\section{Main Bottlenecks and Conclusion}
+\section{Main Bottlenecks}
 
 The initially assumed bottleneck at the radio link connection proves true: the main router output queue buffers the packets which are waiting to be transmitted via the radio link. With six HTTP users active, around 175 kbit worth of packets are dropped each second (see figure \ref{fig:onMainRouterDrops}). The average throughput at this connection is 2,400 kbit/s with six users. This means that 7.3\% of all transmitted Bytes are lost at the main router only. The second worst packet drop rate belongs to the WLAN access point connections, which have average packet loss rates of around .6\%, only a fraction of the main router packet drops.
 
@@ -353,9 +352,9 @@ By Nina Piontek and Daniel Plöger. \\
 
 For both scenarios with the CCTV camera turned on and off, the FTP upload data rate turned out to be lower than expected. It was expected to be almost 10,000 kbit/s instead of a tenth of it. This behavior can not be explained with the simulation results and is assumed to be caused by faulty FTP protocol implementation in the simulation. This topic would need further investigation.
 
-Even so it is not assumed that a higher FTP upload would have big impact on the other applications. Since it is the upstream direction it shares the link with the video conference upload and the CCTV camera, which both have negligible packet losses right now. With the FTP upload being close to the radio link data rate limit, there are still only three applications sharing this link direction, which is a number the router should be able to properly allocate.
+Even so it is not assumed that a higher FTP upload rate would have big impact on the other applications. Since it is the upstream direction it shares the link with the video conference upload and the CCTV camera, which both have negligible packet losses right now. With the FTP upload being close to the radio link data rate limit, there are still only three applications sharing this link direction, which is a number the router should be able to properly allocate.
 
-As seen in the evaluation, the video stream down-link quality-of-service strongly depends on the number of HTTP users. Other applications do not seem to have high influence on the quality-of-service because without HTTP users and with all other applications active, both video streams work flawlessly. This means in conclusion that more bandwidth is needed in the down-link between main and remote router if more than six users should be able to browse on the web during a video conference with these parameters. It would also be possible to increase the quality of service of the video lecture by prioritizing the video data or by using a better video codec with lower data rates and higher tolerable delays. In summary, the radio link part of the network turns out to be the single bottleneck for the given scenario. 
+As seen in the evaluation, the video stream down-link quality-of-service strongly depends on the number of HTTP users. Other applications do not seem to have high influence on the quality-of-service because without HTTP users and with all other applications active, both video streams work flawlessly. This also applies to the CCTV camera, which does not have a big impact on the results. That means in conclusion that more bandwidth is needed in the down-link between main and remote router if more than six users should be able to browse on the web during a video conference with these parameters. It would also be possible to increase the quality of service of the video lecture by prioritizing the video data or by using a better video codec with lower data rates and higher tolerable delays. In summary, the radio link part of the network turns out to be the single bottleneck for the given scenario. 
 
 	\bibliographystyle{plain}
 	\bibliography{bibliography}
