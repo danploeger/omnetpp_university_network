@@ -22,7 +22,7 @@
 \chapter{Network Description}
 By Nina Piontek.\\
 
-Because of a construction site near the remote building which might accidentally damage the cables 
+Because of a construction site near the remote building, which might accidentally damage the cables 
 used for internet connection,
 a point-to-point radio link should be implemented to ensure network connection.
 In the following, the new network configuration as depicted in \ref{fig:network} will be evaluated.
@@ -242,7 +242,6 @@ users to the server increases as well. The upload data from the FTP client to th
 In ~\ref{fig:ftpUpR} we can see as a result a decreasing average upload rate. 
 \subsection{Problems with FTP}
 \label{sec:ftp}
-
 The networks behaviour on the uplink is very unusual. The Video Conference is using UDP and sending with constant datarate of 280 kbit/s not adjusting its upload rate. This means, that the FTP client really has 11,7 Mbit/s for upload.
 Since the FTP client uploading a file is using TCP I would expect that it adjusts its upload speed if the network can provide a higher datarate.
 But, as we can see in ~\ref{fig:ftpUpR}, the FTP Client transmits with an average upload rate of around 1250 kbit/s , despite the fact, that it could theoretically transmit with a datarate of up 11,7 Mbit/s.
