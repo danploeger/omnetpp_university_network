@@ -19,7 +19,7 @@
 
 
 
-\chapter{Network Description}
+\chapter{Introduction}
 By Nina Piontek.\\
 
 Because of a construction site near the remote building, which might accidentally damage the cables 
@@ -236,6 +236,7 @@ This means no impact on the Quality of Service for the video lecture (see~\ref{s
      \label{fig:remoteRdrops}
      \end{center}
 \end{figure}
+
 \section{FTP Upload}
 When the number of users increases,  the amount of connection establishment messages (TCP-Handshake) from the HTTP 
 users to the server increases as well. The upload data from the FTP client to the server will therefeore experience longer queuing times in the network.
@@ -314,7 +315,9 @@ Just like the video conference upstream, the CCTV camera stream is independent o
     \end{center}
 \end{figure}
 
-The average download rate per web browsing user almost stays constant when the number of users increases (see figure \ref{fig:onHttpDownload}). On average, is stays between 350 and 275 kbit/s, which is more than two third of the expected theoretical download rate from chapter \ref{chapter_expectations}. This result indicates that the users have a comfortable web browsing experience for this number of clients. Only for overlapping peaks of downloads, the download speed will have to be shared between users and thus decreases notably which leads to a minor drop on the time average between one and 13 users. While higher number of users were not simulated, the average download rate is expected to drop faster from around 27 HTTP users upwards. This is because with that number of users, the radio link bandwidth is filled to capacity not in peaks only but also on average.
+The average download rate per web browsing user almost stays constant when the number of users increases (see figure \ref{fig:onHttpDownload}). On average, is stays between 350 and 275 kbit/s, which is more than two third of the expected theoretical download rate from chapter \ref{chapter_expectations}. This result indicates that the users have a comfortable web browsing experience for this number of clients. 
+
+Only for overlapping peaks of downloads, the download speed will have to be shared between users and thus decreases notably. This leads to a minor drop on the time average between one and 13 users. While higher number of users were not simulated, the average download rate is expected to drop faster from around 27 HTTP users upwards. This is because with that number of users, the radio link bandwidth is filled to capacity not in peaks only but also on average.
 
 \section{FTP Data Rate}
 \begin{figure}[!ht]
@@ -327,7 +330,7 @@ The average download rate per web browsing user almost stays constant when the n
 
 FTP upload changes only little with the number of HTTP users increasing (see figure \ref{fig:onFtpUpload}). Its mean value decreases from 1300 kbit/s without any web surfing down to 1000 kbit/s with 13 users. Just as expected, that the influence is so small can be explained by the direction within the network, which is opposite between web browsing data download and FTP upload. Only protocol handshakes and control data of the FTP connection may get stuck in queues together with the HTTP data and thus slows down the FTP upload.
 
-The general speed of the FTP connection stays far below the expected data rate however. It was expected to be almost 10,000 kbit/s instead of a tenth of it. This behavior can not be explained with the simulation results and is assumed to be caused by faulty ftp protocol implementation in the simulation. This topic would need further investigation.
+The general speed of the FTP connection stays far below the expected data rate however. More about this topic in chapter \ref{chapter_conclusion} (conclusion).
 
 \section{Main Bottlenecks and Conclusion}
 
@@ -343,8 +346,15 @@ The initially assumed bottleneck at the radio link connection proves true: the m
 
 On top of this, packets which are not dropped at the main router output queue often have a very long queuing time of up to 100 ms. While the mean queuing time ranges between 15 and 20 ms with six HTTP users, a high variance leads to a high number of unacceptable delays for the video connections. This means, simply increasing the maximum queuing length of the router is not an option. It may lead to less dropped packets but the video streams will still have a bad performance due to even higher delays caused by longer queues.
 
-As seen in the evaluation, the video stream down-link quality-of-service strongly depends on the number of HTTP users. Other applications do not seem to have high influence on the quality-of-service because without HTTP users and with all other applications active, both video streams work flawlessly. This means in conclusion that more bandwidth is needed in the down-link between main and remote router if more than six users should be able to browse on the web during a video conference with these parameters. This part of the network turns out to be the single bottleneck for the given scenario. 
+\chapter{Conclusion}
+\label{chapter_conclusion}
+By Nina Piontek and Daniel Plöger. \\
 
+For both scenarios with the CCTV camera turned on and off, the FTP upload data rate turned out to be lower than expected. It was expected to be almost 10,000 kbit/s instead of a tenth of it. This behavior can not be explained with the simulation results and is assumed to be caused by faulty FTP protocol implementation in the simulation. This topic would need further investigation.
+
+Even so it is not assumed that a higher FTP upload would have big impact on the other applications. Since it is the upstream direction it shares the link with the video conference upload and the CCTV camera, which both have negligible packet losses right now. With the FTP upload being close to the radio link data rate limit, there are still only three applications sharing this link direction, which is a number the router should be able to properly allocate.
+
+As seen in the evaluation, the video stream down-link quality-of-service strongly depends on the number of HTTP users. Other applications do not seem to have high influence on the quality-of-service because without HTTP users and with all other applications active, both video streams work flawlessly. This means in conclusion that more bandwidth is needed in the down-link between main and remote router if more than six users should be able to browse on the web during a video conference with these parameters. It would also be possible to increase the quality of service of the video lecture by prioritizing the video data or by using a better video codec with lower data rates and higher tolerable delays. In summary, the radio link part of the network turns out to be the single bottleneck for the given scenario. 
 
 	\bibliographystyle{plain}
 	\bibliography{bibliography}
