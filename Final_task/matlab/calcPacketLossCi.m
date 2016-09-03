@@ -18,11 +18,6 @@ function calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
     warmupPeriod = 5;
     acceptableDelay = 0.1;  % 100 ms delay
     simTime = 5405;
-%     if cctvOn == 1
-%         cctvPath = 'on';
-%     else 
-%         cctvPath = 'off';
-%     end
     
     %% Loop over number of HTTP user
     videoConfDownload = cell(1,maxNumberHttpUser + 1);

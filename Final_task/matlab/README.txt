@@ -1,9 +1,4 @@
 ##########################################################################
-##                                HOWTO                                 ##
-##########################################################################
-
-
-##########################################################################
 ## Calculate the distribution of file sizes from given trace statistics ##
 ##########################################################################
 
@@ -15,38 +10,16 @@ alpha = @default: 0.05						% significance level
 
 
 ##########################################################################
-##             Calculate the QoS of the network 				        ##
+##       Calculate the QoS of the network and plot everything		    ##
 ##########################################################################
 
-[videoConfDownload, videoConfUpload, cctv] = qos(...
-        folderName, ...
-        cctvOn, ...
-        repeat, ...
-        acceptableDelay, ...
-        warmupPeriod))
-		
-		
-folderName = @default: '10on';		% subfolder name within the script folder
-warmupPeriod = @default: 5;	
-acceptableDelay = @default: 0.1;	% 100 ms delay
-repeat = @default: 10;            	% Number of simulation runs with different seed
-cctvOn = @default: 1;	
+calcPacketLossCi(maxNumberHttpUser, cctvOn, repeat)
 
-Note: needs to have the following *.csv files within the specified folder
-/qos/[folderName]/
 
-CCTV_sentPkSum.csv
-ccTVMonitoringHost_endToEndDelay-1.csv
-...
-ccTVMonitoringHost_endToEndDelay-[repeat].csv
-ccTVMonitoringHost_rcvdPkSum.csv
-profLaptop_rcvdPkLifetime-1.csv
-...
-profLaptop_rcvdPkLifetime-[repeat].csv
-profLaptop_rcvdPkSum.csv
-profLaptop_sentPkSum.csv
-whostVideoConf_rcvdPkLifetime-1.csv
-...
-whostVideoConf_rcvdPkLifetime-[repeat].csv
-whostVideoConf_rcvdPkSum.csv
-whostVideoConf_sentPkSum.csv
+repeat = @default: 10            % Number of simulation runs with different seed
+cctvOn = @default: 1			 % choose the CCTV camera to be on or off
+maxNumberHttpUser = @default: 13 % number of users for which simulation results exist
+
+Note: simulation result paths have to be adjusted in: 
+qos.m (variable resultPath, and if the precalculated results in folder "qos" shall be used, the variable resultFileName needs to be right, too)
+importVec.m, importSca.m (variable path, only if NO precalculated results exist in the subfoldder "qos" and if vector and scalar results are available)
